@@ -1,6 +1,6 @@
 #Ecological Genomics Spring 2017    
 
-### Author: Lauren Ash      
+## Author: Lauren Ash      
 
 ##Overall Description of notebook      
 
