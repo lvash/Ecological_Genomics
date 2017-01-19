@@ -1,7 +1,7 @@
 #Project title    
 
 ### Author: Lauren Ash   
-### Ecological Genomics:   
+### Ecological Genomics   
 
 ##Overall Description of notebook      
 
