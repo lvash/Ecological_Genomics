@@ -22,3 +22,11 @@ Syntax:
 
 Implementation:
 [hyperlinked words](http://lvash.github.io/)
+
+Example of embedding an image:
+
+Syntax:
+
+```
+![](URL)
+```
