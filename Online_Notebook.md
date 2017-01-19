@@ -1,7 +1,6 @@
-#Project title    
+#Ecological Genomics Spring 2017    
 
-### Author: Lauren Ash   
-### Ecological Genomics   
+### Author: Lauren Ash      
 
 ##Overall Description of notebook      
 
