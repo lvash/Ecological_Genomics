@@ -1,19 +1,20 @@
 #Project title    
-#
-###Author: Lauren Ash Ecological Genomics:   
-###
+
+### Author: Lauren Ash   
+### Ecological Genomics:   
+
 ##Overall Description of notebook      
-##
+
 This is my online notebook for the Ecological Genomics course. I will update with new techniques I learn, questions that I come up with, and general notes. 
 
 
 ##Date started: 2017-01-19 Date end:  -   
-##
+
 ##Philosophy   
 Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.
 
 ###Helpful features of the notebook     
-###
+
 
 **It is absolutely critical for your future self and others to follow your work.**     
 
@@ -93,7 +94,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 
 ------ <div id='id-section1'/>
 ###Page 1: 2017-01-19. First journal article: Ellegren 2014
-###
+
 
 
 ------ <div id='id-section2'/>
@@ -214,5 +215,5 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ###Page 59:
 ------ <div id='id-section60'/>
 ###Page 60:
-### 
+
 ------
