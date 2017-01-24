@@ -101,13 +101,13 @@ Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomic
 
 The paper has a glossary of terms and I wanted to write a few down:
    
-**Effective population size (N_e_):** a measure of the size of an idealized population in which the effect of genetic drift on allele frequencies is similar to the population under consideration.   
+**Effective population size (N<sub>e</sub>):** a measure of the size of an idealized population in which the effect of genetic drift on allele frequencies is similar to the population under consideration.   
    
 **Genetic architecture:** the genetic background to phenotypic traits, including their number, effect sizes, and dominance.   
    
 **Genome-wide association studies (GWAS):** studies based on the use of large numbers of SNP markers genotyped in a group showing a particular trait, and in a control group, with the aim of finding association between trait and markers.   
 
-**Scaled selection coefficient:** the selection coefficient (*s*, the relative fitness dis-/advantage of a derived allele) multiplied with N_{e}, to take into account the fact that the efficiency of selection is directly proportional to population size. 
+**Scaled selection coefficient:** the selection coefficient (*s*, the relative fitness dis-/advantage of a derived allele) multiplied with N<sub>e</sub>, to take into account the fact that the efficiency of selection is directly proportional to population size. 
    
 **Transcriptome:** the complete repertoire of transcribed sequences in the genome, including expression of both from protein-coding genes and from noncoding RNAs.   
    
