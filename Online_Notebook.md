@@ -153,7 +153,7 @@ Illumina: Illumina next-generation sequencing utilizes a fundamentally different
 ------ <div id='id-section3'/>
 ###Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
    
-Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationale for the QTN programme   
+### Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationale for the QTN programme   
    
 **QTN: quantitative trait nucleotide**      
 * Goal = identifying the genes or nucleotide variants underlying quantitative and adaptive traits   
@@ -164,25 +164,25 @@ Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationa
 * Exciting: adaptive phenotypes can be understood as a collection of single-nucleotide polymorphisms (SNPs)   
 
 **Rationale for QTN**   
-1. Vertical integration   
+* Vertical integration   
 	+ Understanding the evolution of adaptation from genetic variation at causal nucleotides to -> heritablity in natural populations -> strength of contemporary selection -> how patterns of genetic variation and selection depend on geography/ecological context
 	+ Suprising in the lack of complete vertical integration examples   
 	+ Example: Hopkins and Rauscher 2011 - found nucleotide diversity patterns indicative of recent, strong natural selection and investigated how pollinators affect intensity/color of flowers   
 	+ Few examples exist where selection on QTN for truly quantitative traits has been demonstrated (focus on qualitative like pink vs red flowers)   
-2. Genetic parallelism and pleitropy   
+* Genetic parallelism and pleitropy   
 	+ QTN research can reveal underlying mechanisms of convergent phenotypic evolution across related organismal groups   
 	+ Only way to directly test for the extension of convergence down to the nucleotide level   
 	+ Production of common phenotype can imply either i) there are developmental/structural constraints on the production of the trait or ii) repeated changes are favored because they have fewer deleterious pleiotropic side-effects relative to others
-3. Maintenance of standing genetic variation    
+* Maintenance of standing genetic variation    
 	+ Why is there such an abundance of heritable variation in nature?   
 	+ Mutation-selection balance: equilibrium between mutation introducing deleterious variation and purifying selection depleting it; variants are mostly rare, recessive alleles   
 	+ Balancing selection hypothesis: negative and positive selection acting on same site for different components of a trait; result in maintenance of both alleles and predicts polymorphisms at intermediate frequencies   
 	+ QTN programme can examine how selection acts on standing variation, thereby connecting theory, quantitative genetics, and population genetics.
-4. Role of standing genetic variation in the wild    
+* Role of standing genetic variation in the wild    
 	+ Evolutionary responses to selection will differ greatly depending on whether the 'substrate of adaptation' comes from new mutations or standing variance   
 	+ Adaptation from new mutation is accompanied by the signature of a 'hard sweep' (steep decline in nucleotide diversity around a fixed site; excess of rare alleles close to selected site)   
 	+ Adaptation from standing variance is accompanied by the signature of a 'soft sweep' (lesser decline in diversity and associated with intermediate-frequency alleles)   
-5. Understanding the role of genomic architecture in adaptation   
+* Understanding the role of genomic architecture in adaptation   
 	+ QTN programme can clarify the role of aspects of genomic architecture (chromosomal inversions, translocations, 'supergenes' in areas of suppressed/restricted recombination) in adaptation   
 	+ Can clarify genetic basis and evolutionary forces responsible for polymorphisms (i.e. that directly influence plant mating and fitness)   
 	+ Necessary for evaluating role of genomic architecture in studies on role of chromosomal inversions in local adaptation, which could 'capture' locally advantageous haplotypes and spread quite rapidly  
