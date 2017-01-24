@@ -97,7 +97,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 
 Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**).   
 
-#### My thoughts while reading the paper
+### My thoughts while reading the paper
 
 The paper has a glossary of terms and I wanted to write a few down:
    
@@ -113,11 +113,11 @@ The paper has a glossary of terms and I wanted to write a few down:
  
 Some parts that stood out to me:  
 
-* Adaptive evolution should be more common in those regions of the genome experiencing high rates of recombination.   
-* GC-biased gene conversion is a process in which C and G nucleotides have a higher probability of being the donor -> genomic regions with high recombination rates should evolve towards a high GC content -> explains heterogeneous landscape of base composition   
+* **Adaptive evolution** should be more common in those regions of the genome experiencing high rates of recombination.   
+* **GC-biased gene conversion** is a process in which C and G nucleotides have a higher probability of being the donor -> genomic regions with high recombination rates should evolve towards a high GC content -> explains heterogeneous landscape of base composition   
 * Not fully explored: biased gene conversion has potential to reduce efficacy of purifying selection in high recombination regions by aggravating the removal of deleterious AT/CG mutations.   
 * Being able to quantify the proportion of the genome evolving under purifying selection is important (identifying conserved sequences) * There is a debate about what contributes to the 'functionality' of the genome (transcribed sequence, histone modification, open chromain indicative of function vs only proven purifying selection)
-* When scaled selection coefficents are higher, one might expect to see larger fractions of the genome conserved   
+* When **scaled selection coefficents** are higher, one might expect to see larger fractions of the genome conserved   
 * Having genome access, we can conclude gene duplication and neofunctionalization represent common mechanisms for formation of new phenotypes and thereby a seedbed for adaptation.   
 * Adaptive evolution can be estimated by comparing the rate of nucleotide substitutions (likely to have functional consequences) vs presumably neutral substitutions, but it is hard to estimate in small populations.   
 * **Population genomics:** the use of sequence or genotype data from multiple, although individually analyzed, loci spread across the genome; scales up inference power AND offers a means to study the genomic landscape and variance of allelic diversity within and between populations.   
@@ -126,12 +126,17 @@ Some parts that stood out to me:
 		2. Generation of sequence data   
 		3. Mapping of sequence reads to the assembly   
 		4. Variant calling (genotyping)   
-		5. Downstream population genetic or molecular evolutionary analyses
+		5. Downstream population genetic or molecular evolutionary analyses  
+* **Trait mapping** example: resequenced pigeon genomes with and without a head crest phenotype and identified a particular allelic variant present in the crested breeds, absent in the others.   
+* Regions with low diversity within populations are indicative of recent selective sweeps and regions with high divergence between populations point to diversifying selection and limited gene exchange
 
-Overall messages:  
+**Overall messages:**  
 * Having access to genomes is letting us infer evolutionary processes affecting sequence evolution from the whole-genome perspective instead of a random sample of loci.   
 * The technology is rapidly evolving (next generation sequencing is no longer a fitting name)
-
+* Population genomics is becoming a venue for the identification of genes/genomic regions involved in fitness-related traits and speciation.   
+   
+**Ideas for my research:**   
+* Comparing genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
 
 
 ------ <div id='id-section2'/>
