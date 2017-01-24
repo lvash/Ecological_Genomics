@@ -135,18 +135,63 @@ Some parts that stood out to me:
 * The technology is rapidly evolving (next generation sequencing is no longer a fitting name)
 * Population genomics is becoming a venue for the identification of genes/genomic regions involved in fitness-related traits and speciation.   
    
-**Ideas for my research:**   
-* Comparing genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
+**How can I apply to my research?**   
+* Trait mapping? Could compare genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
 
 
 ------ <div id='id-section2'/>
 ###Page 2: 2017-01-23 Course notes [MISSED]
 
-Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).
+Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).   
+
+Info I looked up after reading Andrew's notes:   
+   
+Sanger sequencing: "The first method of sequencing the genetic code was devised by Fred Sanger. To sequence the DNA, it must first be separated into two strands. The strand to be sequenced is copied using chemically altered bases. These altered bases cause the copying process to stop each time one particular letter is incorporated into the growing DNA chain. This process is carried out for all four bases, and then the fragments are put together like a jigsaw to reveal the sequence of the original piece of DNA." [Reference](https://www.dnalc.org/view/15479-Sanger-method-of-DNA-sequencing-3D-animation-with-narration.html)   
+   
+Illumina: Illumina next-generation sequencing utilizes a fundamentally different approach from the classic Sanger chain-termination method. It leverages sequencing by synthesis (SBS) technology – tracking the addition of labeled nucleotides as the DNA chain is copied – in a massively parallel fashion. [Reference](https://www.illumina.com/technology/next-generation-sequencing.html)      
 
 ------ <div id='id-section3'/>
 ###Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
+   
+Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationale for the QTN programme   
+   
+**QTN: quantitative trait nucleotide**      
+* Goal = identifying the genes or nucleotide variants underlying quantitative and adaptive traits   
+* Criticisms   
+	+ QTN programme has asserted that finding the genes and nucleotides for adaptive/quant. traits is a goal without explaining why it is a goal   
+	+ Logical flaws in how results are interpreted (i.e. overestimating phenotypic consequences; biased picture of importance)   
+	+ Holds little value: focuses on patterns instead of evolutionary processes
+* Exciting: adaptive phenotypes can be understood as a collection of single-nucleotide polymorphisms (SNPs)   
 
+**Rationale for QTN**   
+1. Vertical integration   
+	+ Understanding the evolution of adaptation from genetic variation at causal nucleotides to -> heritablity in natural populations -> strength of contemporary selection -> how patterns of genetic variation and selection depend on geography/ecological context
+	+ Suprising in the lack of complete vertical integration examples   
+	+ Example: Hopkins and Rauscher 2011 - found nucleotide diversity patterns indicative of recent, strong natural selection and investigated how pollinators affect intensity/color of flowers   
+	+ Few examples exist where selection on QTN for truly quantitative traits has been demonstrated (focus on qualitative like pink vs red flowers)   
+2. Genetic parallelism and pleitropy   
+	+ QTN research can reveal underlying mechanisms of convergent phenotypic evolution across related organismal groups   
+	+ Only way to directly test for the extension of convergence down to the nucleotide level   
+	+ Production of common phenotype can imply either i) there are developmental/structural constraints on the production of the trait or ii) repeated changes are favored because they have fewer deleterious pleiotropic side-effects relative to others
+3. Maintenance of standing genetic variation    
+	+ Why is there such an abundance of heritable variation in nature?   
+	+ Mutation-selection balance: equilibrium between mutation introducing deleterious variation and purifying selection depleting it; variants are mostly rare, recessive alleles   
+	+ Balancing selection hypothesis: negative and positive selection acting on same site for different components of a trait; result in maintenance of both alleles and predicts polymorphisms at intermediate frequencies   
+	+ QTN programme can examine how selection acts on standing variation, thereby connecting theory, quantitative genetics, and population genetics.
+4. Role of standing genetic variation in the wild    
+	+ Evolutionary responses to selection will differ greatly depending on whether the 'substrate of adaptation' comes from new mutations or standing variance   
+	+ Adaptation from new mutation is accompanied by the signature of a 'hard sweep' (steep decline in nucleotide diversity around a fixed site; excess of rare alleles close to selected site)   
+	+ Adaptation from standing variance is accompanied by the signature of a 'soft sweep' (lesser decline in diversity and associated with intermediate-frequency alleles)   
+5. Understanding the role of genomic architecture in adaptation   
+	+ QTN programme can clarify the role of aspects of genomic architecture (chromosomal inversions, translocations, 'supergenes' in areas of suppressed/restricted recombination) in adaptation   
+	+ Can clarify genetic basis and evolutionary forces responsible for polymorphisms (i.e. that directly influence plant mating and fitness)   
+	+ Necessary for evaluating role of genomic architecture in studies on role of chromosomal inversions in local adaptation, which could 'capture' locally advantageous haplotypes and spread quite rapidly  
+	+ Ex: monkeyflower - could estimate the relative contribution of inversion to reproductive isolation between the two ecotypes   
+	
+**Take away:** We should refocus and redouble our efforts to gain insight into the evolutionary process, use effective genetic data, and test evolutionary hypotheses	
+	
+**How can this relate to my research?**   
+* Could look at different virus strains? Try to relate nucleotides to adaptation in virulence?   
 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes
