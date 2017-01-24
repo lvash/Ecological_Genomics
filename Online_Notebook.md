@@ -32,7 +32,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 
 ###Table of contents for 60 entries (Format is *Page: Date(with year-month-day). Title*)        
 * [Page 1: 2017-01-19](#id-section1). First journal article: Ellegren 2014 
-* [Page 2: 2016-6-16](#id-section2). Title 2
+* [Page 2: 2017-01-23](#id-section2). Class notes [MISSED]
 * [Page 3:](#id-section3).
 * [Page 4:](#id-section4).
 * [Page 5:](#id-section5).
@@ -95,10 +95,14 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ------ <div id='id-section1'/>
 ###Page 1: 2017-01-19. First journal article: Ellegren 2014
 
+Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**)
 
 
 ------ <div id='id-section2'/>
-###Page 2: 2016-06-16 title 
+###Page 2: 2017-01-23 Course notes [MISSED]
+
+Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).
+
 ------ <div id='id-section3'/>
 ###Page 3:
 ------ <div id='id-section4'/>
