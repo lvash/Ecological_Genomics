@@ -204,7 +204,7 @@ Rockman outlines 5 critiques of the QTN Program:
 	+ We have a bias in studying dramatic traits with discrete differences between populations/species   
 	+ The null hypothesis for most QTL mapping is the absence of QTL, not abundance of infinitesimal QTLs
 * Theory does not Require a Preponderance of Large-Effect QTNs   
-	Three contexts in which theoretical expectation of large-effect QTNs does not apply: 
+	Three contexts in which theoretical expectation of large-effect QTNs does not apply:    
 		1. adaptation to a moving optimum (small mutational steps predominate rather than large steps)   
 		2. adaptation from standing variation (new models focus on new-mutation models)   
 		3. nonadaptive evolution (adaptive fixation is not whole of natural selection; there are questions that can't be addressed with geometric model of adaptive fixation)   
@@ -219,7 +219,10 @@ Rockman outlines 5 critiques of the QTN Program:
 **The Future**
 * Large-effect QTNs that are amenable to discovery are informative about the genetics of evolution
 * We need to develop more meaningful classifications of biological contexts   
-* We could devote resources to the discovery of QTNs of smaller and smaller effect   
+* We could devote resources to the discovery of QTNs of smaller and smaller effect    
+   
+**How can I apply to my research?** Don't look for nucleotide variants 'just because.' Come up with a compelling reason to do so and how the results can relate to the broader picture of evolution and the virus.
+
 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes
