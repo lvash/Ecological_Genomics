@@ -33,8 +33,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ###Table of contents for 60 entries (Format is *Page: Date(with year-month-day). Title*)        
 * [Page 1: 2017-01-19](#id-section1). First journal article: Ellegren 2014 
 * [Page 2: 2017-01-23](#id-section2). Class notes [MISSED]
-* [Page 3:](#id-section3).
-* [Page 4:](#id-section4).
+* [Page 3: 2017-01-24](#id-section3). Articles: Rockman 2012 and Lee et al. 2014
+* [Page 4: 2017-01-25](#id-section4). Class notes
 * [Page 5:](#id-section5).
 * [Page 6:](#id-section6).
 * [Page 7:](#id-section7).
@@ -95,7 +95,24 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ------ <div id='id-section1'/>
 ###Page 1: 2017-01-19. First journal article: Ellegren 2014
 
-Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**)
+Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**).   
+
+#### My thoughts while reading the paper
+
+The paper has a glossary of terms and I wanted to write a few down:
+   
+**Effective population size (N_e_):** a measure of the size of an idealized population in which the effect of genetic drift on allele frequencies is similar to the population under consideration.   
+   
+**Genetic architecture:** the genetic background to phenotypic traits, including their number, effect sizes, and dominance.   
+   
+**Genome-wide association studies (GWAS):** studies based on the use of large numbers of SNP markers genotyped in a group showing a particular trait, and in a control group, with the aim of finding association between trait and markers.   
+
+**Scaled selection coefficient:** the selection coefficient (*s*, the relative fitness dis-/advantage of a derived allele) multiplied with N_{e}, to take into account the fact that the efficiency of selection is directly proportional to population size. 
+   
+**Transcriptome:** the complete repertoire of transcribed sequences in the genome, including expression of both from protein-coding genes and from noncoding RNAs.   
+   
+   
+
 
 
 ------ <div id='id-section2'/>
@@ -104,9 +121,11 @@ Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomic
 Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).
 
 ------ <div id='id-section3'/>
-###Page 3:
+###Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
+
+
 ------ <div id='id-section4'/>
-###Page 4:
+###Page 4: 2017-01-25 Class notes
 ------ <div id='id-section5'/>
 ###Page 5:
 ------ <div id='id-section6'/>
