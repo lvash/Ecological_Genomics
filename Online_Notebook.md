@@ -135,8 +135,7 @@ Some parts that stood out to me:
 * The technology is rapidly evolving (next generation sequencing is no longer a fitting name)
 * Population genomics is becoming a venue for the identification of genes/genomic regions involved in fitness-related traits and speciation.   
    
-**How can I apply to my research?**   
-* Trait mapping? Could compare genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
+**How can I apply to my research?** Trait mapping? Could compare genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
 
 
 ------ <div id='id-section2'/>
@@ -190,8 +189,37 @@ Illumina: Illumina next-generation sequencing utilizes a fundamentally different
 	
 **Take away:** We should refocus and redouble our efforts to gain insight into the evolutionary process, use effective genetic data, and test evolutionary hypotheses	
 	
-**How can this relate to my research?**   
-* Could look at different virus strains? Try to relate nucleotides to adaptation in virulence?   
+**How can this relate to my research?** Could look at different virus strains? Try to relate nucleotides to adaptation in virulence?   
+
+### Rockman 2012: The QTN Program and the alleles that matter for evolution: all that's gold does not glitter  
+
+The problem: For the QTN program to succeed, the allelic variants it discovers must be representative examples of the underlying pool; this condition is rarely met. Current catalog of QTNs represents a biased sample of evolutionary causes and molecular functions.   
+
+Rockman outlines 5 critiques of the QTN Program:  
+* Known Causal Variants are Not Typical QTNs   
+	+ Our QTN successes have only sampled the most extreme outliers in the geometic model's distribution's tail   
+	+ Not very informative   
+* The LOD that Failed: QTLs are Uninformative   
+	+ Does not address question of relative importance of major vs minor genes in evolution   
+	+ We have a bias in studying dramatic traits with discrete differences between populations/species   
+	+ The null hypothesis for most QTL mapping is the absence of QTL, not abundance of infinitesimal QTLs
+* Theory does not Require a Preponderance of Large-Effect QTNs   
+	Three contexts in which theoretical expectation of large-effect QTNs does not apply: 
+		1. adaptation to a moving optimum (small mutational steps predominate rather than large steps)   
+		2. adaptation from standing variation (new models focus on new-mutation models)   
+		3. nonadaptive evolution (adaptive fixation is not whole of natural selection; there are questions that can't be addressed with geometric model of adaptive fixation)   
+* Fisher Redivivus: Unbiased QTNs are Often Small-Effect Polygenes  
+	+ Genetics of genome-wide gene expression - it's complex!    
+	+ Genome-wide association studies - incapable of pinpointing causal variants   
+	+ Genomic selection in agriculture - allows every marker to have an effect on the trait; works as well as weighting?     
+	+ Population studies of weak selection - large fraction of all segregating variants have fitness consequences, even if magnitudes are too small for selection to detect in typical populations     
+* There is a Relationship Between Phenotypic Effect Size and Molecular Function   
+	+ The population holds an enormous store of common small-effect QTNs whose molecular function is disproportionately noncoding   
+   
+**The Future**
+* Large-effect QTNs that are amenable to discovery are informative about the genetics of evolution
+* We need to develop more meaningful classifications of biological contexts   
+* We could devote resources to the discovery of QTNs of smaller and smaller effect   
 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes
