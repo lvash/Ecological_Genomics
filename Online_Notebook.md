@@ -110,8 +110,16 @@ The paper has a glossary of terms and I wanted to write a few down:
 **Scaled selection coefficient:** the selection coefficient (*s*, the relative fitness dis-/advantage of a derived allele) multiplied with N<sub>e</sub>, to take into account the fact that the efficiency of selection is directly proportional to population size. 
    
 **Transcriptome:** the complete repertoire of transcribed sequences in the genome, including expression of both from protein-coding genes and from noncoding RNAs.   
-   
-   
+ 
+Some parts that stood out to me:  
+
+* Adaptive evolution should be more common in those regions of the genome experiencing high rates of recombination.   
+* GC-biased gene conversion is a process in which C and G nucleotides have a higher probability of being the donor -> genomic regions with high recombination rates should evolve towards a high GC content -> explains heterogeneous landscape of base composition   
+* Not fully explored: biased gene conversion has potential to reduce efficacy of purifying selection in high recombination regions by aggravating the removal of deleterious AT/CG mutations.   
+
+Overall messages:  
+* Having access to genomes is letting us infer evolutionary processes affecting sequence evolution from the whole-genome perspective instead of a random sample of loci.   
+* The technology is rapidly evolving (next generation sequencing is no longer a fitting name)
 
 
 
