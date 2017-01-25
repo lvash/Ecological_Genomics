@@ -223,11 +223,23 @@ Rockman outlines 5 critiques of the QTN Program:
    
 **How can I apply to my research?** Don't look for nucleotide variants 'just because.' Come up with a compelling reason to do so and how the results can relate to the broader picture of evolution and the virus.
 
-Small group discussion of Rockman 2012:   
+### Small group discussion of Rockman 2012:   
 - Most effect sizes are small - we are not getting a good representation   
-- Are these methods identifying interactions between locis? No.   
+- Small effect alleles are most likely not operating the same way large effect alleles
+- Are these methods identifying interactions between locis? NO!   
 - Should relate to broader picture/question   
-- 
+   
+### Debate of Rockman 2012 and Lee et al. 2014:   
+* Lee et al. 2014
+	+ Hoping to see bigger picture of how genetic processes interact with larger scale processes   
+	+ Should collect data now and generate questions later?   
+	+ Ask you question and apply appropriate tool
+
+Is it worth 4 years of PhD research?    
+
+**Theme:** It depends on your question, use tools to answer it; perhaps broad sweeps aren't very informative.
+
+If comparing resistance versus susceptibility in populations: which populations would benefit from connectivity (looking at gene flow; could be conservation aspect)? Are certain QTNs related to resistance with a particular genetic background? How repeatable and transferable is the evolutionary process?   
 
 
 ------ <div id='id-section4'/>
