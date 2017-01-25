@@ -290,15 +290,39 @@ Methods to determine how alleles affect traits:
 * Some are more resistant, some are vulnerable   
 * Hours to days until loss of turgor, lesions, arms are falling off, insides explode, goo           
 * The pathogen is unknown: no viral load studies   
-* First report in 2012, intensified in 2013, really bad 2014, less severe now  
-* Densovirus implicated; could be opportunistic after host is sick 
-* Previous outbreaks in 1970s in Monterey Bay and Baja, CA area and Densovirus present in museum specimens   
-* [Link to map](data.piscoweb.org/marine1/seastardisease.html) - blue dots are not currently observed   
+* First report in 2012, intensified in 2013, really bad 2014 (never as severe/widely distributed as then), less severe now  
+* Densovirus (DNA virus) implicated; could be opportunistic after host is sick 
+* Previous outbreaks in 1970s in Monterey Bay and Baja, CA area and Densovirus present in museum specimens  
+* Goop is byproduct of being sick and inability to enact collagen   
+* Seems more prevalent intertidally than subtidally because colder water/less stress in subtidal areas   
+* [Link to map](http://data.piscoweb.org/marine1/seastardisease.html) - blue dots are not currently observed   
   
+**Actual study:**    
+* *Pisaster ochraceus* is the subject of this study: found from Alaska to Baja
+* Took sick sea star, chopped it up and put it in the water with healthy, did a time course - not this study?   
+* Came healthy, developed disease on their own   
+* Maintained in individual aquaria   
+* Collected from two sites: intertidal and subtidal around Monterey (super diverse between/within populations)     
+* MM abbrevation: fluctuated between sick and healthy   
+* Sampling   
+	+ Epidermal biopsy   
+	+ Extracted total RNA   
+	+ Poly-A tail selection for mRNA   
+	+ Sequenced on 5 Illumina HiSeq lanes   
+	+ Amplified out ribosomal 16S for all microbes   
+	+ 16S data and images for all 93 samples and 'holes' in data table   
+* Which individuals or days to subset for question?   
 
-Took sick sea star, chopped it up and put it in the water with healthy, did a time course   
+Questions:   
+* Does genetic diversity/variance relate to becoming sick?      
+* Resistance genes for those that stayed healthy and went from sick to healthy   
+* Intertidal versus subtidal: genetic differences (local adaptation) or gene expression?    
+* Just within intertidal healthy versus sick genetic differences   
+* All individuals died versus stayed alive: genetic differences/gene expression?   
+* Heritability of microbiome (day as replicate)      
+* Microbiome through time   
+* Immune related genes (reverse pathology); specific classes of genes; respond if there is a virus present   
 
-*Pisaster ochraceus* is the subject of this study: found from Alaska to Baja
 
 
 ------ <div id='id-section5'/>
