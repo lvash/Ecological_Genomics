@@ -253,12 +253,12 @@ Info Update Outline:
    
 1) What are QTN?   
 2) Quantitative Genetic Theory of Adaptive Traits   
-	* V<sub>A</sub>   
-	* h<sup>2</sup>   
+* V<sub>A</sub>   
+* h<sup>2</sup>   
 3) Methods   
-	* Linkage maps
-	* GWAS   
-	* Selection scans   
+* Linkage maps   
+* GWAS   
+* Selection scans   
 	
 QTN = quantitative trait nucleotides   
 
