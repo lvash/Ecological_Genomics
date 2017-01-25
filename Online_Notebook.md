@@ -283,6 +283,24 @@ Methods to determine how alleles affect traits:
 
 * Add link to handout scan   
 
+
+### Sea Star Wasting Disease  
+   
+* Affecting dozens of species   
+* Some are more resistant, some are vulnerable   
+* Hours to days until loss of turgor, lesions, arms are falling off, insides explode, goo           
+* The pathogen is unknown: no viral load studies   
+* First report in 2012, intensified in 2013, really bad 2014, less severe now  
+* Densovirus implicated; could be opportunistic after host is sick 
+* Previous outbreaks in 1970s in Monterey Bay and Baja, CA area and Densovirus present in museum specimens   
+* [Link to map](data.piscoweb.org/marine1/seastardisease.html) - blue dots are not currently observed   
+  
+
+Took sick sea star, chopped it up and put it in the water with healthy, did a time course   
+
+*Pisaster ochraceus* is the subject of this study: found from Alaska to Baja
+
+
 ------ <div id='id-section5'/>
 ###Page 5:
 ------ <div id='id-section6'/>
