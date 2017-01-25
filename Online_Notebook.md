@@ -223,6 +223,12 @@ Rockman outlines 5 critiques of the QTN Program:
    
 **How can I apply to my research?** Don't look for nucleotide variants 'just because.' Come up with a compelling reason to do so and how the results can relate to the broader picture of evolution and the virus.
 
+Small group discussion of Rockman 2012:   
+- Most effect sizes are small - we are not getting a good representation   
+- Are these methods identifying interactions between locis? No.   
+- Should relate to broader picture/question   
+- 
+
 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes   
