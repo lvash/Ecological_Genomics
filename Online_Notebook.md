@@ -225,7 +225,46 @@ Rockman outlines 5 critiques of the QTN Program:
 
 
 ------ <div id='id-section4'/>
-###Page 4: 2017-01-25 Class notes
+###Page 4: 2017-01-25 Class notes   
+
+Things to do:   
+**Pick an info update paper and discussion paper by Monday**   
+Sign up to audit the class   
+    
+Info Update Outline:   
+   
+1) What are QTN?   
+2) Quantitative Genetic Theory of Adaptive Traits   
+	* V<sub>A</sub>   
+	* h<sup>2</sup>   
+3) Methods   
+	* Linkage maps
+	* GWAS   
+	* Selection scans   
+	
+QTN = quantitative trait nucleotides   
+
+adaptive trait examples:   
+flowering time (continuous/quantitative traits, could be graphed as normal distribution with flowering time on x axis and frequency on y axis)    
+flower color (discrete/Mendelian, could be graphed with bars)   
+thermal tolerance, venom potency, defense compounds, toxin tolerance, drought tolerance, altitude tolerance (hypoxia)
+
+	|       /
+	|     /   } alpha <- QTN
+trait	|   / }    "average effect"
+	|_/_________
+	AA  Aa  aa
+	p2  2pq q2
+
+V<sub>A</sub> (additive variance)
+h<sup>2</sup> = V<sub>A</sub>/V<sub>p</sub>   
+
+more efficient to have many small mutations than large because large can push populations to their extremes (reference handout for drawing)   
+
+Methods to determine how alleles affect traits:   
+
+* Add link to handout scan   
+
 ------ <div id='id-section5'/>
 ###Page 5:
 ------ <div id='id-section6'/>
