@@ -30,12 +30,12 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 
-###Table of contents for 60 entries (Format is *Page: Date(with year-month-day). Title*)        
+###Table of contents for 60 entries         
 * [Page 1: 2017-01-19](#id-section1). First journal article: Ellegren 2014 
 * [Page 2: 2017-01-23](#id-section2). Class notes [MISSED]
 * [Page 3: 2017-01-24](#id-section3). Articles: Rockman 2012 and Lee et al. 2014
 * [Page 4: 2017-01-25](#id-section4). Class notes
-* [Page 5:](#id-section5).
+* [Page 5: 2017-01-30](#id-section5). Choosing questions
 * [Page 6:](#id-section6).
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
@@ -326,7 +326,28 @@ Questions:
 
 
 ------ <div id='id-section5'/>
-###Page 5:
+###Page 5: 2017-01-30 Choosing questions   
+
+More info on study:   
+* single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
+* collected from same site but intertidal vs subtidal   
+* more stressful collecting at intertidal because they are exposed and need to be 'ripped off' rock - influence symptoms?      
+* had positive control for densovirus, did not amplify for qPCR   
+* epidermal biopsy (biome is from outside, top of sea star, not gut)   
+
+## Immune-related gene expression
+Design: break up between healthy versus sick (exclude MM? look at gene expression through time?)
+Subset: two points in time (first, last or healthy, very sick), all sick versus all healthy
+	+ Steve thinks polarizing may be best method to subset (first and last)   
+Reverse pathology: looking at different immune pathways
+Is difference in expression more than what we would expect at random? Have random matched genes   
+	+ Normalize: over total amount of reads
+Info: Jonathan Rast - sea urchin immunity
+Design: Break them up according to transition
+Hypotheses:    
+Predictions: 
+
+
 ------ <div id='id-section6'/>
 ###Page 6:
 ------ <div id='id-section7'/>
