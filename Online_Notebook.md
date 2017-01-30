@@ -327,36 +327,50 @@ Questions:
 
 ------ <div id='id-section5'/>
 ###Page 5: 2017-01-30 Choosing questions   
-
+   
 More info on study:   
 * single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
 * collected from same site but intertidal vs subtidal   
 * more stressful collecting at intertidal because they are exposed and need to be 'ripped off' rock - influence symptoms?      
 * had positive control for densovirus, did not amplify for qPCR   
 * epidermal biopsy (biome is from outside, top of sea star, not gut)   
-
+   
 ## Immune-related gene expression
-Design: break up between healthy versus sick (exclude MM? look at gene expression through time?)
-Subset: two points in time (first, last or healthy, very sick), all sick versus all healthy
+Design: break up between healthy versus sick (exclude MM? look at gene expression through time?)   
+Subset: two points in time (first, last or healthy, very sick), all sick versus all healthy   
 	+ Steve thinks polarizing may be best method to subset (first and last)   
-Reverse pathology: looking at different immune pathways
+Reverse pathology: looking at different immune pathways   
 Is difference in expression more than what we would expect at random? Have random matched genes   
-	+ Normalize: over total amount of reads
-Info: Jonathan Rast - sea urchin immunity
-Design: Break them up according to transition; may be different for individuals
-Healthy->Healthy 
-analysis: repeated measure ANOVA; survival analysis: which variables predict susceptibilty/death? gene expression/ microbiome?
-Three groups: HH, HS, SS (5 each, 15 individuals, 2 time steps) 
-
+	+ Normalize: over total amount of reads   
+Info: Jonathan Rast - sea urchin immunity   
+Design: Break them up according to transition; may be different for individuals   
+Healthy->Healthy   
+analysis: repeated measure ANOVA; survival analysis: which variables predict susceptibilty/death? gene expression/ microbiome?   
+Three groups: HH, HS, SS (5 each, 15 individuals, 2 time steps)    
+   
 Questions:
 * Can we tell anything about the pathogen identity based on gene expression of known immune-related genes?  
-	+ What is immune response of this species of starfish? 
-	+ Is expression of immune-related genes different between two species of starfish?
-	+ Difference in immune response between densovirus positive and negative individuals	
-Hypotheses:      
-
-Justification for 'control': transcriptome wide changes among the three groups - to be certain that only immune genes are different, we want to compare to background random genes
-
+	+ What is immune response of this species of starfish?    
+	+ Is expression of immune-related genes different between two species of starfish?   
+	+ Difference in immune response between densovirus positive and negative individuals      
+	+ Compare microbiome in individuals that show immune response versus those that don't; before/after sick      
+     
+Justification for 'control' of background gene comparison: transcriptome wide changes among the three groups - to be certain that only immune genes are different, we want to compare to background random genes
+   
+**Intertidal versus subtidal group:**  
+* Focus on differences in gene expression between two groups and community structure (# of species versus one taxa) in microbiome   
+* Identifying difference in stress response versus immune response: broad survey first
+* Day 3 first to pick up stronger environment signature   
+   
+**Temporal variation**   
+* Which genes are expressed through time?   
+* Account for variation of when individuals got sick   
+   
+**Intertidal** 
+* Assess genomic difference using SNPs with individuals that stayed healthy (n=3)   
+* Compare basic genomes of healthy vs sick   
+* Compare healthy subtidals and see if there are no differences, include in healthy group    
+* Looking at microbiome at end and maybe through time   
 
 ------ <div id='id-section6'/>
 ###Page 6:
