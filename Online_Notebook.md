@@ -347,9 +347,14 @@ Design: Break them up according to transition; may be different for individuals
 Healthy->Healthy 
 analysis: repeated measure ANOVA; survival analysis: which variables predict susceptibilty/death? gene expression/ microbiome?
 Three groups: HH, HS, SS (5 each, 15 individuals, 2 time steps) 
-Question: 
-Hypotheses:    
-Predictions: 
+
+Questions:
+* Can we tell anything about the pathogen identity based on gene expression of known immune-related genes?  
+	+ What is immune response of this species of starfish? 
+	+ Is expression of immune-related genes different between two species of starfish?
+	+ Difference in immune response between densovirus positive and negative individuals	
+Hypotheses:     
+
 
 
 ------ <div id='id-section6'/>
