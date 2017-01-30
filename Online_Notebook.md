@@ -336,11 +336,11 @@ More info on study:
 * epidermal biopsy (biome is from outside, top of sea star, not gut)   
    
 ## Immune-related gene expression
-Design: break up between healthy versus sick (exclude MM? look at gene expression through time?)   
-Subset: two points in time (first, last or healthy, very sick), all sick versus all healthy   
+* Design: break up between healthy versus sick (exclude MM? look at gene expression through time?)   
+* Subset: two points in time (first, last or healthy, very sick), all sick versus all healthy   
 	+ Steve thinks polarizing may be best method to subset (first and last)   
-Reverse pathology: looking at different immune pathways   
-Is difference in expression more than what we would expect at random? Have random matched genes   
+* Reverse pathology: looking at different immune pathways   
+* Is difference in expression more than what we would expect at random? Have random matched genes   
 	+ Normalize: over total amount of reads   
 Info: Jonathan Rast - sea urchin immunity   
 Design: Break them up according to transition; may be different for individuals   
