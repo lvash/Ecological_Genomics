@@ -343,7 +343,11 @@ Reverse pathology: looking at different immune pathways
 Is difference in expression more than what we would expect at random? Have random matched genes   
 	+ Normalize: over total amount of reads
 Info: Jonathan Rast - sea urchin immunity
-Design: Break them up according to transition
+Design: Break them up according to transition; may be different for individuals
+Healthy->Healthy 
+analysis: repeated measure ANOVA; survival analysis: which variables predict susceptibilty/death? gene expression/ microbiome?
+Three groups: HH, HS, SS (5 each, 15 individuals, 2 time steps) 
+Question: 
 Hypotheses:    
 Predictions: 
 
