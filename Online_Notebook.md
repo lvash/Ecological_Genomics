@@ -353,8 +353,9 @@ Questions:
 	+ What is immune response of this species of starfish? 
 	+ Is expression of immune-related genes different between two species of starfish?
 	+ Difference in immune response between densovirus positive and negative individuals	
-Hypotheses:     
+Hypotheses:      
 
+Justification for 'control': transcriptome wide changes among the three groups - to be certain that only immune genes are different, we want to compare to background random genes
 
 
 ------ <div id='id-section6'/>
