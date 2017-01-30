@@ -342,6 +342,7 @@ More info on study:
 * Reverse pathology: looking at different immune pathways   
 * Is difference in expression more than what we would expect at random? Have random matched genes   
 	+ Normalize: over total amount of reads   
+   
 Info: Jonathan Rast - sea urchin immunity   
 Design: Break them up according to transition; may be different for individuals   
 Healthy->Healthy   
@@ -371,6 +372,22 @@ Justification for 'control' of background gene comparison: transcriptome wide ch
 * Compare basic genomes of healthy vs sick   
 * Compare healthy subtidals and see if there are no differences, include in healthy group    
 * Looking at microbiome at end and maybe through time   
+
+### Potential Analyses:    
+* crude subtraction    
+* Fst approach   
+* PCA/discriminate analysis   
+
+
+## Next Steps:    
+* As a group, write a one-page proposal following hand-out for essential information    
+* List exact sample names      
+* Due Monday February 8 (one per group)   
+* MS Word, email to Steve and Melissa   
+
+This Wednesday: Library prep types blitz to learn about how libraries are made and different types of data they produce; whole genome, RAD Seq, Amplicon sequences, GBS (no person has signed up)   
+GBS: restriction enzymes - reduce representation across genome so you can focus sequencing efforts; pop gen differences   
+
 
 ------ <div id='id-section6'/>
 ###Page 6:
