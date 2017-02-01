@@ -565,8 +565,20 @@ Limitations
 * Individuals that vary in methylation will vary in fragments that are produced (restriction enzymes sensitive to epigenetic modifications - may skip over)   
 * Reduced representation   
 
-Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labnotebook/blob/master/Tutorials/Tutorials_CommandLine.md)   
+Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labnotebook/blob/master/Tutorials/Tutorials_CommandLine.md) 
+* How to connect to server (use netID with UVM password)    
+* Server has 24 cpu cores; 32Gb RAM   
+* 1 TB HD   
+* top shows how much memory is being used and who is working (q for quitting out)   
+* / goes back to most basal directory   
+* ~/ goes to home directory   
+* head -n 15 ssw_samples.txt (-n is an option to specify number of rows you want to see)   
+* mv moves files: ```mv *only* subsets/``` * will choose files with any text before (*only.txt) or after (*only*)   
+* mv also renames files (ex: mv subsets subsets_by_disease) mv currentname newname   
+
+
 Link to [Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
+[Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)
 
 ------ <div id='id-section7'/>
 ###Page 7:
