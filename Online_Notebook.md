@@ -552,10 +552,10 @@ RAD - restriction assisted DNA sequencing (common to be used synonmously)
 
 Not all individuals have same restriction sites (restriction sites can be polymorphic)   
 **Individuals**    
-1|2|3|4|
-----|:-----:|:-----:|-----:|   
-|+|-|+|+|   
-|-|-|+|-|  
+1 | 2 | 3 | 4    
+---|:---:|:---:|---:|   
+| + | - | + | + |   
+| - | - | + | - |  
 
 **Fragments/Loci on y axis**
 
