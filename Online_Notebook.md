@@ -495,34 +495,32 @@ Glossary:
 * Amplicon sequencing: targeted approach for analyzing genetic varation in **specific genomic regions**   
 * Amplicon: Targeted gene (region) to be amplified via PCR w/specific primers    
 
-Methods    
+**Methods**    
 * Library Prep   
 * Sequencing   
 * Data Analysis   
-	+ Learning Activity    
-Applications   
-
-Extract   
+ 
+**Extract**   
 -> 
-PCR (1st)
+**PCR (1st)**
 * Amplify gene (200-600bp with variable and conserved regions)   
 * Specific primers   
 ->   
-Clean (PCR purify)   
+**Clean (PCR purify)**   
 * Run a gel; extract amplicon from gel   
 * Put through column    
 ->   
-Sequence   
+**Sequence**   
 * Send to facility   
 * Or another PCR (2nd)     
 	+ Barcodes   
 	+ Adaptors  
 ->   
-Clean   
+**Clean**   
 ->   
-Pool   
+**Pool**   
 ->   
-Sequence   
+**Sequence**   
 * 454 sequencing is out of date      
 * MiSeq (Illumina); paired end sequencing    
 * [Library prep video](https://www.youtube.com/watch?v=yC0Bzw3WbQ) on handout   
@@ -531,6 +529,10 @@ Sequence
 1. Trim some bp off ends    
 2. Align (use conserved areas)   
 * Sometimes have to manually align    
+
+**Applications**   
+* If you know what you are looking for (which gene; ex: 16S), you can identify species    
+* Compare genes between treatments      
 
 ------ <div id='id-section7'/>
 ###Page 7:
