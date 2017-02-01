@@ -36,7 +36,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 3: 2017-01-24](#id-section3). Articles: Rockman 2012 and Lee et al. 2014
 * [Page 4: 2017-01-25](#id-section4). Class notes
 * [Page 5: 2017-01-30](#id-section5). Choosing questions
-* [Page 6:](#id-section6).
+* [Page 6: 2017-02-01](#id-section6). Info Update Blitz
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
@@ -390,7 +390,29 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 
 
 ------ <div id='id-section6'/>
-###Page 6:
+###Page 6: 2017-02-01 Info Update Blitz
+
+**Whole Genome Sequencing**   
+* Applications: 
+	+ Population genetics (genetic relatedness, admixture events)   
+	+ Conservation (monitoring, controlled breeding)   
+	+ Screen for variation and adaption potential  
+	+ Understand inbreeding potential; impacts of genetic variation; plastic responses to the environment   
+* Prior Considerations   
+	+ Potentially need a reference genome   
+		+ No:   
+			+ De novo assembly
+			+ Adaptations   
+			+ Gene expression (can be addressed without reference genome)   
+		+ Yes: Select important variation   
+			+ Epigenetic modifications   
+			+ DNA to protein process   
+			+ Gene expression studies can benefit from reference genome
+* Methods   
+    
+Benefits: High power, high resolution
+
+
 ------ <div id='id-section7'/>
 ###Page 7:
 ------ <div id='id-section8'/>
