@@ -398,6 +398,7 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 	+ Conservation (monitoring, controlled breeding)   
 	+ Screen for variation and adaption potential  
 	+ Understand inbreeding potential; impacts of genetic variation; plastic responses to the environment   
+	+ Benefits: High power, high resolution   
 * Prior Considerations   
 	+ Potentially need a reference genome   
 		+ No:   
@@ -430,13 +431,39 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 				+ Avoid energetically active tissue (muscle) because it has high content of mitochondrial DNA which can affect depth read)   
 				+ Avoid gut and skin
 			+ Quantity: 1mg to around ~6ug (short reads)   
+			+ GC content, duplicates and repeat abundance (trim)  
 	+ Library Prep   
 		+ Assemble into contigs with shotgun sequencing
 			+ Single end reads that go in any direction in relation to genome sequence   
 			+ Paired end reads that are put together by overlap  
 			+ Mate pair are pairs that are far away (can assemble scaffold)     
+	+ Quality control: statistics like N50 (the length (# bp in 'middle' contig) of the 50% of assembled genome ~median statistic); error detection account for misorientation (Reaper); foreign DNA (BLAST)   
+	+ Annotatation can help determine what the different genes would code for if you have info of related organism (could be done automated with software and manually)   
+	+ Publish! Can find on NCBI   
     
-Benefits: High power, high resolution
+**RNA-seq**   
+Advantage    
+* Can get differention of genome expression between diff populations, between diff treatments   
+* Allele specific expression (from environmental response or adaptation)   
+* Functionally relevant subset of the genome   
+
+RNA seq  | Micro array   
+-------- |:----------:|
+Wide range of expression value| X   
+X| Saturation of analog-type (flourescent) signal   
+Info on splicing events| ??
+
+Limitation   
+Work flow   
+* Set up  
+* Wet lab   
+* Seq strategy   
+* Bio-info   
+* Statistical measures   
+
+
+**Work flow**   
+Experimental setup -> Tissue prep + Library -> High thorough put sequencing -> Transcriptome reconstruction -> Alignment of reads -> read quantificaton and Marker development -> Biological inference
 
 
 ------ <div id='id-section7'/>
