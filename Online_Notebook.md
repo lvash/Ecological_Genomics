@@ -489,8 +489,48 @@ Work flow
 * Bio-info   - will cover next week   
 * Statistical measures  - will cover next week    
 
+**Amplicon Sequencing**   
+    
+Glossary:   
+* Amplicon sequencing: targeted approach for analyzing genetic varation in **specific genomic regions**   
+* Amplicon: Targeted gene (region) to be amplified via PCR w/specific primers    
 
+Methods    
+* Library Prep   
+* Sequencing   
+* Data Analysis   
+	+ Learning Activity    
+Applications   
 
+Extract   
+-> 
+PCR (1st)
+* Amplify gene (200-600bp with variable and conserved regions)   
+* Specific primers   
+->   
+Clean (PCR purify)   
+* Run a gel; extract amplicon from gel   
+* Put through column    
+->   
+Sequence   
+* Send to facility   
+* Or another PCR (2nd)     
+	+ Barcodes   
+	+ Adaptors  
+->   
+Clean   
+->   
+Pool   
+->   
+Sequence   
+* 454 sequencing is out of date      
+* MiSeq (Illumina); paired end sequencing    
+* [Library prep video](https://www.youtube.com/watch?v=yC0Bzw3WbQ) on handout   
+
+**Data Analysis**
+1. Trim some bp off ends    
+2. Align (use conserved areas)   
+* Sometimes have to manually align    
 
 ------ <div id='id-section7'/>
 ###Page 7:
