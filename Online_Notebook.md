@@ -501,8 +501,8 @@ Glossary:
 * Data Analysis   
  
 **Extract**   
--> 
-**PCR (1st)**
+->   
+**PCR (1st)**   
 * Amplify gene (200-600bp with variable and conserved regions)   
 * Specific primers   
 ->   
@@ -525,7 +525,7 @@ Glossary:
 * MiSeq (Illumina); paired end sequencing    
 * [Library prep video](https://www.youtube.com/watch?v=yC0Bzw3WbQ) on handout   
 
-**Data Analysis**
+**Data Analysis**   
 1. Trim some bp off ends    
 2. Align (use conserved areas)   
 * Sometimes have to manually align    
@@ -533,6 +533,31 @@ Glossary:
 **Applications**   
 * If you know what you are looking for (which gene; ex: 16S), you can identify species    
 * Compare genes between treatments      
+   
+**GBS**   
+```
+Whole genome seq ---------RNA seq---------------------------GBS (RAD seq)------------------Amplicons   
+everything               just gene space expressed        lots of SNPs across genome      single gene         (completeness)    
+1 individual             a few individuals (~10s-100s)       lots of indivs     many individuals (1000s?)    (sampling tradeoffs)		
+```
+
+GBS doesn't care about specific genes; can randomly sample genome space   
+GBS - genotyping by sequencing (get SNPs by process of genotyping)   
+RAD - restriction assisted DNA sequencing (common to be used synonmously)   
+
+1. restriction enzyme - cuts double stranded DNA; finds sequence enzyme recognizes and cuts at appropriate sequence; creates overhangs called 'sticky ends' (looks like tetris pieces)   
+2. Adaptors and barcode ligate to sticky ends     
+3. PCR 
+4. Sequence (usually single end reads; doesn't really benefit from paired end)    
+
+Not all individuals have same restriction sites (restriction sites can be polymorphic)   
+**Individuals**    
+1|2|3|4|
+----|:-----:|:-----:|-----:|
+**Fragments/** |+|-|+|+|
+**Loci**  |-|-|+|-|
+
+
 
 ------ <div id='id-section7'/>
 ###Page 7:
