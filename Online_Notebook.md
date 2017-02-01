@@ -407,8 +407,34 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 		+ Yes: Select important variation   
 			+ Epigenetic modifications   
 			+ DNA to protein process   
-			+ Gene expression studies can benefit from reference genome
+			+ Gene expression studies can benefit from reference genome    
+	+ Need: money and computational resources (>1 T; work with a server, using command line and programming language)   
+	+ Limitations:  
+		+ Polymorphic genes and paraloges - core genes that are highly conserved; difficult to assemble genome   
+		+ Rapidly evolving genes and large gene families - have poor representation in genome      
+		+ Using 1 individual: does that sequence represent the genome of that species?   
+		+ Pool samples: there will be individual variation that can affect sequence  
+		+ Impossible to sequence all nucleotides: heterochromatic regions (in centromeres, telomeres, around histones - sometimes can't be reached) and highly repetitive regions (can't figure out where it should go)   
+	+ Sequencing platforms   
+		+ Short reads: Illumina sequencing (150bp); SOLiD (50bp)   
+		+ Long reads: Pacific Biosciences (5 kilobites); Ion Torrent (~500 bps); Illumina Moleculo (up to 10 Kb)   
+	+ Knowledge on organism   
+		+ Genome size (can estimate with a few methods; K-mer approach: short, unique element of DNA sequence of length K)   
+		+ Repeat content  
+		+ Sequence error rates (of platform)   
+		+ Degree of genome duplications (polyploidy)   
 * Methods   
+	+ Wet lab   
+		+ Tissue   
+			+ High quality DNA: 
+				+ Avoid energetically active tissue (muscle) because it has high content of mitochondrial DNA which can affect depth read)   
+				+ Avoid gut and skin
+			+ Quantity: 1mg to around ~6ug (short reads)   
+	+ Library Prep   
+		+ Assemble into contigs with shotgun sequencing
+			+ Single end reads that go in any direction in relation to genome sequence   
+			+ Paired end reads that are put together by overlap  
+			+ Mate pair are pairs that are far away (can assemble scaffold)     
     
 Benefits: High power, high resolution
 
