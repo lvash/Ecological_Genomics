@@ -553,12 +553,15 @@ RAD - restriction assisted DNA sequencing (common to be used synonmously)
 Not all individuals have same restriction sites (restriction sites can be polymorphic)   
 **Individuals**    
 1|2|3|4|
-----|:-----:|:-----:|-----:|
-**Fragments/** |+|-|+|+|
-**Loci**  |-|-|+|-|
+----|:-----:|:-----:|-----:|   
+|+|-|+|+|   
+|-|-|+|-|  
 
+**Fragments/Loci on y axis**
 
-
+Limitations   
+* Individuals that vary in methylation will vary in fragments that are produced (restriction enzymes sensitive to epigenetic modifications - may skip over)   
+* Reduced representation   
 ------ <div id='id-section7'/>
 ###Page 7:
 ------ <div id='id-section8'/>
