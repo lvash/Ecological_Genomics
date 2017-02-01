@@ -449,21 +449,47 @@ Advantage
 
 RNA seq  | Micro array   
 -------- |:----------:|
-Wide range of expression value| X   
-X| Saturation of analog-type (flourescent) signal   
-Info on splicing events| ??
+Wide range of expression value| N/A |   
+N/A| Saturation of analog-type (flourescent) signal |  
+Info on splicing events| ?? |        
+    
+Limitation: post transcriptional modifications can't be captured with RNA seq   
+   
+**Work flow**   
+Experimental setup -> Tissue prep + Library -> High thorough put sequencing -> Transcriptome reconstruction -> Alignment of reads -> read quantificaton and Marker development -> Biological inference   
+   
+Purpose (before you start RNA sequencing): 
+1. Proof coding or regulatory non-coding?   
+2. Reference Genome?   
+3. Alternative splicing?   
+4. Technology?   
+5. Population or specific treatments?   
 
-Limitation   
 Work flow   
 * Set up  
+	+ Biological replication is very important   
+	+ Choice of tissue (which time are you taking the tissue? Different life stage; pool small organisms)  
 * Wet lab   
-* Seq strategy   
-* Bio-info   
-* Statistical measures   
+	+ RNA extraction   
+		+ RNA prone to contamination so RNase free environment   
+		+ Treat with DNase (DNA/RNA hybrids?)  
+		+ Get rid of rRNAs   
+		+ Enrich mRNA with poly-A tails    
+	+ cDNA   
+		+ Use oligodT primers to get reverse transcriptase and forms cDNA   
+	+ Library   
+		+ Single end   
+		+ Paired end
+* Seq strategy    
+	+ Pyrosequencing by Roche, Ion Torrent: incorrect homopolymers -> can affect gene expression profile      
+	+ GA/Hiseq by Illumina: easily affected by GC content -> can affect gene expression profile   
+	+ Sequence coverage: >100 million bp - 10 million bp    
+	+ Programming -> Unix, Python, R   
+	+ Seq strategy: de novo approach if no reference genome; assembly approach (reconstruction -> splice junction -> map/align the reads -> Library   
+* Bio-info   - will cover next week   
+* Statistical measures  - will cover next week    
 
 
-**Work flow**   
-Experimental setup -> Tissue prep + Library -> High thorough put sequencing -> Transcriptome reconstruction -> Alignment of reads -> read quantificaton and Marker development -> Biological inference
 
 
 ------ <div id='id-section7'/>
