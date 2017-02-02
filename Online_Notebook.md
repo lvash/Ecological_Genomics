@@ -238,6 +238,8 @@ If comparing resistance versus susceptibility in populations: which populations 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
 
+[Link to Handout and Notes](QTNHandout.pdf) 
+
 Things to do:   
 **Pick an info update paper and discussion paper by Monday**   
 Sign up to audit the class   
@@ -274,8 +276,7 @@ h<sup>2</sup> = V<sub>A</sub>/V<sub>p</sub>
 more efficient to have many small mutations than large because large can push populations to their extremes (reference handout for drawing)   
 
 Methods to determine how alleles affect traits:   
-
-* Add link to handout scan   
+ 
 
 
 ### Sea Star Wasting Disease  
@@ -321,6 +322,8 @@ Questions:
 
 ------ <div id='id-section5'/>
 ###Page 5: 2017-01-30 Choosing SSWD questions   
+    
+[Sea Star Wasting Disease Data](SSWD_data.pdf)   
    
 More info on study:   
 * single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
@@ -484,6 +487,8 @@ Work flow
 * Statistical measures  - will cover next week    
 
 **Amplicon Sequencing**   
+    
+[Amplicon Sequencing Handout](AmpSeqHandout.pdf)   
     
 Glossary:   
 * Amplicon sequencing: targeted approach for analyzing genetic varation in **specific genomic regions**   
