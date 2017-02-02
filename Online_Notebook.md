@@ -260,9 +260,10 @@ flowering time (continuous/quantitative traits, could be graphed as normal distr
 flower color (discrete/Mendelian, could be graphed with bars)   
 thermal tolerance, venom potency, defense compounds, toxin tolerance, drought tolerance, altitude tolerance (hypoxia)
 ```
+trait 
 	   |       /
 	   |     /   } alpha <- QTN
-trait	   |   / }    "average effect"
+	   |   / }    "average effect"
 	   |_/_________
 	   AA  Aa  aa
 	   p2  2pq q2
