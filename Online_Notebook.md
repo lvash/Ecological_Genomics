@@ -238,7 +238,8 @@ If comparing resistance versus susceptibility in populations: which populations 
 ------ <div id='id-section4'/>
 ###Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
 
-[Link to Handout and Notes](QTNHandout.pdf) 
+[Handout and Notes Page 1](https://cloud.githubusercontent.com/assets/15003012/22557682/3f9c49ac-e939-11e6-851f-628492b6a93d.jpg)   
+[Handout and Notes Page 2](https://cloud.githubusercontent.com/assets/15003012/22557681/3f92678e-e939-11e6-8651-c6f9ee686310.jpg)   
 
 Things to do:   
 **Pick an info update paper and discussion paper by Monday**   
@@ -323,7 +324,7 @@ Questions:
 ------ <div id='id-section5'/>
 ###Page 5: 2017-01-30 Choosing SSWD questions   
     
-[Sea Star Wasting Disease Data](SSWD_data.pdf)   
+[Sea Star Wasting Disease Data](https://cloud.githubusercontent.com/assets/15003012/22557683/3fa00cd6-e939-11e6-97b5-f128756e3200.jpg)   
    
 More info on study:   
 * single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
@@ -488,7 +489,7 @@ Work flow
 
 **Amplicon Sequencing**   
     
-[Amplicon Sequencing Handout](https://github.com/lvash/Online-Notebook/files/748269/AmpSeqHandout.pdf)    
+[Amplicon Sequencing Handout](https://cloud.githubusercontent.com/assets/15003012/22557684/3fa71800-e939-11e6-816d-1e5645c57828.jpg)    
     
 Glossary:   
 * Amplicon sequencing: targeted approach for analyzing genetic varation in **specific genomic regions**   
