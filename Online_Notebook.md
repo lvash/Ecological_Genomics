@@ -324,7 +324,7 @@ Questions:
 ------ <div id='id-section5'/>
 ###Page 5: 2017-01-30 Choosing SSWD questions   
     
-[Sea Star Wasting Disease Data](https://cloud.githubusercontent.com/assets/15003012/22557683/3fa00cd6-e939-11e6-97b5-f128756e3200.jpg)   
+[Sea Star Wasting Disease Data](https://cloud.githubusercontent.com/assets/15003012/22557818/a82b9f0e-e939-11e6-9862-db46aa909de8.jpg)   
    
 More info on study:   
 * single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
