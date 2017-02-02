@@ -523,7 +523,7 @@ Glossary:
 **Sequence**   
 * 454 sequencing is out of date      
 * MiSeq (Illumina); paired end sequencing    
-* [Library prep video](https://www.youtube.com/watch?v=yC0Bzw3WbQ) on handout   
+* [Library prep video](https://www.youtube.com/watch?v=_yC0Bzw3WbQ) on handout   
 
 **Data Analysis**   
 1. Trim some bp off ends    
