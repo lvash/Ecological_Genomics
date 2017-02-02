@@ -30,7 +30,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 4: 2017-01-25](#id-section4). Class notes [QTNs and SSWD info] 
 * [Page 5: 2017-01-30](#id-section5). Choosing SSWD questions
 * [Page 6: 2017-02-01](#id-section6). Info Update Blitz
-* [Page 7:](#id-section7).
+* [Page 7: 2017-02-01](#id-section7). Unix Tutorial and Tips
 * [Page 8:](#id-section8).
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
@@ -552,18 +552,19 @@ RAD - restriction assisted DNA sequencing (common to be used synonmously)
 
 Not all individuals have same restriction sites (restriction sites can be polymorphic)   
 **Individuals**    
-1 | 2 | 3 | 4    
---- |:---:|:---:|---:|   
+| 1 | 2 | 3 | 4 |     
 | + | - | + | + |   
 | - | - | + | - |  
-   
   
-
 **Fragments/Loci on y axis**
 
 Limitations   
 * Individuals that vary in methylation will vary in fragments that are produced (restriction enzymes sensitive to epigenetic modifications - may skip over)   
 * Reduced representation   
+    
+
+------ <div id='id-section7'/>
+###Page 7: 2017-02-01 Unix Tutorial and Tips   
 
 Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labnotebook/blob/master/Tutorials/Tutorials_CommandLine.md) 
 * How to connect to server (use netID with UVM password)    
@@ -577,11 +578,9 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 * mv also renames files (ex: mv subsets subsets_by_disease) mv currentname newname   
 
 
-Link to [Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
-[Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)
-
------- <div id='id-section7'/>
-###Page 7:
+[Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
+[Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)    
+    
 ------ <div id='id-section8'/>
 ###Page 8:
 ------ <div id='id-section9'/>
