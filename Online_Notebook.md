@@ -23,7 +23,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * Also, one of the perks of keeping all activities in a single document is that you can **search and find elements quickly**.     
 * You can document anything you'd like, aside from logging your research activities. For example:
 	* feel free to log all/any ideas for your research project([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#page-39-2016-06-13-post-doc-project-idea-assessing-current-impacts-of-climate-change-in-natural-populations)) as an entry,     
-	* or write down notes for a paper([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#id-section36).      
+	* or write down notes for a paper([example](https://github.com/adnguyen/Notebooks_and_Protocols/blob/master/2016_notebook.md#id-section36)).      
 
 * Lastly, you can share specific entries because of the three "#" automatically creates a link when the notebook renders on github. 
 
@@ -34,8 +34,8 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 1: 2017-01-19](#id-section1). First journal article: Ellegren 2014 
 * [Page 2: 2017-01-23](#id-section2). Class notes [MISSED]
 * [Page 3: 2017-01-24](#id-section3). Articles: Rockman 2012 and Lee et al. 2014
-* [Page 4: 2017-01-25](#id-section4). Class notes
-* [Page 5: 2017-01-30](#id-section5). Choosing questions
+* [Page 4: 2017-01-25](#id-section4). Class notes [QTNs and SSWD info] 
+* [Page 5: 2017-01-30](#id-section5). Choosing SSWD questions
 * [Page 6: 2017-02-01](#id-section6). Info Update Blitz
 * [Page 7:](#id-section7).
 * [Page 8:](#id-section8).
@@ -243,7 +243,7 @@ If comparing resistance versus susceptibility in populations: which populations 
 
 
 ------ <div id='id-section4'/>
-###Page 4: 2017-01-25 Class notes   
+###Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
 
 Things to do:   
 **Pick an info update paper and discussion paper by Monday**   
@@ -326,7 +326,7 @@ Questions:
 
 
 ------ <div id='id-section5'/>
-###Page 5: 2017-01-30 Choosing questions   
+###Page 5: 2017-01-30 Choosing SSWD questions   
    
 More info on study:   
 * single-stranded DNA virus (sequenced RNA to obtain active not just present particles)   
