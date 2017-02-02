@@ -488,7 +488,7 @@ Work flow
 
 **Amplicon Sequencing**   
     
-[Amplicon Sequencing Handout](AmpSeqHandout.pdf)   
+[Amplicon Sequencing Handout](https://github.com/lvash/Online-Notebook/files/748269/AmpSeqHandout.pdf)    
     
 Glossary:   
 * Amplicon sequencing: targeted approach for analyzing genetic varation in **specific genomic regions**   
