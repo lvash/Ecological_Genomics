@@ -31,7 +31,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 5: 2017-01-30](#id-section5). Choosing SSWD questions
 * [Page 6: 2017-02-01](#id-section6). Info Update Blitz
 * [Page 7: 2017-02-01](#id-section7). Unix Tutorial and Tips
-* [Page 8:](#id-section8).
+* [Page 8: 2017-02-03](#id-section8). Article: Dunning et al. 2014
 * [Page 9:](#id-section9).
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
@@ -582,7 +582,22 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)    
     
 ------ <div id='id-section8'/>
-###Page 8:
+###Page 8: 2017-02-03 Article: Dunning et al. 2014   
+### Divergent transcriptional responses to low temperature among populations of alpine and lowland species of New Zealand stick insects (*Micrarchus*)   
+
+**Background**    
+Subzero temperature exposure leads to: membrane rigidity, apoptosis (cell death), oxidative stress, and loss of sodium ions/water from haemolymph (insect blood)   
+Cold-responsive loci have been identified in *Drosophila* (roles of gene regulation, immune function, metabolism, stress, cuticles, membranes, and cytoskeleton, but do not overlap with those identified in other insects and gene expression patterns differ among species
+
+
+
+
+**Methods**   
+
+**Results**   
+
+**Discussion**   
+
 ------ <div id='id-section9'/>
 ###Page 9:
 ------ <div id='id-section10'/>
