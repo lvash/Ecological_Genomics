@@ -586,15 +586,27 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 ### Divergent transcriptional responses to low temperature among populations of alpine and lowland species of New Zealand stick insects (*Micrarchus*)   
 
 **Background**    
-Subzero temperature exposure leads to: membrane rigidity, apoptosis (cell death), oxidative stress, and loss of sodium ions/water from haemolymph (insect blood)   
-Cold-responsive loci have been identified in *Drosophila* (roles of gene regulation, immune function, metabolism, stress, cuticles, membranes, and cytoskeleton, but do not overlap with those identified in other insects and gene expression patterns differ among species
-
-
-
-
+* Subzero temperature exposure leads to: membrane rigidity, apoptosis (cell death), oxidative stress, and loss of sodium ions/water from haemolymph (insect blood)   
+* Cold-responsive loci have been identified in *Drosophila* (roles of gene regulation, immune function, metabolism, stress, cuticles, membranes, and cytoskeleton, but do not overlap with those identified in other insects and gene expression patterns differ among species
+* **Hypothesis**: species with poor dispersal abilities are likely to have strong phylogenetic structure as a result of genetic drift and possibly local adaptation; resulting divergent genetic backgrounds are likely to contribute to variation in transcriptional responses to environmental stress   
+* Study organism: New Zealand stick insect genus with varying extremes in temperature encounterd of 4 species (M nov. sp. 2 encounters more extreme cold temperatures (+3.6 degrees C) and ten times more freeze-thaw cycles than other 3 species)   
+    
 **Methods**   
-
+* Phylogeny   
+	+ Nuclear and mitochondrial DNA sequence data collected   
+	+ Assembled/aligned with Geneious   
+	+ Model was chosen with jModelTest   
+	+ Bayesian tree: MrBayes   
+	+ Maximum Likelihood tree: Garli   
+* Cold shock experiments on females   
+* Total RNA extracted, ambiguous bases were removed; cleaned reads were grouped by population and assembled de novo   
+* R packages were used to determine which genes were differentially expressed (considered diff. expressed if significant for at least 1 analysis)   
+* Subset of 6 genes was selected for qPCR analysis; with two non-differentially expressed reference genes for normalization between genes   
+* Biological replicates: different individuals from the same population    
+* SNP data were generated from a new Trinity assembly   
+   
 **Results**   
+
 
 **Discussion**   
 
