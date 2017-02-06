@@ -33,7 +33,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 7: 2017-02-01](#id-section7). Unix Tutorial and Tips
 * [Page 8: 2017-02-03](#id-section8). Article: Dunning et al. 2014
 * [Page 9: 2017-02-06](#id-section9). Info update for RNA seq and article discussion
-* [Page 10:](#id-section10).
+* [Page 10: 2017-02-06](#id-section10). RNA-seq Coding
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
 * [Page 13:](#id-section13).
@@ -675,7 +675,32 @@ Beforehand:
    
 
 ------ <div id='id-section10'/>
-###Page 10:
+###Page 10: 2017-02-06 RNA-seq Coding   
+
+[RNA seq Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-06_RNAseq_tutorial.html)   
+   
+cd /data/project_data/fastq   
+
+My samples I am in charge of: 19_5-20_S_5_R1.fq.gz and 19_5-20_S_5_R2.fq.gz   
+
+zcat 19_5-20_S_5_R1.fq.gz | head   
+zcat 19_5-20_S_5_R2.fq.gz | head   
+   
+The fast file format has 4 lines for each read: the read identifier, the read sequence, “+”, and a sequence of quality scores for each base. [Phred quality scores](http://www.drive5.com/usearch/manual/quality_score.html)   
+
+We'll use **Trimmomatic** program to clean the reads for each file   
+**Moved script from main directory scripts folder to my scripts folder:**
+cd /data/scripts/   
+cp trim_example.sh ~/scripts/   
+
+Edit script with vim - change file names and extensions   
+escape :w to save   
+
+**Results:** Input Read Pairs: 23380667 Both Surviving: 19638718 (84.00%) Forward Only Surviving: 2818120 (12.05%) Reverse Only Surviving: 381554 (1.63%) Dropped: 542275 (2.32%)
+TrimmomaticPE: Completed successfully
+
+
+
 ------ <div id='id-section11'/>
 ###Page 11:
 ------ <div id='id-section12'/>
