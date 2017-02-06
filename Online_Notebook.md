@@ -616,7 +616,9 @@ Table 2: nov. sp 2. has most variety in function of genes; both # DEG in both co
 Fig 5: tries to relate qPCR results (look at copy number of cDNA) with differential expression (compare with read #s)
 
 **Discussion**   
-
+Take home biological: a lot of diff. expressed genes in nov. 2 sp. could suggest selection   
+Take home technical:  no Venn diagrams! justify statistical analysis    
+    
 **Discussion in class**   
 Unigenes: collapse alternative splice variant contigs into 'unigenes' and takes the longest one to be the representative contigs   
 enrichment: functional classification (can group genes into pathways; figure out which genes are related to 'cold tolerance')   
