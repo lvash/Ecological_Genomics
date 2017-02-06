@@ -699,7 +699,7 @@ escape :w to save
 **Results:** Input Read Pairs: 23380667 Both Surviving: 19638718 (84.00%) Forward Only Surviving: 2818120 (12.05%) Reverse Only Surviving: 381554 (1.63%) Dropped: 542275 (2.32%)
 TrimmomaticPE: Completed successfully
 
-
+Last line I run: fastqc /data/project_data/fastq/19_5-20_S_5_R1.fq.gz   
 
 ------ <div id='id-section11'/>
 ###Page 11:
