@@ -32,7 +32,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 6: 2017-02-01](#id-section6). Info Update Blitz
 * [Page 7: 2017-02-01](#id-section7). Unix Tutorial and Tips
 * [Page 8: 2017-02-03](#id-section8). Article: Dunning et al. 2014
-* [Page 9:](#id-section9).
+* [Page 9: 2017-02-06](#id-section9). Info update for RNA seq and article discussion
 * [Page 10:](#id-section10).
 * [Page 11:](#id-section11).
 * [Page 12:](#id-section12).
@@ -610,8 +610,26 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 
 **Discussion**   
 
------- <div id='id-section9'/>
-###Page 9:
+------ <div id='id-section9'/> 
+###Page 9: 2017-02-06 Info update for RNA seq and article discussion   
+   
+Beforehand: 
+* Figure out approach   
+* Experimental design   
+* Library prep    
+* Sequencing (facility)   
+* Receive data  
+* Computer/server set up
+   
+**RNA seq work flow**   
+1. Clean reads   
+* Get rid of adaptors   
+* Nucleotide quality   
+* Length   
+
+
+   
+
 ------ <div id='id-section10'/>
 ###Page 10:
 ------ <div id='id-section11'/>
