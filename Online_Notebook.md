@@ -602,13 +602,31 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 * Total RNA extracted, ambiguous bases were removed; cleaned reads were grouped by population and assembled de novo   
 * R packages were used to determine which genes were differentially expressed (considered diff. expressed if significant for at least 1 analysis)   
 * Subset of 6 genes was selected for qPCR analysis; with two non-differentially expressed reference genes for normalization between genes   
-* Biological replicates: different individuals from the same population    
+* Biological replicates: different individuals from the same population   
+* Technical replicates: replicates of same individual (ex: qPCR run in duplicate)   
 * SNP data were generated from a new Trinity assembly   
    
 **Results**   
-
+Fig 1: phylogeny 28S of the 4 species; shows geography and haplotypes   
+Fig 2: phylogeny of mitochondria does not separate out as much; geographically proximal populations often grouping (possible introgression/hybridization)   
+Fig 3: a. maximum likelihood estimation (k=3 best fit) of ancestry using SNP data b. PCA - 3 separate populations   
+Fig 4: very little shared response among the 3 populations; the middle Venn diagram is most different (Micrarchus nov. sp. 2)   
+Table 1: number of DEGs with three methods - no comparison, unfortunately; variability between the 3 methods   
+Table 2: nov. sp 2. has most variety in function of genes; both # DEG in both control and treatment tell us something    
+Fig 5: tries to relate qPCR results (look at copy number of cDNA) with differential expression (compare with read #s)
 
 **Discussion**   
+
+**Discussion in class**   
+Unigenes: collapse alternative splice variant contigs into 'unigenes' and takes the longest one to be the representative contigs   
+enrichment: functional classification (can group genes into pathways; figure out which genes are related to 'cold tolerance')   
+BlastX to NR (gene annotation); to uniprot [of proteins] database (Gene Ontology [GO] functional categories)   
+   
+60k unigenes: 10% related to cuticular hydrocarbons   
+2K DGE: ~20% cuticular HC group   
+Is this more than expected? Use Fisher's exact test   
+
+
 
 ------ <div id='id-section9'/> 
 ###Page 9: 2017-02-06 Info update for RNA seq and article discussion   
@@ -632,7 +650,7 @@ Beforehand:
    
 3. De novo transcriptome assembly (if reference genome unavailable; fasta files)      
 - then evaluate assembly: what percentage match closely related species; compare to reference CEG (core eukaryotic genes); N50; # contigs   
-- Annotation (BLAST)   
+- Annotation (BLASTX; GO: Gene Ontology)   
    
 4. Map reads to reference transcriptome -> generates alignment files  (.sam sequence alignment files)   
    
@@ -650,6 +668,7 @@ Beforehand:
 - Demographic history    
 - Test for signatures of selection   
 ```
+   
 
    
 
