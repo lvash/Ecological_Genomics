@@ -626,15 +626,23 @@ Beforehand:
 * Get rid of adaptors   
 * Nucleotide quality   
 * Length   
-2. Evaluate the qulity   
+   
+2. Evaluate the quality   
+   
 3. De novo transcriptome assembly (if reference genome unavailable; fasta files)      
-* then evaluate assembly: what percentage match closely related species; compare to reference CEG (core eukaryotic genes); N50; # contigs     
+* then evaluate assembly: what percentage match closely related species; compare to reference CEG (core eukaryotic genes); N50; # contigs   
+* Annotation (BLAST)   
+   
 4. Map reads to reference transcriptome -> generates alignment files  (.sam sequence alignment files)   
+   
 5. a. Extract read count information   
 * # reads that map to each contig for each sample   
+   
 5. b. Identify SNPs (single nucleotide polymorphisms)   
+   
 6. a. Differential gene expression analyses (DGE)   
 * Co-expression network analyses   
+   
 6. b. Population genomics with SNPs   
 * Analyses for genetic differentiation between groups   
 * Population structure   
