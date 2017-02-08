@@ -35,7 +35,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 9: 2017-02-06](#id-section9). Info update for RNA seq and article discussion
 * [Page 10: 2017-02-06](#id-section10). RNA-seq Coding
 * [Page 11: 2017-02-08](#id-section11). Transcriptomics info update
-* [Page 12:](#id-section12).
+* [Page 12: 2017-02-08](#id-section12).    
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
 * [Page 15:](#id-section15).
@@ -754,11 +754,18 @@ Glossary:
 **transcriptomics:** the study of the transcriptome which is the complete set of RNA transcripts produced by the genome   
 **Qst-Fst comparisons:** a means to distinguish between genetic drift and natural selection in driving differentiation in a population   
 *Qst*= amount of variation in quantitative traits in a population   
-*Fst*= variation at neutral loci
+*Fst*= variation at neutral loci   
+
+**Article discussion: DeWit et al. 2012**
+Cactophilic *Drosophila* species with primary and secondary host expression differences  
 
 
 ------ <div id='id-section12'/>
-###Page 12:
+###Page 12: 2017-02-08    
+ 
+
+
+
 ------ <div id='id-section13'/>
 ###Page 13:
 ------ <div id='id-section14'/>
