@@ -761,7 +761,22 @@ Cactophilic *Drosophila* species with primary and secondary host expression diff
 
 
 ------ <div id='id-section12'/>
-###Page 12: 2017-02-08    
+###Page 12: 2017-02-08 RNAseq coding Pt 2   
+Skills learning objectives:   
+* Modifying script   
+	+ Paths: program, input, output   
+	+ Filenames: in, out   
+* Moving through directories and files   
+* Moving files from server to PC (scp)    
+* Executing scripts   
+* Calling programs      
+
+- Finish cleaning (trimmomatic)   
+- fastqc (vis.)   
+- Make table of reads   
+- Design assembly tests   
+- Start assemblies   
+- Evaluate assembly
  
 
 
