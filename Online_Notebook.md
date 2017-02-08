@@ -34,7 +34,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 8: 2017-02-03](#id-section8). Article: Dunning et al. 2014
 * [Page 9: 2017-02-06](#id-section9). Info update for RNA seq and article discussion
 * [Page 10: 2017-02-06](#id-section10). RNA-seq Coding
-* [Page 11:](#id-section11).
+* [Page 11: 2017-02-08](#id-section11). Transcriptomics info update
 * [Page 12:](#id-section12).
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
@@ -702,7 +702,61 @@ TrimmomaticPE: Completed successfully
 Last line I run: fastqc /data/project_data/fastq/19_5-20_S_5_R1.fq.gz   
 
 ------ <div id='id-section11'/>
-###Page 11:
+###Page 11: 2017-02-08 Transcriptomics info update   
+
+Outline:   
+Introduction   
+Brief Overview of Transcriptomics   
+Main Questions   
+Future Directions   
+   
+Why wild systems? 
+- A way of looking at non-model organisms (or non-traditional model organisms) in natural settings   
+- Silent genes responding to multiple stimuli   
+- Novel transcripts without homologues in closely related organisms   
+
+Two ways of studying transcriptomics:   
+- Microarrays 
+	+ Older   
+	+ Easy for ecological analyses
+- RNAseq   
+	+ Newer   
+	+ Allows for genome-wide ecological transcripts   
+	+ Data/analyses much more time consuming and involved   
+   
+Questions:   
+1. How much variation is there in gene expression and how is it structured?   
+Evolutionary process: gene expression is heritable so natural selection can act upon it   
+Epigenetics   
+Qst-Fst comparisons   
+eQTL - expression quantitative trait loci mapping   
+Macro evolution: drift, selection, bottleneck
+2. How do environmental stimuli affect gene expression?   
+Abiotic stress   
+Environmental heterogeneity in time or space      
+Host-parasite interactions   
+Selective biotic and abiotic interactions   
+-Molecular response   
+-Genotype   
+-Phenotypic plasticity   
+Flash freeze samples; taking a snapshot of transcription at that point in time (unless time-course analyses)      
+3. How does gene expression affect phenotype?   
+Alternate phenotypes: how does expression difference translate into phenotypic variation? how does pollution/drought tolerance affect phenotypes?   
+Push to move from correlation to causation: manipulation of transcription (transgenics, RNAi, CRISPER/CAS); knock down of genes to determine if you still get phenotype   
+
+Where do we go?   
+- Using combined microarrays and RNAseq to test gene expression hypotheses in natural populations? (microarrays are outdated)  
+- Expand database for proposed ecological variation annotations   
+   
+Problems: bias in signals; heterologous arrays (for microarrays); polyploidy; RNA pooling; statistical analyses; unannotated genes   
+   
+Glossary:   
+**transcriptomics:** the study of the transcriptome which is the complete set of RNA transcripts produced by the genome   
+**Qst-Fst comparisons:** a means to distinguish between genetic drift and natural selection in driving differentiation in a population   
+*Qst*= amount of variation in quantitative traits in a population   
+*Fst*= variation at neutral loci
+
+
 ------ <div id='id-section12'/>
 ###Page 12:
 ------ <div id='id-section13'/>
