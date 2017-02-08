@@ -725,13 +725,13 @@ Two ways of studying transcriptomics:
 	+ Data/analyses much more time consuming and involved   
    
 Questions:   
-1. How much variation is there in gene expression and how is it structured?   
+**1. How much variation is there in gene expression and how is it structured?**   
 Evolutionary process: gene expression is heritable so natural selection can act upon it   
 Epigenetics   
 Qst-Fst comparisons   
 eQTL - expression quantitative trait loci mapping   
 Macro evolution: drift, selection, bottleneck
-2. How do environmental stimuli affect gene expression?   
+**2. How do environmental stimuli affect gene expression? **  
 Abiotic stress   
 Environmental heterogeneity in time or space      
 Host-parasite interactions   
@@ -740,7 +740,7 @@ Selective biotic and abiotic interactions
 -Genotype   
 -Phenotypic plasticity   
 Flash freeze samples; taking a snapshot of transcription at that point in time (unless time-course analyses)      
-3. How does gene expression affect phenotype?   
+**3. How does gene expression affect phenotype? **  
 Alternate phenotypes: how does expression difference translate into phenotypic variation? how does pollution/drought tolerance affect phenotypes?   
 Push to move from correlation to causation: manipulation of transcription (transgenics, RNAi, CRISPER/CAS); knock down of genes to determine if you still get phenotype   
 
