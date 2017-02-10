@@ -35,7 +35,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 9: 2017-02-06](#id-section9). Info update for RNA seq and article discussion
 * [Page 10: 2017-02-06](#id-section10). RNA-seq Coding
 * [Page 11: 2017-02-08](#id-section11). Transcriptomics info update
-* [Page 12: 2017-02-08](#id-section12).    
+* [Page 12: 2017-02-10](#id-section12). Prepping for Todd et al. info update    
 * [Page 13:](#id-section13).
 * [Page 14:](#id-section14).
 * [Page 15:](#id-section15).
@@ -759,9 +759,7 @@ Glossary:
 **Article discussion: DeWit et al. 2012**
 Cactophilic *Drosophila* species with primary and secondary host expression differences  
 
-
------- <div id='id-section12'/>
-###Page 12: 2017-02-08 RNAseq coding Pt 2   
+### RNAseq coding Pt 2 
 Skills learning objectives:   
 * Modifying script   
 	+ Paths: program, input, output   
@@ -777,8 +775,50 @@ Skills learning objectives:
 - Design assembly tests   
 - Start assemblies   
 - Evaluate assembly
- 
 
+------ <div id='id-section12'/>
+###Page 12: 2017-02-10 Prepping for Todd et al. info update      
+
+### The power and promise of RNA-seq in ecology and evolution   
+
+#### Glossary terms:   
+read/sequencing depth
+biological replication: multiple libraries representing biologically distinct samples from each condition   
+read coverage: 
+effect size: 
+noise: 
+statistical power: reflects ability to distinguish true differential expression due to treatment effect from background noise
+
+
+#### Outline:   
+Background:   
++ RNA-seq enables examination of expression differences underlying interindividual and interpopulation variation   
+	+ Disease resistance   
+	+ Mating behavior   
+	+ Adaptive significance in changing environments   
++ Key technology for using integrative biology to understand molecular mechanisms of phenotypic/behavioral plasticity   
++ Biological replication   
+	+ Requiring independent library preparations   
+	+ Pooling multiple independent samples saves costs but only provides average of the expression states across samples (not true biological replication)   
+
+Issues   
++ RNA-seq studies still underutilize biological replication   
+	+ 23/158 studies, 15%, used more than 3 biological replicates   
+	+ Many derive broad biological conclusions from data with little/no biological replication   
++ Study designs prioritize sequencing depth over replication, so fail to capitalize on the power of RNA-seq technology for DE inference 
++ Wide dynamic range makes RNA-seq data potentially very noisy   
+	+ Possion counting error - uncertainty inherent in any count-based measurement   
+	+ Non-Poisson technical variance   
+	+ Biological variance   
+
+Rules of thumb:
+1. Sequence more replicates rather than increasing read depth   
+2. Sequence each sample to a depth that ensures the majority of transcripts are covered by >10 reads   
+3. Sequence at least 3 biological replicates per condition, more when biological variance is high and/or when the research question inclues small expression differences   
+4. Conduct a pilot sequencing experiment   
+ 
+### Interactive ideas:   
+Replication comparison in R? 
 
 
 ------ <div id='id-section13'/>
