@@ -815,11 +815,11 @@ Issues
 	+ Inherent power bias in RNA-seq towards longer transcripts and transcripts with higher expression (see Activity)   
 	+ Acceptable power >80%
 
-Rules of thumb:
-1. Sequence more replicates rather than increasing read depth   
-2. Sequence each sample to a depth that ensures the majority of transcripts are covered by >10 reads   
+Rules of thumb:   
+1. Sequence more replicates rather than increasing read depth (improved estimation of bio variance)      
+2. Sequence each sample to a depth that ensures the majority of transcripts are covered by >10 reads (minimizing sampling noise bias and Poisson counting error plateaus; ~10-20M mapped reads/sample is sufficient)   
 3. Sequence at least 3 biological replicates per condition, more when biological variance is high and/or when the research question inclues small expression differences   
-4. Conduct a pilot sequencing experiment   
+4. Conduct a pilot sequencing experiment (What is best/powerful experiment I can afford? What is smallest fold change I can reliably detect?) Use tools!  
 
 There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments   
 Take into account research question (exceptions):   
