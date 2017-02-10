@@ -782,7 +782,7 @@ Skills learning objectives:
 ### The power and promise of RNA-seq in ecology and evolution   
 
 #### Glossary terms:   
-read/sequencing depth
+read/sequencing depth: 
 biological replication: multiple libraries representing biologically distinct samples from each condition   
 read coverage: 
 effect size: 
@@ -797,6 +797,7 @@ Background:
 	+ Mating behavior   
 	+ Adaptive significance in changing environments   
 + Key technology for using integrative biology to understand molecular mechanisms of phenotypic/behavioral plasticity   
++ Limitations: reference genome quality; gene annotation availability; expense of per sample library prep
 + Biological replication   
 	+ Requiring independent library preparations   
 	+ Pooling multiple independent samples saves costs but only provides average of the expression states across samples (not true biological replication)   
@@ -807,15 +808,25 @@ Issues
 	+ Many derive broad biological conclusions from data with little/no biological replication   
 + Study designs prioritize sequencing depth over replication, so fail to capitalize on the power of RNA-seq technology for DE inference 
 + Wide dynamic range makes RNA-seq data potentially very noisy   
-	+ Possion counting error - uncertainty inherent in any count-based measurement   
-	+ Non-Poisson technical variance   
-	+ Biological variance   
+	+ Poisson counting error - uncertainty inherent in any count-based measurement   
+	+ Non-Poisson technical variance (ex: sample collection, storage, processing, RNA quality, flow cell and lane effects during Illumina sequencing)   
+	+ Biological variance - natural variation in gene expression measurements due to environmental or genetic differences (represents greatest source of within-group variance)      
++ Power equation in RNA-seq influenced by sample size, depth, choice of Type 1 error rate, expression landscape, bio/tech variation   
+	+ Inherent power bias in RNA-seq towards longer transcripts and transcripts with higher expression (see Activity)   
+	+ Acceptable power >80%
 
 Rules of thumb:
 1. Sequence more replicates rather than increasing read depth   
 2. Sequence each sample to a depth that ensures the majority of transcripts are covered by >10 reads   
 3. Sequence at least 3 biological replicates per condition, more when biological variance is high and/or when the research question inclues small expression differences   
 4. Conduct a pilot sequencing experiment   
+
+There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments   
+Take into account research question (exceptions):   
++ Rare transcripts   
++ Subtle fold changes   
++ Isoform-level analysis   
++ De novo transcriptome assembly required
  
 ### Interactive ideas:   
 Replication comparison in R? 
