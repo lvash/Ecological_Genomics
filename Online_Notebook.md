@@ -98,7 +98,7 @@ The paper has a glossary of terms and I wanted to write a few down:
    
 **Effective population size (N<sub>e</sub>):** a measure of the size of an idealized population in which the effect of genetic drift on allele frequencies is similar to the population under consideration.   
    
-**Genetic architecture:** the genetic background to phenotypic traits, including their number, effect sizes, and dominance.   
+**Genetic architecture:** the genetic background to phenotypic traits, including their number, effect sizes,and dominance.   
    
 **Genome-wide association studies (GWAS):** studies based on the use of large numbers of SNP markers genotyped in a group showing a particular trait, and in a control group, with the aim of finding association between trait and markers.   
 
@@ -784,55 +784,56 @@ Skills learning objectives:
 ### The power and promise of RNA-seq in ecology and evolution   
 
 #### Glossary terms:   
-read/sequencing depth: 
-biological replication: multiple libraries representing biologically distinct samples from each condition   
-read coverage: 
-effect size: 
-noise: 
-statistical power: reflects ability to distinguish true differential expression due to treatment effect from background noise
-
+**Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases.
+**Read depth:** the total number of bases sequenced and aligned at a given reference base position
+**Statistical noise:** unexplained variation/randomness in a sample    
+**Statistical power:** probability that it will reject a false null hypothesis; reflects ability to distinguish true differential expression due to treatment effect from background noise   
+bio rep: individals from same trt; technical: same sample  
+effect size: effect size as the contribution of the SNP to genetic variance of the trait (standard deviations from mean)   
 
 #### Outline:   
-Background:   
-+ RNA-seq enables examination of expression differences underlying interindividual and interpopulation variation   
+##### RNA-seq Background:   
++ **Enables examination of expression differences** underlying **interindividual and interpopulation variation**   
 	+ Disease resistance   
 	+ Mating behavior   
 	+ Adaptive significance in changing environments   
-+ Key technology for using integrative biology to understand molecular mechanisms of phenotypic/behavioral plasticity   
-+ Limitations: reference genome quality; gene annotation availability; expense of per sample library prep
-+ Biological replication   
-	+ Requiring independent library preparations   
-	+ Pooling multiple independent samples saves costs but only provides average of the expression states across samples (not true biological replication)   
-
-Issues   
-+ RNA-seq studies still underutilize biological replication   
-	+ 23/158 studies, 15%, used more than 3 biological replicates   
-	+ Many derive broad biological conclusions from data with little/no biological replication   
-+ Study designs prioritize sequencing depth over replication, so fail to capitalize on the power of RNA-seq technology for DE inference 
-+ Wide dynamic range makes RNA-seq data potentially very noisy   
++ Key technology for using integrative biology to understand **molecular mechanisms of phenotypic/behavioral plasticity**   
++ **Limitations:** reference genome quality; gene annotation availability; expense of per sample library prep 
+	   
+   
+##### Issues   
++ RNA-seq studies still **underutilize biological replication** (diff individuals in a trt)   
+	+ Defined in paper as **'requiring independent library preparations'**/multiple libraries representing biologically distinct samples from each condition  
+	+ **Pooling multiple independent samples** saves costs but only provides **average of the expression states across samples (not true biological replication)**   
+	+ **23/158 studies, 15%, used more than 3 biological replicates**   
+	+ Many **derive broad biological conclusions from data with little/no biological replication**   
++ Study designs **prioritize sequencing depth over replication**, so fail to capitalize on the power of RNA-seq technology for DE inference 
++ Wide dynamic range makes **RNA-seq data potentially very noisy**   
 	+ Poisson counting error - uncertainty inherent in any count-based measurement   
 	+ Non-Poisson technical variance (ex: sample collection, storage, processing, RNA quality, flow cell and lane effects during Illumina sequencing)   
 	+ Biological variance - natural variation in gene expression measurements due to environmental or genetic differences (represents greatest source of within-group variance)      
-+ Power equation in RNA-seq influenced by sample size, depth, choice of Type 1 error rate, expression landscape, bio/tech variation   
+
+##### R exercise: Visualize influence of replicates on power of an experiment   
++ Power equation in RNA-seq influenced by sample size, depth, choice of Type 1 error rate (falsely rejecting true null hypothesis; alpha), expression landscape, bio/tech variation   
 	+ Inherent power bias in RNA-seq towards longer transcripts and transcripts with higher expression (see Activity)   
-	+ Acceptable power >80%
+	+ Acceptable power >80%   
+	+ effect size measured in fold change (Control gene with 10 reads vs DE gene 20 reads; fold change of 2)   
+	+ R code; depth; **n (replicates); cv (biological coefficient of variation);** effect (effect size in fold change); **alpha (false positive rate)**   
++ Conclusions: Large effect size and/or low biological variance -> higher power   
++ Why lower power with low effect size? Difficulty differentiating true expression differences from background noise    
 
-Rules of thumb:   
-1. Sequence more replicates rather than increasing read depth (improved estimation of bio variance)      
-2. Sequence each sample to a depth that ensures the majority of transcripts are covered by >10 reads (minimizing sampling noise bias and Poisson counting error plateaus; ~10-20M mapped reads/sample is sufficient)   
-3. Sequence at least 3 biological replicates per condition, more when biological variance is high and/or when the research question inclues small expression differences   
-4. Conduct a pilot sequencing experiment (What is best/powerful experiment I can afford? What is smallest fold change I can reliably detect?) Use tools!  
-
-There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments   
+##### General Rules of thumb:   
+1. Sequence **more replicates rather than increasing read depth** (improved estimation of bio variance)      
+2. Sequence each sample to a **depth** that ensures the majority of transcripts are covered by **>10 reads** (minimizing sampling noise bias and Poisson counting error plateaus; **~10-20M mapped reads/sample** is sufficient)   
+3. Sequence at least **3 biological replicates per condition**, more when biological variance is high and/or when the research question inclues small expression differences   
+4. Conduct a **pilot sequencing experiment** (What is best/powerful experiment I can afford? What is smallest fold change I can reliably detect?) Use tools!  
+    
+There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments      
 Take into account research question (exceptions):   
 + Rare transcripts   
 + Subtle fold changes   
 + Isoform-level analysis   
 + De novo transcriptome assembly required
- 
-### Interactive ideas:   
-Replication comparison in R? 
-
 
 ------ <div id='id-section13'/>
 ###Page 13:
