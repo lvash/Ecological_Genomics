@@ -784,11 +784,11 @@ Skills learning objectives:
 ## The power and promise of RNA-seq in ecology and evolution   
 
 ### Glossary terms:   
-**Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases.
-**Read depth:** the total number of bases sequenced and aligned at a given reference base position
-**Statistical noise:** unexplained variation/randomness in a sample    
-**Statistical power:** probability that it will reject a false null hypothesis; reflects ability to distinguish true differential expression due to treatment effect from background noise   
-bio rep: individals from same trt; technical: same sample  
+**Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases.   
+**Read depth:** the total number of bases sequenced and aligned at a given reference base position   
+**Statistical noise:** unexplained variation/randomness in a sample     
+**Statistical power:** probability that it will reject a false null hypothesis; reflects ability to distinguish true differential expression due to treatment effect from background noise      
+bio rep: individals from same trt; technical: same sample     
 effect size: effect size as the contribution of the SNP to genetic variance of the trait (standard deviations from mean)   
 
 ### Outline:   
