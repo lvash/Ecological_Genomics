@@ -16,7 +16,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ###Helpful Resources   
 [Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)   
-RNA-seq exercise [RMD](./RNASeqPowerActivity.Rmd)        
+[RNA-seq exercise RMD](./RNASeqPowerActivity.Rmd)        
 
 
 
@@ -781,9 +781,9 @@ Skills learning objectives:
 ------ <div id='id-section12'/>
 ###Page 12: 2017-02-10 Prepping for Todd et al. info update      
 
-### The power and promise of RNA-seq in ecology and evolution   
+## The power and promise of RNA-seq in ecology and evolution   
 
-#### Glossary terms:   
+### Glossary terms:   
 **Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases.
 **Read depth:** the total number of bases sequenced and aligned at a given reference base position
 **Statistical noise:** unexplained variation/randomness in a sample    
@@ -791,8 +791,8 @@ Skills learning objectives:
 bio rep: individals from same trt; technical: same sample  
 effect size: effect size as the contribution of the SNP to genetic variance of the trait (standard deviations from mean)   
 
-#### Outline:   
-##### RNA-seq Background:   
+### Outline:   
+#### RNA-seq Background:   
 + **Enables examination of expression differences** underlying **interindividual and interpopulation variation**   
 	+ Disease resistance   
 	+ Mating behavior   
@@ -801,7 +801,7 @@ effect size: effect size as the contribution of the SNP to genetic variance of t
 + **Limitations:** reference genome quality; gene annotation availability; expense of per sample library prep 
 	   
    
-##### Issues   
+#### Issues   
 + RNA-seq studies still **underutilize biological replication** (diff individuals in a trt)   
 	+ Defined in paper as **'requiring independent library preparations'**/multiple libraries representing biologically distinct samples from each condition  
 	+ **Pooling multiple independent samples** saves costs but only provides **average of the expression states across samples (not true biological replication)**   
@@ -813,7 +813,7 @@ effect size: effect size as the contribution of the SNP to genetic variance of t
 	+ Non-Poisson technical variance (ex: sample collection, storage, processing, RNA quality, flow cell and lane effects during Illumina sequencing)   
 	+ Biological variance - natural variation in gene expression measurements due to environmental or genetic differences (represents greatest source of within-group variance)      
 
-##### R exercise: Visualize influence of replicates on power of an experiment   
+#### R exercise: Visualize influence of replicates on power of an experiment   
 + Power equation in RNA-seq influenced by sample size, depth, choice of Type 1 error rate (falsely rejecting true null hypothesis; alpha), expression landscape, bio/tech variation   
 	+ Inherent power bias in RNA-seq towards longer transcripts and transcripts with higher expression (see Activity)   
 	+ Acceptable power >80%   
@@ -822,7 +822,7 @@ effect size: effect size as the contribution of the SNP to genetic variance of t
 + Conclusions: Large effect size and/or low biological variance -> higher power   
 + Why lower power with low effect size? Difficulty differentiating true expression differences from background noise    
 
-##### General Rules of thumb:   
+#### General Rules of thumb:   
 1. Sequence **more replicates rather than increasing read depth** (improved estimation of bio variance)      
 2. Sequence each sample to a **depth** that ensures the majority of transcripts are covered by **>10 reads** (minimizing sampling noise bias and Poisson counting error plateaus; **~10-20M mapped reads/sample** is sufficient)   
 3. Sequence at least **3 biological replicates per condition**, more when biological variance is high and/or when the research question inclues small expression differences   
