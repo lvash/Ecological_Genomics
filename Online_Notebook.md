@@ -16,7 +16,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 ###Helpful Resources   
 [Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)   
-RNA-seq exercise [RMD](./RNASeqPowerActivity.Rmd) [html](./RNASeqPowerActivity.html)     
+RNA-seq exercise [RMD](./RNASeqPowerActivity.Rmd)        
 
 
 
