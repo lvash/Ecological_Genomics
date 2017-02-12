@@ -784,16 +784,17 @@ Skills learning objectives:
 ## The power and promise of RNA-seq in ecology and evolution   
 
 ### Glossary terms:   
-**Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases.   
-**Read depth:** the total number of bases sequenced and aligned at a given reference base position   
+**Sequence coverage:** describes the average number of reads that align to, or "cover," known reference bases. [Link](https://www.illumina.com/science/education/sequencing-coverage.html)   
+**Read depth:** the total number of bases sequenced and aligned at a given reference base position [Link](https://www.illumina.com/science/education/sequencing-coverage.html)     
 **Statistical noise:** unexplained variation/randomness in a sample     
 **Statistical power:** probability that it will reject a false null hypothesis; reflects ability to distinguish true differential expression due to treatment effect from background noise      
+**Biological variance:** natural variation in gene expression measurements due to environmental or genetic differences   
 bio rep: individals from same trt; technical: same sample     
 effect size: effect size as the contribution of the SNP to genetic variance of the trait (standard deviations from mean)   
 
 ### Outline:   
 #### RNA-seq Background:   
-+ **Enables examination of expression differences** underlying **interindividual and interpopulation variation**   
++ **Enables examination of DE** underlying **interindividual and interpopulation variation**   
 	+ Disease resistance   
 	+ Mating behavior   
 	+ Adaptive significance in changing environments   
@@ -809,9 +810,9 @@ effect size: effect size as the contribution of the SNP to genetic variance of t
 	+ Many **derive broad biological conclusions from data with little/no biological replication**   
 + Study designs **prioritize sequencing depth over replication**, so fail to capitalize on the power of RNA-seq technology for DE inference 
 + Wide dynamic range makes **RNA-seq data potentially very noisy**   
-	+ Poisson counting error - uncertainty inherent in any count-based measurement   
-	+ Non-Poisson technical variance (ex: sample collection, storage, processing, RNA quality, flow cell and lane effects during Illumina sequencing)   
-	+ Biological variance - natural variation in gene expression measurements due to environmental or genetic differences (represents greatest source of within-group variance)      
+	+ **Poisson counting error** - uncertainty inherent in any count-based measurement   
+	+ **Non-Poisson technical variance** (ex: sample collection/storage/processing, RNA quality, flow cell and lane effects during Illumina sequencing)   
+	+ **Biological variance** - natural variation in gene expression measurements due to environmental or genetic differences (**represents greatest source of within-group variance**)      
 
 #### R exercise: Visualize influence of replicates on power of an experiment   
 + Power equation in RNA-seq influenced by sample size, depth, choice of Type 1 error rate (falsely rejecting true null hypothesis; alpha), expression landscape, bio/tech variation   
@@ -826,9 +827,10 @@ effect size: effect size as the contribution of the SNP to genetic variance of t
 1. Sequence **more replicates rather than increasing read depth** (improved estimation of bio variance)      
 2. Sequence each sample to a **depth** that ensures the majority of transcripts are covered by **>10 reads** (minimizing sampling noise bias and Poisson counting error plateaus; **~10-20M mapped reads/sample** is sufficient)   
 3. Sequence at least **3 biological replicates per condition**, more when biological variance is high and/or when the research question inclues small expression differences   
-4. Conduct a **pilot sequencing experiment** (What is best/powerful experiment I can afford? What is smallest fold change I can reliably detect?) Use tools!  
+4. Conduct a **pilot sequencing experiment** (**What is best/powerful experiment I can afford? What is smallest fold change I can reliably detect?**) Use **tools!**  
     
-There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments      
+There are a few software tools that can evaluate statistical power and calculate appropriate sample sizes and depths for DE experiments    
+##### If there is time:   
 Take into account research question (exceptions):   
 + Rare transcripts   
 + Subtle fold changes   
