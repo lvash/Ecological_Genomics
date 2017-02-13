@@ -835,7 +835,16 @@ Take into account research question (exceptions):
 + Rare transcripts   
 + Subtle fold changes   
 + Isoform-level analysis   
-+ De novo transcriptome assembly required
++ De novo transcriptome assembly required   
+
+
+## Using Screen in Terminal   
+screen
+bash bwaaln.sh
+
+press ctrl + a + d (detach)   
+
+screen -r (reattach)
 
 ------ <div id='id-section13'/>
 ###Page 13:
