@@ -41,7 +41,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 13: 2017-02-15](#id-section13)  SNPs and Population Genomics Info Update
 * [Page 14: 2017-02-15](#id-section14). Article discussion: Zhao et al. 2016
 * [Page 15: 2017-02-15](#id-section15). Sequence alignment (SAM) files and Read Count Extraction
-* [Page 16:](#id-section16).
+* [Page 16: 2017-02-22](#id-section16). DESeq2 in R
 * [Page 17:](#id-section17).
 * [Page 18:](#id-section18).
 * [Page 19:](#id-section19).
@@ -989,7 +989,22 @@ We are interested in first column (total unique reads)
 
 
 ------ <div id='id-section16'/>
-###Page 16:
+###Page 16: 2017-02-22 DESeq2 in R
+
+#### Moving the R scripts and files from the server to Ecological Genomics 
+**Don't forget the period after the file name!!!! It tells it to move it to where you are**
+```
+Open new terminal window
+cd Desktop/UVM/Courses/Ecological_Genomics/
+scp lvash@pbio381.uvm.edu:/data/project_data/DGE/* . 
+```
+The following code loads the package into R
+```
+source("http://bioconductor.org/workflows.R")
+workflowInstall("rnaseqGene")
+```
+
+
 ------ <div id='id-section17'/>
 ###Page 17:
 ------ <div id='id-section18'/>
