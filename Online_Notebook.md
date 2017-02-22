@@ -991,10 +991,10 @@ We are interested in first column (total unique reads)
 ------ <div id='id-section16'/>
 ###Page 16: 2017-02-22 DESeq2 in R
 
-#### Moving the R scripts and files from the server to Ecological Genomics 
-**Don't forget the period after the file name!!!! It tells it to move it to where you are**
+### Moving the R scripts and files from the server to Ecological Genomics 
+* Open new terminal window and set the working directory to where you want to move files
+* Use scp to move: Don't forget the **period after the file name!!!!** It tells it to move it to where you are
 ```
-Open new terminal window
 cd Desktop/UVM/Courses/Ecological_Genomics/
 scp lvash@pbio381.uvm.edu:/data/project_data/DGE/* . 
 ```
