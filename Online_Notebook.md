@@ -42,7 +42,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 14: 2017-02-15](#id-section14). Article discussion: Zhao et al. 2016
 * [Page 15: 2017-02-15](#id-section15). Sequence alignment (SAM) files and Read Count Extraction
 * [Page 16: 2017-02-22](#id-section16). DESeq2 in R
-* [Page 17:](#id-section17).
+* [Page 17: 2017-02-27](#id-section17). Edwards paper
 * [Page 18:](#id-section18).
 * [Page 19:](#id-section19).
 * [Page 20:](#id-section20).
@@ -1006,7 +1006,25 @@ workflowInstall("rnaseqGene")
 
 
 ------ <div id='id-section17'/>
-###Page 17:
+###Page 17: 2017-02-27 Scott Edwards paper    
+
+**Glossary**
+* **coalescent (multi-species coalescent; MCS)** - two lineages tracing back in time finding common ancestor   
+* **reticulation** -   
+* **purifying/background selection** -   
+* **gene trees vs species trees** - Can we make gene trees with SNPs?    
+* **introgression/recombination** - hybridization (two different species exchanging genetic info)   
+* **incomplete lineage sorting** - passage of allele is following divergence of species, but divergence of alleles predate speciation; large population size and short time can affect this (large t/Ne resembles species tree);   
+* **recombination** - another type of reticulation; blurs gene boundaries
+
+
+Craig Moritz (last author) - Australia; reptiles/amphibian population genetics   
+
+
+
+
+
+
 ------ <div id='id-section18'/>
 ###Page 18:
 ------ <div id='id-section19'/>
