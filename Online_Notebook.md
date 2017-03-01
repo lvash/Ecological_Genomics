@@ -43,7 +43,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 15: 2017-02-15](#id-section15). Sequence alignment (SAM) files and Read Count Extraction
 * [Page 16: 2017-02-22](#id-section16). DESeq2 in R
 * [Page 17: 2017-02-27](#id-section17). Edwards paper
-* [Page 18:](#id-section18).
+* [Page 18: 2017-03-01](#id-section18). Homework Assignment info and WGCNA
 * [Page 19:](#id-section19).
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
@@ -1020,13 +1020,59 @@ workflowInstall("rnaseqGene")
 
 Craig Moritz (last author) - Australia; reptiles/amphibian population genetics   
 
-
-
-
-
-
 ------ <div id='id-section18'/>
-###Page 18:
+###Page 18: 2017-03-01 Homework Assignment info and WGCNA
+
+### WGCNA - Weighted correlation network
+
+**Glossary**   
+* Module - Modules are clusters of highly interconnected genes. In an unsigned co- expression network, modules correspond to clusters of genes with high absolute correlations. In a signed network, modules correspond to positively correlated genes.   
+* Connectivity - For each gene, the connectivity (also known as degree) is defined as the sum of connection strengths with the other network genes: ki =  u iaui. In co- expression networks, the connectivity measures how correlated a gene is with all other network genes.   
+* Intramodular connectivity - measures how connected, or co-expressed, a given gene is with respect to the genes of a particular module. The intramodular connectivity may be interpreted as a measure of module membership.   
+* Modular Eigengene - defined as the first principal component of a given module. It can be considered a representative of the gene expression profiles in a module.   
+* Eigengene significance - When a microarray sample trait y is available (e.g. case control status or body weight), one can correlate the module eigengenes with this outcome. The correlation coefficient is referred to as eigengene significance.   
+* Gene significance - the higher the absolute value of GSi, the more biologically significant is the i-th gene; also be defined by minus log of a p-value. The only requirement is that gene significance of 0 indicates that the gene is not significant with regard to the biological question of interest. The gene significance can take on positive or negative values.   
+
+Outline:
+1. Overview of WGCNA   
+2. Network Construction  
+3. Module Detection   
+4. Incorporation of External Info into Network   
+5. Topological properties   
+6. Other features   
+7. Limitations   
+
+- R package: applies correlation network methods to describe correlation (coexpression) patterns among genes in micro-array samples   
+
+2. **Network Construction**   
+Node - gene   
+Edges - how strongly correlated in terms of expression   
+Package provides different co-expression measures   
+Makes signed (+/-) or unsigned networks (absolute value of correlation)   
+
+Identify modules (clusters of gene) then test for correlation in traits/factors (clusters of genes associated with being sick/low score/location/etc?); 'collapse' weak correlations
+
+```		  1  2   3       n individuals
+sea star  = l1 | g11 g12 g13 ... g1n |
+ data	    l2 | g21 g22 g23 ... g2n | 
+	    lm | gm1 gm2 gm3 ... gmn | 
+```
+unweighted network analysis 
+- hard threshold for whether genes are linked or network for expression   
+- can lose information
+
+vs weighted network analysis
+- package allows for soft or hard threshold   
+   
+3. **Module detection**   
+- unsupervised clustering (less bias / no a priori defined gene sets)   
+- removes weak clustering   
+- summarizes profiles of modules (involves eigengene)   
+
+
+	    
+	    
+
 ------ <div id='id-section19'/>
 ###Page 19:
 ------ <div id='id-section20'/>
