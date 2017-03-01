@@ -1033,7 +1033,7 @@ Craig Moritz (last author) - Australia; reptiles/amphibian population genetics
 * Eigengene significance - When a microarray sample trait y is available (e.g. case control status or body weight), one can correlate the module eigengenes with this outcome. The correlation coefficient is referred to as eigengene significance.   
 * Gene significance - the higher the absolute value of GSi, the more biologically significant is the i-th gene; also be defined by minus log of a p-value. The only requirement is that gene significance of 0 indicates that the gene is not significant with regard to the biological question of interest. The gene significance can take on positive or negative values.   
 
-Outline:
+Outline:   
 1. Overview of WGCNA   
 2. Network Construction  
 3. Module Detection   
@@ -1051,12 +1051,13 @@ Package provides different co-expression measures
 Makes signed (+/-) or unsigned networks (absolute value of correlation)   
 
 Identify modules (clusters of gene) then test for correlation in traits/factors (clusters of genes associated with being sick/low score/location/etc?); 'collapse' weak correlations
-
-```		  1  2   3       n individuals
+```
+		  1  2   3       n individuals
 sea star  = l1 | g11 g12 g13 ... g1n |
  data	    l2 | g21 g22 g23 ... g2n | 
 	    lm | gm1 gm2 gm3 ... gmn | 
 ```
+
 unweighted network analysis 
 - hard threshold for whether genes are linked or network for expression   
 - can lose information
@@ -1069,8 +1070,17 @@ vs weighted network analysis
 - removes weak clustering   
 - summarizes profiles of modules (involves eigengene)   
 
+4. **Relating info with external information**   
+- depends on questions   
+- gene significance -> assigns a positive number to each gene; tells whether genes are associated with trait of interest   
+   
+Ran out of time, didn't finish
 
-	    
+### Assignment   
+- Due Wednesday, March 8   
+- Looking at sick and healthy and then sick/healthy and location   
+- ~1 page of text and then figures/tables   
+- Reference online notebook for scripts and work   
 	    
 
 ------ <div id='id-section19'/>
