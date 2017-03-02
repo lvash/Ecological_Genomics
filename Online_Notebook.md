@@ -1052,7 +1052,7 @@ Makes signed (+/-) or unsigned networks (absolute value of correlation)
 
 Identify modules (clusters of gene) then test for correlation in traits/factors (clusters of genes associated with being sick/low score/location/etc?); 'collapse' weak correlations
 ```
-		       1  2   3       n individuals
+		         1  2   3       n individuals
 sea star  = l1 | g11 g12 g13 ... g1n |
  data	    l2 | g21 g22 g23 ... g2n | 
 	        lm | gm1 gm2 gm3 ... gmn | 
