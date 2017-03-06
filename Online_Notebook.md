@@ -1143,6 +1143,95 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 
 ```:set nowrap``` in vim does not wrap text and makes it easier to read
 
+```vcftools --vcf SSW_bamlist.txt.vcf``` summarizes data     
+   
+Did it detect the correct number of individuals? kept 24 out of 24 Individuals   
+How many SNPs do we have? 7472775   
+
+```grep "unres" SSW_bamlist.txt.vcf | wc ``` this searches for SNPs deemed unresolved ("unres") and pipes it to a wordcount (wc) function   
+Output: ```5631864 185851488 1028494934
+``` 
+**5631864 were unresolved**   
+
+```
+lvash@pbio381 reads2snps]$ grep "para" SSW_bamlist.txt.vcf | wc
+   4354  143652  795592
+```
+**4354 were paralogs**   
+
+**1,836,557 SNPs survived the filter** of unres and para (SNPs that were not unresolved or paralogs)   
+
+We only want bi-allelic SNPs (more than two alleles is most likely an error) so we use this code:   
+```
+vcftools --vcf SSW_bamlist.txt.vcf --min-alleles 2 --max-alleles 2
+After filtering, kept 20319 out of a possible 7472775 Sites   
+```   
+**Minor allele frequency (MAF)**: Gets rid of very rare SNPs - If we have a SNP that is only seen very rarely, it may be a sequencing error, and should be discarded. For us, the most liberal MAF filters would be 1 allele copy out of the total 2N copies, or 1/48 = 0.02   
+```
+$ vcftools --vcf SSW_bamlist.txt.vcf --maf 0.02   
+After filtering, kept 5656584 out of a possible 7472775 Sites
+```   
+**Missing data across individuals**: individuals are missing data for a given SNP; this code allows 20% missing data   
+```
+vcftools --vcf SSW_bamlist.txt.vcf --max-missing 0.8
+```
+Now we can combine all of the filters and direct the output to our home directory (produces log file with output of how many SNPs and individuals were kept) and a vcf file that lists all of the genes and corresponding genotypes: 
+```
+vcftools --vcf SSW_bamlist.txt.vcf --min-alleles 2 --max-alleles 2 --maf 0.02 --max-missing 0.8 --recode --out ~/mydata/biallelic_20percentmissingdata_MAF02
+```
+We can look at the observed and expected heterozygosity for each SNPs and test if any violate Hardy-Weinberg equilibrium expectations (give an output file of out.hwe that we will load into R):   
+```
+vcftools --vcf filtered_filename.vcf --hardy
+```
+
+We can use R in the Terminal!! (Just type R and press enter)   
+```
+$ R
+> getwd()
+[1] "/data/users/l/v/lvash/mydata"
+> hardy<-read.table("out.hwe", header=T)
+> str(hardy)
+> hardy[which(hardy$P_HET_EXCESS<0.001),] ## which rows are significantly deviated from H-W (excess heterozygosity)   
+<0 rows> (or 0-length row.names)
+> hardy[which(hardy$P_HET_DEFICIT<0.01),]
+                                                                 CHR POS
+277 TRINITY_DN45155_c27_g2_TRINITY_DN45155_c27_g2_i2_g.18743_m.18743 216
+291 TRINITY_DN45155_c27_g1_TRINITY_DN45155_c27_g1_i1_g.18742_m.18742  99
+293 TRINITY_DN45155_c27_g1_TRINITY_DN45155_c27_g1_i1_g.18742_m.18742 138
+401     TRINITY_DN39079_c3_g1_TRINITY_DN39079_c3_g1_i1_g.8354_m.8354 244
+406     TRINITY_DN39696_c4_g1_TRINITY_DN39696_c4_g1_i1_g.8926_m.8926 283
+    OBS.HOM1.HET.HOM2. E.HOM1.HET.HOM2. ChiSq_HWE        P_HWE P_HET_DEFICIT
+277             22/0/2  20.17/3.67/0.17        24 1.418440e-03  1.418440e-03
+291            11/0/13  5.04/11.92/7.04        24 9.114786e-08  9.114786e-08
+293             19/0/5  15.04/7.92/1.04        24 6.498371e-06  6.498371e-06
+401            13/0/11  7.04/11.92/5.04        24 9.114786e-08  9.114786e-08
+406            13/0/11  7.04/11.92/5.04        24 9.114786e-08  9.114786e-08
+    P_HET_EXCESS
+277            1
+291            1
+293            1
+401            1
+406            1
+```
+**These five loci above show heterozygosity deficit which can be indicative of inbreeding**   
+ OBS.HOM1.HET.HOM2. (observed homozygous/heterozygous/homozygous) 
+ E.HOM1.HET.HOM2. (expected under H-W)
+
+
+Linkage: defines maximum number of physical bases between the SNPs being tested for LD   
+How much of SNPs on one transcript statistically linked with SNPs on another transcript?
+
+So we're gong to use --geno-r2 (vcftools in Terminal)
+Calculates the squared correlation coefficient between genotypes encoded as 0, 1 and 2 to represent the number of non-reference alleles in each individual. This is the same as the LD measure reported by PLINK. The D and D’ statistics are only available for phased genotypes. The output file has the suffix ".geno.ld".
+
+Let's go back into R and visualize output:
+```
+$ R
+> LD<-read.table("out.geno.ld", header=T)
+> LD$dist<-abs(LD$POS1-LD$POS2) # distance in each base pair being compared; as you get further away 
+> pdf("LD.plot.pdf")
+> plot(LD$dist,LD$R.2)
+```
 
 ------ <div id='id-section21'/>
 ###Page 21:
