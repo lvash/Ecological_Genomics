@@ -45,7 +45,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 17: 2017-02-27](#id-section17). Edwards paper
 * [Page 18: 2017-03-01](#id-section18). Homework Assignment info and WGCNA
 * [Page 19: 2017-03-06](#id-section19). Population Genomics: Steve's Info Update and Alex's Discussion
-* [Page 20:](#id-section20).
+* [Page 20: 2017-03-06](#id-section20). Population Genomics Tutorial
 * [Page 21:](#id-section21).
 * [Page 22:](#id-section22).
 * [Page 23:](#id-section23).
@@ -1138,7 +1138,11 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 
 
 ------ <div id='id-section20'/>
-###Page 20:
+###Page 20:2017-03-06 Population Genomics Tutorial 
+[Link to Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html)   
+
+
+
 ------ <div id='id-section21'/>
 ###Page 21:
 ------ <div id='id-section22'/>
