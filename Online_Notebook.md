@@ -1141,6 +1141,7 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 ###Page 20:2017-03-06 Population Genomics Tutorial 
 [Link to Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html)   
 
+```:set nowrap``` in vim does not wrap text and makes it easier to read
 
 
 ------ <div id='id-section21'/>
