@@ -44,7 +44,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 16: 2017-02-22](#id-section16). DESeq2 in R
 * [Page 17: 2017-02-27](#id-section17). Edwards paper
 * [Page 18: 2017-03-01](#id-section18). Homework Assignment info and WGCNA
-* [Page 19:](#id-section19).
+* [Page 19: 2017-03-06](#id-section19). Population Genomics: Steve's Info Update and Alex's Discussion
 * [Page 20:](#id-section20).
 * [Page 21:](#id-section21).
 * [Page 22:](#id-section22).
@@ -1084,7 +1084,59 @@ Ran out of time, didn't finish
 	    
 
 ------ <div id='id-section19'/>
-###Page 19:
+###Page 19: 2017-03-06 Population Genomics: Steve's Info Update and Alex's Discussion   
+
+**Glossary**   
+* paralog: gene duplicate   
+* π: pairwise nucelotide diversity   
+* SFS: Site frequency spectrum = histogram of allele frequencies   
+* Ne: effective population size   
+
+**Population genomics (def):**    
+- SNPs and lots of them   
+- sampling unit is individuals within species   
+- processes:   
+	+ population structure   
+	+ population diversity within and between populations   
+	+ selection (different kinds of selection - negative/'purifying' or positive)   
+	
+**Pipeline**   
+Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean reads reference **->** transcriptomics (count # of reads per transcript) -> differential gene expression   
+   
+Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean reads reference **->** "Population Genomics" Call SNPs (is given position of transcript variable? if yes, then SNP) and Genotypes (is it heterozygote or homozygote?) -> allele frequencies; SFS; nucleotide diversity (π)   
+
+**Challenges of SNP calling**   
+* Sequencing error (Illumina error rate is ~1%)
+	+ Filters: minor allele frequency (how many individuals is it found in? filter out rare SNPs across individuals)   
+	+ Depth (less confident with less depth)   
+	
+** Challenges of Genotype (AA AT TT) calling**   
+* If G=AT, predict A=T=0.5   
+* Assign probabilities (AAAAAAATTT) T=3/10; probability of heterozygote is high   
+
+**Challenges of Paralogy**   
+* Gene duplicates   
+* One gene has AAAAAAAAAA and the duplicate has a SNP TTTTTTTTTT   
+* This leads to ~100% of individuals being heterozygotes (violates Hardy-Weinberg)      
+* Can use Hardy-Weinberg = p^2^ +2pq + q^2^ to test for excess of hetereozygoes which points to paralogy   
+
+**π**   
+* Expected heterozygosity   
+* For two sequences in population (i and j), π = sum(xi * xj * πij) (frequency of i times frequency of j times times number of differences between sequences)   
+* πsyn (syn = synonomous sites; don't change nucleotides) = 4Ne * mu (mutation rate)   
+* πnonsyn more affected by selection; don't want bias affecting population size estimate   
+* πnonsyn/πsyn = 1 with no selection; pretty much always less than one because selection acting on nonsyn (because nonsyn sites almost always deleterious); use ratio as how strong selection is working; low ratio = purifying selection       
+
+### Gayral et al. 2013 paper discussion   
+#### Reference-Free Population Genomics from Next- Generation Transcriptome Data and the Vertebrate– Invertebrate Gap   
+
+* Our expectation is that small-Ne species should show a lower pN, a lower pS, and a higher pN/pS ratio than large-Ne species. (mutations occur in meiosis; large populations are reproducing more leading to more meiosis and more mutations)   
+
+
+
+
+
+
 ------ <div id='id-section20'/>
 ###Page 20:
 ------ <div id='id-section21'/>
