@@ -46,7 +46,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 18: 2017-03-01](#id-section18). Homework Assignment info and WGCNA
 * [Page 19: 2017-03-06](#id-section19). Population Genomics: Steve's Info Update and Alex's Discussion
 * [Page 20: 2017-03-06](#id-section20). Population Genomics Tutorial
-* [Page 21:](#id-section21).
+* [Page 21: 2017-03-07](#id-section21). Homework 2: RNA sequencing for gene expression analyses
 * [Page 22:](#id-section22).
 * [Page 23:](#id-section23).
 * [Page 24:](#id-section24).
@@ -1234,7 +1234,10 @@ $ R
 ```
 
 ------ <div id='id-section21'/>
-###Page 21:
+###Page 21: 2017-03-07 Homework 2: RNA sequencing for gene expression analyses
+
+I found a [website](http://www.gettinggeneticsdone.com/2014/05/r-volcano-plots-to-visualize-rnaseq-microarray.html) that shows how to create volcano plots with count data, which I was able to apply to this data set.
+
 ------ <div id='id-section22'/>
 ###Page 22:
 ------ <div id='id-section23'/>
