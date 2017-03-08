@@ -48,7 +48,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 20: 2017-03-06](#id-section20). Population Genomics Tutorial
 * [Page 21: 2017-03-07](#id-section21). **Homework 2: RNA sequencing for gene expression analyses**
 * [Page 22: 2017-03-08](#id-section22). Effective Population Size and Substitution Rate Info Update
-* [Page 23:](#id-section23).
+* [Page 23: 2017-03-08](#id-section23). Population Genomics Part 2 Tutorial
 * [Page 24:](#id-section24).
 * [Page 25:](#id-section25).
 * [Page 26:](#id-section26).
@@ -1303,7 +1303,69 @@ estimating mu: time (MY) since common ancestor (phylogenetic distance) can be lo
 
 
 ------ <div id='id-section23'/>
-###Page 23:
+###Page 23: 2017-03-08 Population Genomics Part 2 Tutorial   
+   
+[Link](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html) to Tutorial   
+
+### Using R to look at H-W data   
+```
+cd /data/project_data/snps/reads2snps/
+vcftools --gzvcf SSW_byind.txt.vcf.gz --min-alleles 2 --max-alleles 2 --maf 0.02 --max-missing 0.8 --recode --out ~/SSW_all_biallelic_MAF_02_Miss_08  
+gzip SSW_all_biallelic_MAF_02_Miss_08.recode.vcf.gz
+vcftools --gzvcf SSW_all_biallelic_MAF_02_Miss_08.recode.vcf.gz --hardy
+R
+hwe<-read.table("out.hwe",header=TRUE)
+head(hwe)
+which(hwe$P_HET_DEFICIT<0.01)
+#[1] 1001 1021 1023 1300 1302 1320 1407 1409
+hwe[which(hwe$P_HET_DEFICIT<0.01),] ## prints the columns of all the rows that satisfy conditions (deficit p value < 0.01)   
+hwe[which(hwe$P_HET_EXCESS<0.05),] ## excessive heterozygosity p<0.05
+quit()
+```
+P_HET_DEFICIT - inbreeding   
+P_HET_EXCESS - error in mapping/gene duplication (parology)   
+
+### Using Terminal to look at diversity metrics
+* Can look at allele frequency difference between sick and healthy!!   
+* Make Sick.txt and Healthy.txt that lists samples; up to user to decide - do we put individuals that ever got sick into Sick.txt or divide by time points? 
+* We will put SS and HS into Sick.txt and HH into Healthy.txt (leaving out MM)   
+
+Let's grab a pre-made text file (ssw_healthloc.txt) that lists individual, sick type, location, and whether SNP data are available   
+We can use >> to append new info to an existing txt file (add HS individuals to SS)
+```
+cd /data/project_data/snps/reads2snps/
+cp ssw_healthloc.txt ~/mydata/
+cd ~/mydata/
+grep "HH" ssw_healthloc.txt > H_OneSampPerInd.txt
+grep "SS" ssw_healthloc.txt > S_OneSampPerInd.txt
+grep "HS" ssw_healthloc.txt >> S_OneSampPerInd.txt
+```
+vcftools just wants first column with sample ID and doesn't care about info, so we want to isolate the first column with cut   
+We need to give it another name or nothing will be in the file   
+```
+cut -f 1 H_OneSampPerInd.txt > H_OneSampPerInd2.txt
+cut -f 1 S_OneSampPerInd.txt > S_OneSampPerInd2.txt
+```  
+Now we want to calculate allele frequencies   
+--keep says we want to determine frequencies of the subset we made in txt files   
+```
+vcftools --gzvcf SSW_all_biallelic_MAF_02_Miss_08.recode.vcf.gz --freq2 --keep H_OneSampPerInd2.txt --out H_AlleleFreqs   
+vcftools --gzvcf SSW_all_biallelic_MAF_02_Miss_08.recode.vcf.gz --freq2 --keep S_OneSampPerInd2.txt --out S_AlleleFreqs   
+```
+Fst between Healthy and sick   
+```
+vcftools --gzvcf SSW_all_biallelic_MAF_02_Miss_08.recode.vcf.gz --weir-fst-pop H_OneSampPerInd2.txt --weir-fst-pop S_OneSampPerInd2.txt --out HvS_OneSampPerInd
+```
+
+Bringing our allele data into R
+```
+R
+Salleles<-read.table("S_AlleleFreqs.frq", header=T)
+Halleles<-read.table("H_AlleleFreqs.frq",header=T)
+BothAlleles<-merge(Salleles,Halleles,by="CHROM")
+Diffs<-BothAlleles$MAJOR.x - BothAlleles$MAJOR.y
+```
+
 ------ <div id='id-section24'/>
 ###Page 24:
 ------ <div id='id-section25'/>
