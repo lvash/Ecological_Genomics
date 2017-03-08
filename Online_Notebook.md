@@ -47,7 +47,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 19: 2017-03-06](#id-section19). Population Genomics: Steve's Info Update and Alex's Discussion
 * [Page 20: 2017-03-06](#id-section20). Population Genomics Tutorial
 * [Page 21: 2017-03-07](#id-section21). **Homework 2: RNA sequencing for gene expression analyses**
-* [Page 22:](#id-section22).
+* [Page 22: 2017-03-08](#id-section22). Effective Population Size and Substitution Rate Info Update
 * [Page 23:](#id-section23).
 * [Page 24:](#id-section24).
 * [Page 25:](#id-section25).
@@ -1239,7 +1239,69 @@ $ R
 I found a [website](http://www.gettinggeneticsdone.com/2014/05/r-volcano-plots-to-visualize-rnaseq-microarray.html) that shows how to create volcano plots with count data, which I was able to apply to this data set.
 
 ------ <div id='id-section22'/>
-###Page 22:
+###Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
+   
+### Rate of evolution due to the relationship of effective population size and the substitution rate (NeRR)   
+
+Effective population size (Ne): 4 methods to measure
+* Species life history - Ne = (4 * NmNf)/(Nm+Nf) with Nm number of males and Nf number of females   
+* Variance in allele frequency between genome   
+* Genetic polymorphous data   
+* Correlated trait (like body size): correlate body size with effective pop size   
+
+Ne varies across species and genome (genetic hitchhiking/selective sweeps; background selection; fewer sex chromosomes than autosomes - males contribute more mutations than females)   
+These happen with no recombination:   
+selective sweep - harmful mutations increase because beneficial mutations are selected for (and they are linked)   
+background selection - beneficial mutations decrease because linked to harmful/deleterious mutations   
+
+Mutations -      
+* whole gene/chromosome: duplications; inversions; deletion; translocations (chunk of chromosome moves and attaches elsewhere)      
+* base level: point mutation -> substitutions   
+	+ Transitions (purine - purine; pyrimidine - pyrimidine)     
+	+ Transversions (purine - pyrimidine; pyrimidine - purine)      
+* Two types of point mutations   
+	+ Synonymous - silent site -> DNA seq change, amino acid doesn't change; no selection (drift operates)   
+	+ Non synonymous - replacement mutations -> DNA seq change, amino acid changes - selection operates   
+		+ Purifying selection - reducing deleterious alleles    
+		+ Positive selection - advancing beneficial alleles   
+* Five mutation classes   
+	+ Neutral: fitness effect (w) ~ 0, < 1/Ne; no selections; drift operates      
+	+ Slightly deleterious: small effect on fitness; haploid 1/Ne; diploid 1/2Ne; selection and drift operate   
+	+ Slightly advantageous: small effect on fitness; haploid 1/Ne; diploid 1/2Ne; selection and drift operate      
+	+ Completely deleterious: big effect on fitness; > 1/Ne ; **negative** impact on NeRR; selection operates mainly  
+	+ Completely advantageous: big effect on fitness > 1/Ne ; **positive** impact on NeRR; selection operates mainly   
+* Variation in mutation rate (mu)   
+	+ Generation time can influence it (short generation time -> higher mutation rate -> higher NeRR)   
+	+ Selection reduces mutation rate (controversial!!! selection at species or individual level) -> lower NeRR    
+
+NeRR and Linkage   
+* Selective sweep (favors positive mutations but linked to negative)   
+* Clonal interference - 2 individuals; each one has adaptive mutation; which mutation 'wins' and proceeds to next generation   
+
+NeRR and Spatio temporal variation - may be variation across time and space     
+
+NeRR and all mutation (perhaps U shape with Ne on x-axis)      
+
+Fitness landscapes - optimal peaks of fitness for a given trait; populations near the 'peak' will have slower mutation rates than populations far from the peak      
+
+### Take Home Messages   
+* The study of NeRR helps us to uderstand the processes that drive and limit evolution   
+* Drift and selection are the most important forces determining NeRR   
+* We need to work on a better way to estimate Ne   
+* With time, decrease in DNA seq costs will let us better estimate Ne, substitution rate, mutation rates   
+* Most mutations are deleterious   
+
+### Steve's input   
+
+Theta = Ne * mutation rate   (2Ne * mu for diploid, hermaphroditic species; 4Ne * mu for diploid 2 sex organisms)   
+πsyn ~ theta (nucleotide diversity on synonomous sites at most neutral sites estimates theta)   
+**Ne = π/(4 * mu)**   
+estimating mu: time (MY) since common ancestor (phylogenetic distance) can be looked at to see how many mutations per branch leading to species and convert to number of mutations per generation   
+
+
+
+
+
 ------ <div id='id-section23'/>
 ###Page 23:
 ------ <div id='id-section24'/>
