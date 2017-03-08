@@ -1365,6 +1365,16 @@ Halleles<-read.table("H_AlleleFreqs.frq",header=T)
 BothAlleles<-merge(Salleles,Halleles,by="CHROM")
 Diffs<-BothAlleles$MAJOR.x - BothAlleles$MAJOR.y
 ```
+Following the tutorial to make histogram with Fst data   
+```
+fst <- read.table("HvS_OneSampPerInd.weir.fst",header=T)
+pdf("HvS_Fst.pdf")
+hist(fst$WEIR_AND_COCKERHAM_FST, breaks=20, col="red")
+dev.off()
+```
+I brought the pdf to my local computer to look at it and converted it to a jpg.   
+[Histogram Output](https://cloud.githubusercontent.com/assets/15003012/23715108/88e319d0-03f9-11e7-849e-815f1e35cbfe.jpg)   
+
 
 ------ <div id='id-section24'/>
 ###Page 24:
