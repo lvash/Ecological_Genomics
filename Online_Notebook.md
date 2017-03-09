@@ -1236,7 +1236,156 @@ $ R
 ------ <div id='id-section21'/>
 ###Page 21: 2017-03-07 Homework 2: RNA sequencing for gene expression analyses
 
-I found a [website](http://www.gettinggeneticsdone.com/2014/05/r-volcano-plots-to-visualize-rnaseq-microarray.html) that shows how to create volcano plots with count data, which I was able to apply to this data set.
+Here is the code I used to subset out the data into Intertidal versus Subtidal   
+```
+library("DESeq2")
+library("ggplot2")
+
+
+conds <- read.delim("cols_data_trim.txt", header=TRUE, stringsAsFactors=TRUE, row.names=1)
+colData <- as.data.frame(conds)
+colDataINT<-subset(colData, colData$location=="int") ## subsetting colData is easy
+colDataSUB<-subset(colData, colData$location=="sub")
+
+countsTable <- read.delim('countsdata_trim2.txt', header=TRUE, stringsAsFactors=TRUE, row.names=1)
+countData <- as.matrix(countsTable)
+## subsetting countData is trickier because we have to match up the row names in the colData with the column names in the count data to accurately subset
+countDataINT<-countData[, which(colnames(countData) %in% row.names(colDataINT))] 
+countDataSUB<-countData[, -which(colnames(countData) %in% row.names(colDataINT))]
+dim(countDataINT)
+dim(countDataSUB)
+```
+Here is my code for the first model (controlling for location):   
+```
+#################### MODEL NUMBER 1: TEST EFFECT OF HEALTH CONTROLLING FOR LOCATION
+
+ddsFULL <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~ location + health)
+
+ddsFULL <- ddsFULL[ rowSums(counts(ddsFULL)) > 100, ]
+
+colData(ddsFULL)$health <- factor(colData(ddsFULL)$health, levels=c("H","S"))
+
+ddsFULL <- DESeq(ddsFULL)
+resFULL <- results(ddsFULL)
+resFULL <- resFULL[order(resFULL$padj),] #sorts according to pvalue
+head(resFULL)
+summary(resFULL)
+```
+Here are the subsetted models (first just intertidal then just subtidal):   
+```
+##### MODEL SEPARATELY IN EACH LOCATION: INTERTIDAL
+ddsINT <- DESeqDataSetFromMatrix(countData = countDataINT, colData = colDataINT, design = ~ health)
+
+ddsINT <- ddsINT[ rowSums(counts(ddsINT)) > 100, ]
+
+colData(ddsINT)$health <- factor(colData(ddsINT)$health, levels=c("H","S"))
+
+ddsINT <- DESeq(ddsINT)
+resINT <- results(ddsINT)
+resINT <- resINT[order(resINT$padj),] #sorts according to pvalue
+head(resINT)
+summary(resINT)
+
+##### MODEL SEPARATELY IN EACH LOCATION: SUBTIDAL
+ddsSUB <- DESeqDataSetFromMatrix(countData = countDataSUB, colData = colDataSUB, design = ~ health)
+
+ddsSUB <- ddsSUB[ rowSums(counts(ddsSUB)) > 100, ]
+
+colData(ddsSUB)$health <- factor(colData(ddsSUB)$health, levels=c("H","S"))
+
+ddsSUB <- DESeq(ddsSUB)
+resSUB <- results(ddsSUB)
+resSUB <- resSUB[order(resSUB$padj),] #sorts according to pvalue
+head(resSUB)
+summary(resSUB)
+```
+I performed a likelihood ratio test to compare the model controlling for location with a model that doesn't   
+```
+ddsLRT <- DESeq(ddsFULL, parallel=T, test="LRT", reduced = ~ health)
+resLRT <- results(ddsLRT)
+resLRT$symbol <- mcols(ddsLRT)$symbol
+resLRT<-resLRT[order(resLRT$padj),]
+summary(resLRT)
+### look at the pvalue and padj to see if full model is sig diff; if any padj values are significant, indicates that whole model is sig diff
+u<-resLRT$padj<0.01
+length(u[u==TRUE]) #[1] 10151 genes are significantly different between models
+```
+Here is the code for the count plots (all models; 2 genes)   
+```
+###### COUNT PLOTS FOR GENE DN43080c1g1 #########
+## Full model
+dFULL <- plotCounts(ddsFULL, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","score","location")), returnData=TRUE)
+pFULL2 <- ggplot(dFULL, aes(x=score, y=count, color=location, group=health))
+pFULL2 <- pFULL2 +  geom_point() + ggtitle("DN43080c1g1: Full") + stat_smooth(se=FALSE,method="loess") +  scale_y_log10() + scale_color_manual(values=c("#999999", "#E69F00"))   
+
+## Subtidal model
+dSUB2 <- plotCounts(ddsSUB, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","score")), returnData=TRUE)
+pSUB3 <- ggplot(dSUB2, aes(x=score, y=count, color=health))
+pSUB3 <- pSUB3 +  geom_point() + ggtitle("Subtidal") + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+
+## Intertidal model
+dINT <- plotCounts(ddsINT, gene="TRINITY_DN43080_c1_g1_TRINITY_DN43080_c1_g1_i3_g.14110_m.14110", intgroup=(c("health","score")), returnData=TRUE)
+pINT2 <- ggplot(dINT, aes(x=score, y=count, color=health))
+pINT2 <- pINT2 + ggtitle("Intertidal") + geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+
+### COUNT PLOTS FOR GENE DN42073c0g1 #########
+## Subtidal model
+dSUB <- plotCounts(ddsSUB, gene="TRINITY_DN42073_c0_g1_TRINITY_DN42073_c0_g1_i1_g.12173_m.12173", intgroup=(c("health","score")), returnData=TRUE)
+pSUB2 <- ggplot(dSUB, aes(x=score, y=count, color=health))
+pSUB2 <- pSUB2 +  geom_point() + ggtitle("Subtidal") + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+
+## Intertidal   
+dINT2 <- plotCounts(ddsINT, gene="TRINITY_DN42073_c0_g1_TRINITY_DN42073_c0_g1_i1_g.12173_m.12173", intgroup=(c("health","score")), returnData=TRUE)
+pINT3 <- ggplot(dINT2, aes(x=score, y=count, color=health))
+pINT3 <- pINT3 + ggtitle("Intertidal") + geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()
+
+## FULL
+dFULL2 <- plotCounts(ddsFULL, gene="TRINITY_DN42073_c0_g1_TRINITY_DN42073_c0_g1_i1_g.12173_m.12173", intgroup=(c("health","score")), returnData=TRUE)
+pFULL3 <- ggplot(dFULL2, aes(x=score, y=count, color=health))
+pFULL3 <- pFULL3 + ggtitle("DN42073c0g1: Full") + geom_point() + stat_smooth(se=FALSE,method="loess") +  scale_y_log10()+scale_color_manual(values=c("#999999", "#E69F00"))
+
+library(gridExtra)
+### Combining different models for 2 genes: DN43080_c1_g1 and DN42073_c0_g1
+grid.arrange(pFULL2, pINT2, pSUB3,pFULL3,pINT3,pSUB2, ncol=3)
+
+```
+Here is the code for the PCA plots (all models)
+```
+### PCA FOR HEALTHY VS SICK: FULL, SUBTIDAL, INTERTIDAL
+vsdFULL <- varianceStabilizingTransformation(ddsFULL, blind=FALSE)   
+vsdSUB <- varianceStabilizingTransformation(ddsSUB, blind=FALSE)
+vsdINT <- varianceStabilizingTransformation(ddsINT, blind=FALSE)
+
+
+PCA1<-plotPCA(vsdFULL, intgroup=c("health"))
+PCA1<-PCA1 + ggtitle("Location Control")
+PCA2<-plotPCA(vsdINT, intgroup=c("health"))
+PCA2<-PCA2 + ggtitle("Intertidal")
+PCA3<-plotPCA(vsdSUB, intgroup=c("health"))
+PCA3<-PCA3 + ggtitle("Subtidal")
+
+grid.arrange(PCA1,PCA2,PCA3, ncol=1)
+```
+  
+**I found a [website](http://www.gettinggeneticsdone.com/2014/05/r-volcano-plots-to-visualize-rnaseq-microarray.html) that shows how to create volcano plots** with count data, which I was able to apply to this data set.     
+
+```
+## Volcano Plot- Full
+#### I TRIMMED THE GENE NAME TO ONLY SHOW UNIQUE GENE ID WITHIN LONG NAME 
+library(calibrate)
+head(substr(row.names(resFULL), 9,21))
+#### Add the shortened names to the results
+resFULL$Gene<-substr(row.names(resFULL), 9,21) #Made a new column so I can label genes
+head(resFULL)
+
+with(resFULL, plot(log2FoldChange, -log10(padj), pch=20, main="Differential Gene Expression in Healthy versus SSWD Infected Sea Stars", xlim=c(-2.5,4),cex.main=1.8, cex.axis=1.5, cex.lab=1.5))
+with(subset(resFULL, padj<.01 ), points(log2FoldChange, -log10(padj), pch=20, col="blue"))
+with(subset(resFULL, abs(log2FoldChange)>1.5), points(log2FoldChange, -log10(padj), pch=20, col="orange"))
+with(subset(resFULL, padj<.01 & abs(log2FoldChange)>1.5), points(log2FoldChange, -log10(padj), pch=20, col="red"))
+## Add labels
+with(subset(resFULL, padj<.000005 & abs(log2FoldChange)>2), textxy(log2FoldChange, -log10(padj), labs=Gene, cex=1.15))
+```
+Here is the [output](https://cloud.githubusercontent.com/assets/15003012/23735295/ae9d674e-0452-11e7-91b9-72bf08c656c4.png) from one of my earlier versions (later I substituted pvalue for adjusted p-value)   
 
 ------ <div id='id-section22'/>
 ###Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
