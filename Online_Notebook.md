@@ -50,7 +50,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 22: 2017-03-08](#id-section22). Effective Population Size and Substitution Rate Info Update
 * [Page 23: 2017-03-08](#id-section23). Population Genomics Part 2 Tutorial
 * [Page 24: 2017-03-20](#id-section24). Bill Kilpatrick's Info Update
-* [Page 25:](#id-section25).
+* [Page 25: 2017-03-20](#id-section25). Population Genomics Part 3 Tutorial
 * [Page 26:](#id-section26).
 * [Page 27:](#id-section27).
 * [Page 28:](#id-section28).
@@ -1572,7 +1572,35 @@ admixed populations - every individual is going to be a combination of genes; go
 
 
 ------ <div id='id-section25'/>
-### Page 25:
+### Page 25: 2017-03-20. Population Genomics Part 3 Tutorial   
+
+1) Final VCF data (n=24)-> Filter -> Output to Home Directory      
+2) Estimate Healthy and Sick alleles -> f(H) - f(S)   
+3) Fst between H vs S -> output to local machine -> plot R -> estimate pi at synonymous sites, nonsynonymous sites, and nonsyn/syn  -> output to local machine -> compare to Romiguier paper    
+
+### Finishing allele frequency and diversity calculations
+
+**Parsing out data in Terminal from txt file that has individual numbers**   
+```
+cd ~/mydata/
+grep "HH" ssw_healthloc.txt | cut -f1 >H_SampleIDs.txt
+
+wc H_SampleIDs.txt 
+## 8  8 24 H_SampleIDs.txt ##this is the output; gives dimension
+
+```
+**To get both versions of sick individuals (HS and SS) we use this code**   
+```
+grep "HS\|SS" ssw_healthloc.txt | cut -f1 >S_SampleIDs.txt
+```
+
+**Download Fetch or Cyber Duck for easy file transfer from Terminal to computer**   
+
+**Can pick out which genes have high allelic differences**       
+```
+All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele frequency differences (both negative and positive)
+```
+
 ------ <div id='id-section26'/>
 ### Page 26:
 ------ <div id='id-section27'/>
