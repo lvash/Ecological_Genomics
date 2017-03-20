@@ -1272,6 +1272,7 @@ head(resFULL)
 summary(resFULL)
 ```
 Here are the subsetted models (first just intertidal then just subtidal):   
+
 ```
 ##### MODEL SEPARATELY IN EACH LOCATION: INTERTIDAL
 ddsINT <- DESeqDataSetFromMatrix(countData = countDataINT, colData = colDataINT, design = ~ health)
@@ -1581,22 +1582,25 @@ admixed populations - every individual is going to be a combination of genes; go
 ### Finishing allele frequency and diversity calculations
 
 **Parsing out data in Terminal from txt file that has individual numbers**   
+
 ```
 cd ~/mydata/
 grep "HH" ssw_healthloc.txt | cut -f1 >H_SampleIDs.txt
 
 wc H_SampleIDs.txt 
 ## 8  8 24 H_SampleIDs.txt ##this is the output; gives dimension
-
 ```
+
 **To get both versions of sick individuals (HS and SS) we use this code**   
+
 ```
 grep "HS\|SS" ssw_healthloc.txt | cut -f1 >S_SampleIDs.txt
 ```
 
 **Download Fetch or Cyber Duck for easy file transfer from Terminal to computer**   
 
-**Can pick out which genes have high allelic differences**       
+**Can pick out which genes have high allelic differences**      
+
 ```
 All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele frequency differences (both negative and positive)
 ```
