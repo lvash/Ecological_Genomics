@@ -25,7 +25,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 
-###Table of contents for 60 entries         
+### Table of contents for 60 entries         
 * [Page 1: 2017-01-19](#id-section1). First journal article: Ellegren 2014 
 * [Page 2: 2017-01-23](#id-section2). Class notes [MISSED]
 * [Page 3: 2017-01-24](#id-section3). Articles: Rockman 2012 and Lee et al. 2014
@@ -88,7 +88,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 60:](#id-section60).  
 
 ------ <div id='id-section1'/>
-###Page 1: 2017-01-19. First journal article: Ellegren 2014
+### Page 1: 2017-01-19. First journal article: Ellegren 2014
 
 Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**).   
 
@@ -134,7 +134,7 @@ Some parts that stood out to me:
 
 
 ------ <div id='id-section2'/>
-###Page 2: 2017-01-23 Course notes [MISSED]
+### Page 2: 2017-01-23 Course notes [MISSED]
 
 Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).   
 
@@ -145,7 +145,7 @@ Sanger sequencing: "The first method of sequencing the genetic code was devised 
 Illumina: Illumina next-generation sequencing utilizes a fundamentally different approach from the classic Sanger chain-termination method. It leverages sequencing by synthesis (SBS) technology – tracking the addition of labeled nucleotides as the DNA chain is copied – in a massively parallel fashion. [Reference](https://www.illumina.com/technology/next-generation-sequencing.html)      
 
 ------ <div id='id-section3'/>
-###Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
+### Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
 
 ### Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationale for the QTN programme   
 
@@ -238,7 +238,7 @@ If comparing resistance versus susceptibility in populations: which populations 
 
 
 ------ <div id='id-section4'/>
-###Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
+### Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
 
 [Handout and Notes Page 1](https://cloud.githubusercontent.com/assets/15003012/22557682/3f9c49ac-e939-11e6-851f-628492b6a93d.jpg)   
 [Handout and Notes Page 2](https://cloud.githubusercontent.com/assets/15003012/22557681/3f92678e-e939-11e6-8651-c6f9ee686310.jpg)   
@@ -324,7 +324,7 @@ Questions:
 
 
 ------ <div id='id-section5'/>
-###Page 5: 2017-01-30 Choosing SSWD questions   
+### Page 5: 2017-01-30 Choosing SSWD questions   
 
 [Sea Star Wasting Disease Data](https://cloud.githubusercontent.com/assets/15003012/22557818/a82b9f0e-e939-11e6-9862-db46aa909de8.jpg)   
 
@@ -390,7 +390,7 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 
 
 ------ <div id='id-section6'/>
-###Page 6: 2017-02-01 Info Update Blitz
+### Page 6: 2017-02-01 Info Update Blitz
 
 **Whole Genome Sequencing**   
 * Applications: 
@@ -584,7 +584,7 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)    
 ​    
 ------ <div id='id-section8'/>
-###Page 8: 2017-02-03 Article: Dunning et al. 2014   
+### Page 8: 2017-02-03 Article: Dunning et al. 2014   
 ### Divergent transcriptional responses to low temperature among populations of alpine and lowland species of New Zealand stick insects (*Micrarchus*)   
 
 **Background**    
@@ -633,7 +633,7 @@ Is this more than expected? Use Fisher's exact test
 
 
 ------ <div id='id-section9'/> 
-###Page 9: 2017-02-06 Info update for RNA seq and article discussion   
+### Page 9: 2017-02-06 Info update for RNA seq and article discussion   
 
 Beforehand: 
 * Figure out approach   
@@ -677,7 +677,7 @@ Beforehand:
 
 
 ------ <div id='id-section10'/>
-###Page 10: 2017-02-06 RNA-seq Coding   
+### Page 10: 2017-02-06 RNA-seq Coding   
 
 [RNA seq Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-06_RNAseq_tutorial.html)   
 
@@ -704,7 +704,7 @@ TrimmomaticPE: Completed successfully
 Last line I run: fastqc /data/project_data/fastq/19_5-20_S_5_R1.fq.gz   
 
 ------ <div id='id-section11'/>
-###Page 11: 2017-02-08 Transcriptomics info update   
+### Page 11: 2017-02-08 Transcriptomics info update   
 
 Outline:   
 Introduction   
@@ -779,7 +779,7 @@ Skills learning objectives:
 - Evaluate assembly
 
 ------ <div id='id-section12'/>
-###Page 12: 2017-02-10 Prepping for Todd et al. info update      
+### Page 12: 2017-02-10 Prepping for Todd et al. info update      
 
 ## The power and promise of RNA-seq in ecology and evolution   
 
@@ -847,7 +847,7 @@ press ctrl + a + d (detach)
 screen -r (reattach)
 
 ------ <div id='id-section13'/>
-###Page 13: 2017-02-15. SNPs and Population Genomics Info Update
+### Page 13: 2017-02-15. SNPs and Population Genomics Info Update
 
 **Glossary**
 
@@ -902,7 +902,7 @@ SNPs act as 'footprints' for natural selection and can let us know if we need to
 
 
 ------ <div id='id-section14'/>
-###Page 14: 2017-02-15. Article discussion: Zhao et al. 2016
+### Page 14: 2017-02-15. Article discussion: Zhao et al. 2016
 
 [Andrew's Notes](https://adnguyen.github.io/2017_Ecological_Genomics/ANBE_notebook.html#id-section10)
 
@@ -931,7 +931,7 @@ Questions: Does gene level DE count isoforms as one gene?
 
 
 ------ <div id='id-section15'/>
-###Page 15: 2017-02-15 Sequence alignment (SAM) files and Read Count Extraction Coding  
+### Page 15: 2017-02-15 Sequence alignment (SAM) files and Read Count Extraction Coding  
 
 [Link to tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-15_RNAseq_Map_Count.html)   
 
@@ -989,7 +989,7 @@ We are interested in first column (total unique reads)
 
 
 ------ <div id='id-section16'/>
-###Page 16: 2017-02-22 DESeq2 in R
+### Page 16: 2017-02-22 DESeq2 in R
 
 ### Moving the R scripts and files from the server to Ecological Genomics 
 * Open new terminal window and set the working directory to where you want to move files
@@ -1006,7 +1006,7 @@ workflowInstall("rnaseqGene")
 
 
 ------ <div id='id-section17'/>
-###Page 17: 2017-02-27 Scott Edwards paper    
+### Page 17: 2017-02-27 Scott Edwards paper    
 
 **Glossary**
 * **coalescent (multi-species coalescent; MCS)** - two lineages tracing back in time finding common ancestor   
@@ -1021,7 +1021,7 @@ workflowInstall("rnaseqGene")
 Craig Moritz (last author) - Australia; reptiles/amphibian population genetics   
 
 ------ <div id='id-section18'/>
-###Page 18: 2017-03-01 Homework Assignment info and WGCNA
+### Page 18: 2017-03-01 Homework Assignment info and WGCNA
 
 ### WGCNA - Weighted correlation network
 
@@ -1084,7 +1084,7 @@ Ran out of time, didn't finish
 	    
 
 ------ <div id='id-section19'/>
-###Page 19: 2017-03-06 Population Genomics: Steve's Info Update and Alex's Discussion   
+### Page 19: 2017-03-06 Population Genomics: Steve's Info Update and Alex's Discussion   
 
 **Glossary**   
 * paralog: gene duplicate   
@@ -1138,7 +1138,7 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 
 
 ------ <div id='id-section20'/>
-###Page 20:2017-03-06 Population Genomics Tutorial 
+### Page 20:2017-03-06 Population Genomics Tutorial 
 [Link to Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html)   
 
 ```:set nowrap``` in vim does not wrap text and makes it easier to read
@@ -1234,7 +1234,7 @@ $ R
 ```
 
 ------ <div id='id-section21'/>
-###Page 21: 2017-03-07 Homework 2: RNA sequencing for gene expression analyses
+### Page 21: 2017-03-07 Homework 2: RNA sequencing for gene expression analyses
 
 Here is the code I used to subset out the data into Intertidal versus Subtidal   
 ```
@@ -1388,7 +1388,7 @@ with(subset(resFULL, padj<.000005 & abs(log2FoldChange)>2), textxy(log2FoldChang
 Here is the [output](https://cloud.githubusercontent.com/assets/15003012/23735295/ae9d674e-0452-11e7-91b9-72bf08c656c4.png) from one of my earlier versions (later I substituted pvalue for adjusted p-value)   
 
 ------ <div id='id-section22'/>
-###Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
+### Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
    
 ### Rate of evolution due to the relationship of effective population size and the substitution rate (NeRR)   
 
@@ -1452,7 +1452,7 @@ estimating mu: time (MY) since common ancestor (phylogenetic distance) can be lo
 
 
 ------ <div id='id-section23'/>
-###Page 23: 2017-03-08 Population Genomics Part 2 Tutorial   
+### Page 23: 2017-03-08 Population Genomics Part 2 Tutorial   
    
 [Link](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html) to Tutorial   
 
@@ -1526,7 +1526,7 @@ I brought the pdf to my local computer to look at it and converted it to a jpg.
 
 
 ------ <div id='id-section24'/>
-###Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
+### Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
    
 ### Glossary:   
 * Global ancestry (GA) - estimated proportion of ancestry contributed by different populations averaged across genome   
@@ -1568,11 +1568,11 @@ admixed populations - every individual is going to be a combination of genes; go
 
 
 ------ <div id='id-section25'/>
-###Page 25:
+### Page 25:
 ------ <div id='id-section26'/>
-###Page 26:
+### Page 26:
 ------ <div id='id-section27'/>
-###Page 27:
+### Page 27:
 ------ <div id='id-section28'/>
 ###Page 28:
 ------ <div id='id-section29'/>
