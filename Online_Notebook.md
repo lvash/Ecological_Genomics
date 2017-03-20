@@ -1,19 +1,19 @@
-#Ecological Genomics Spring 2017    
+# Ecological Genomics Spring 2017    
 
 ## Author: Lauren Ash      
 
-##Overall Description of notebook      
+## Overall Description of notebook      
 
 This is my online notebook for the Ecological Genomics course. I will update with new techniques I learn, questions that I come up with, and general notes. 
 
 
-##Date started: 2017-01-19 
-##Date end:  -   
+## Date started: 2017-01-19 
+## Date end:  -   
 
-##Philosophy   
+## Philosophy   
 Science should be reproducible and one of the best ways to achieve this is by logging research activities in a notebook. Because science/biology has increasingly become computational, it is easier to document computational projects in an electronic form, which can be shared online through Github.
 
-###Helpful Resources   
+### Helpful Resources   
 [Andrew's Ecological Genomics Webpage](https://adnguyen.github.io/2017_Ecological_Genomics/)   
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)   
 [RNA-seq exercise RMD](./RNASeqPowerActivity.Rmd)        
@@ -49,7 +49,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 21: 2017-03-07](#id-section21). **Homework 2: RNA sequencing for gene expression analyses**
 * [Page 22: 2017-03-08](#id-section22). Effective Population Size and Substitution Rate Info Update
 * [Page 23: 2017-03-08](#id-section23). Population Genomics Part 2 Tutorial
-* [Page 24:](#id-section24).
+* [Page 24: 2017-03-20](#id-section24). Bill Kilpatrick's Info Update
 * [Page 25:](#id-section25).
 * [Page 26:](#id-section26).
 * [Page 27:](#id-section27).
@@ -1526,7 +1526,47 @@ I brought the pdf to my local computer to look at it and converted it to a jpg.
 
 
 ------ <div id='id-section24'/>
-###Page 24:
+###Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
+   
+### Glossary:   
+* Global ancestry (GA) - estimated proportion of ancestry contributed by different populations averaged across genome   
+* Local ancestry (LA) - each chromosome is a mosaic of segments from different ancestral populations - goal is to identify population of origin each position (i.e. neanderthal and recent human chromosome comparisons)   
+* Hidden Markov Model (HMM) - statistical model; assumes Markov processes with unobserved states   
+   
+**Methods for Global Ancestry:**   
+Model based:
+* STRUCTURE - Bayesian approach to use model to designate clusters/populations/ancestry and allelic frequencies associated with populations (using H-W equilibrium and linkage equilibrium)   
+* AdMIXTURE - maximum likelihood to use same mode as STRUCTURE   
+
+Non-parametric approaches (multivariate analyses):   
+* clustering - using pair wise data matrix (distances or similarities, etc); produce phenograms (look like trees) based on overall similarity   
+* ordination - PCA, multiscale dimensioning   
+
+**Methods for Local Ancestry:**   
+admixed populations - every individual is going to be a combination of genes; goal is to recover haplotypes from each of the ancestral populations; Very accurate if 2 source populations, but lose accuracy if there are 3; 4 or 5 and there is very low reliability   
+* Hidden Markov model (HMM) - fit probablistic model to data by modeling joint dependency of alleles and ancestry and uses Bayes' Rule to estimate probability of ancestry by looking at allele configuration   
+* STRUCTURE doesn't model linkage equilibrium so major drawback   
+* LAMP uses sliding window of genome (uses blocks of genome) and assigns ancestral populations by PCA; fast and doesn't lose accuracy 
+* RFMis uses discriminant analysis to take multivariate data and use loading factors for various characters (haplotypes) to maximize separation; very fast, doesn't lose accuracy   
+   
+
+**Weaknesses of Methods**    
+* Assumes we know k (number of ancestral populations) and their allele frequencies; we usually don't know or they are inaccurate   
+* We can do simulations - sig impact on ancestry if you have misinformation about k and allele frequencies (esp closely related ancestral populations; recent admixture)   
+
+**Applications of GA and LA inference**   
+* stratification/population structure - sub populations in seemingly homogeneous populations; DNA profiling, forensics - proportion of population that also has DNA profile?    
+* GA: evolutionary studies for structuring (subpopulations of endangered species?), objectiveley define what population is, population assignment, assignment of immigrants   
+* LA: medicine, mapping genes to diseases by admixture mapping, pharmacogenomics, localize sequences that haven't been determined where they belong in reference so can map with LA; disease-linked genes and variance of those genes   
+
+**Future work and challenges**   
+* Genomics will produce denser mapping of SNPs for much larger sample sizes   
+* Refinement of current methods and new technologies will follow (more reliable for studies)      
+* Improve modeling of linkage disequilibrium to model ancestry   
+
+
+
+
 ------ <div id='id-section25'/>
 ###Page 25:
 ------ <div id='id-section26'/>
