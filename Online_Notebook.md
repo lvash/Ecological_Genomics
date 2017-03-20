@@ -1564,6 +1564,10 @@ admixed populations - every individual is going to be a combination of genes; go
 * Refinement of current methods and new technologies will follow (more reliable for studies)      
 * Improve modeling of linkage disequilibrium to model ancestry   
 
+### Watterson's theta vs pi   
+- bottleneck - lose rare alleles to drift but avg heterozygosity stays high (sites with bars higher than points)   
+- watterson's theta - similar to species richness   
+- pi (heterozygosity) - similar to species evenness    
 
 
 
