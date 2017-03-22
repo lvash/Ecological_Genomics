@@ -51,7 +51,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 23: 2017-03-08](#id-section23). Population Genomics Part 2 Tutorial
 * [Page 24: 2017-03-20](#id-section24). Bill Kilpatrick's Info Update
 * [Page 25: 2017-03-20](#id-section25). Population Genomics Part 3 Tutorial
-* [Page 26:](#id-section26).
+* [Page 26: 2017-03-22](#id-section26). Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)
 * [Page 27:](#id-section27).
 * [Page 28:](#id-section28).
 * [Page 29:](#id-section29).
@@ -1606,7 +1606,12 @@ All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele 
 ```
 
 ------ <div id='id-section26'/>
-### Page 26:
+### Page 26: 2017-03-22. Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)   
+
+πs =   0.00585312 [0.005172; 0.006598]   
+πn/πs = 0.264041 [0.223914; 0.310575]   
+
+
 ------ <div id='id-section27'/>
 ### Page 27:
 ------ <div id='id-section28'/>
