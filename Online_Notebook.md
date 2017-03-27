@@ -135,7 +135,9 @@ Some parts that stood out to me:
 **How can I apply to my research?** Trait mapping? Could compare genomes of asymptomatic and symptomatic ranavirus-infected individuals and seeing if there are allelic variants
 
 
------- <div id='id-section2'/>
+------   
+<div id='id-section2'/>  
+
 ### Page 2: 2017-01-23 Course notes [MISSED]
 
 Andrew posted notes of the class and Melissa's info update that I missed [here](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-3-2017-01-23-day-2-course-notes).   
@@ -1607,7 +1609,9 @@ grep "HS\|SS" ssw_healthloc.txt | cut -f1 >S_SampleIDs.txt
 All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele frequency differences (both negative and positive)
 ```
 
------- <div id='id-section26'/>   
+------   
+<div id='id-section26'/>  
+
 ### Page 26: 2017-03-22. Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)   
 
 πs =   0.00585312 [0.005172; 0.006598]   
