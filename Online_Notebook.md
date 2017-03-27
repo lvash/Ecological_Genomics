@@ -52,7 +52,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 24: 2017-03-20](#id-section24). Bill Kilpatrick's Info Update
 * [Page 25: 2017-03-20](#id-section25). Population Genomics Part 3 Tutorial
 * [Page 26: 2017-03-22](#id-section26). Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)
-* [Page 27:](#id-section27).
+* [Page 27: 2017-03-27](#id-section27). Selective sweep info update (Allison)
 * [Page 28:](#id-section28).
 * [Page 29:](#id-section29).
 * [Page 30:](#id-section30).
@@ -1618,8 +1618,29 @@ All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele 
 πn/πs = 0.264041 [0.223914; 0.310575]   
 
 
------- <div id='id-section27'/>
-### Page 27:
+------   <div id='id-section27'/>  
+### Page 27: 2017-03-27. Selective sweep info update (Allison)      
+**sweep**: pattern whereby a single adaptive allele "sweeps" through populations (goes to fixation or nearly so)   
+**hard sweep**: single adaptive allele in common genetic background (sharp decrease of genetic diversity)   
+**soft sweep**: more than one adaptive allele in different genetic backgrounds (slight decrease of genetic diversity; shallower slope)  
+Ex: for soft sweep; several alleles can be resistant to HIV (phylogenetic tree has different resistant alleles for each monophyletic group)   
+
+Pleuni Pennings - Stanford University; has students create videos on papers published   
+
+Sweeps increase frequency of allele and hitchhiking (closely linked) genes within population   
+- can be hard on a local scale and soft on a global scale (i.e. lactose tolerance selected for in two different areas)   
+
+theta - rate at which mutation enters a population   
+theta = 2Ne * mu   
+- fitness effects and population size affect theta   
+
+alternative hypotheses to selective sweeps:    
+- genetic drift is causing allelic differences   
+- no functional differences    
+- cause and effect? was selection operating before selective event?   
+
+
+
 ------ <div id='id-section28'/>
 ###Page 28:
 ------ <div id='id-section29'/>
