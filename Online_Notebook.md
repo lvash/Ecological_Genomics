@@ -1137,7 +1137,7 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 
 
 
------- <div id='id-section20'/>
+------ <div id='id-section20'/>   
 ### Page 20:2017-03-06 Population Genomics Tutorial 
 [Link to Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html)   
 
@@ -1388,7 +1388,7 @@ with(subset(resFULL, padj<.000005 & abs(log2FoldChange)>2), textxy(log2FoldChang
 ```
 Here is the [output](https://cloud.githubusercontent.com/assets/15003012/23735295/ae9d674e-0452-11e7-91b9-72bf08c656c4.png) from one of my earlier versions (later I substituted pvalue for adjusted p-value)   
 
------- <div id='id-section22'/>
+------ <div id='id-section22'/>   
 ### Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
    
 ### Rate of evolution due to the relationship of effective population size and the substitution rate (NeRR)   
@@ -1452,7 +1452,7 @@ estimating mu: time (MY) since common ancestor (phylogenetic distance) can be lo
 
 
 
------- <div id='id-section23'/>
+------ <div id='id-section23'/>   
 ### Page 23: 2017-03-08 Population Genomics Part 2 Tutorial   
    
 [Link](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html) to Tutorial   
@@ -1526,7 +1526,7 @@ I brought the pdf to my local computer to look at it and converted it to a jpg.
 [Histogram Output](https://cloud.githubusercontent.com/assets/15003012/23715108/88e319d0-03f9-11e7-849e-815f1e35cbfe.jpg)   
 
 
------- <div id='id-section24'/>
+------ <div id='id-section24'/>   
 ### Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
    
 ### Glossary:   
@@ -1572,7 +1572,7 @@ admixed populations - every individual is going to be a combination of genes; go
 
 
 
------- <div id='id-section25'/>
+------ <div id='id-section25'/>   
 ### Page 25: 2017-03-20. Population Genomics Part 3 Tutorial   
 
 1) Final VCF data (n=24)-> Filter -> Output to Home Directory      
@@ -1605,7 +1605,7 @@ grep "HS\|SS" ssw_healthloc.txt | cut -f1 >S_SampleIDs.txt
 All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele frequency differences (both negative and positive)
 ```
 
------- <div id='id-section26'/>
+------ <div id='id-section26'/>   
 ### Page 26: 2017-03-22. Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)   
 
 πs =   0.00585312 [0.005172; 0.006598]   
