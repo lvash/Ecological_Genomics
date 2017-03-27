@@ -87,7 +87,9 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 59:](#id-section59).
 * [Page 60:](#id-section60).  
 
------- <div id='id-section1'/>
+------   
+<div id='id-section1'/>  
+
 ### Page 1: 2017-01-19. First journal article: Ellegren 2014
 
 Here are [Andrew's thoughts](https://github.com/adnguyen/2017_Ecological_Genomics/blob/master/ANBE_notebook.md#page-2-2017-01-20-readings-for-2017-01-25-monday) on the paper "Genome sequencing and population genomics in non-model organisms" (under the heading **Now paper notes:**).   
