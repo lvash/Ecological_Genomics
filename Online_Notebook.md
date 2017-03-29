@@ -1530,7 +1530,8 @@ I brought the pdf to my local computer to look at it and converted it to a jpg.
 [Histogram Output](https://cloud.githubusercontent.com/assets/15003012/23715108/88e319d0-03f9-11e7-849e-815f1e35cbfe.jpg)   
 
 
------- <div id='id-section24'/>   
+------      
+<div id='id-section24'/>   
 ### Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
    
 ### Glossary:   
@@ -1576,18 +1577,20 @@ admixed populations - every individual is going to be a combination of genes; go
 
 
 
------- <div id='id-section25'/>   
-### Page 25: 2017-03-20. Population Genomics Part 3 Tutorial   
+------    
+
+<div id='id-section25'/>     
+### Page 25: 2017-03-20. Population Genomics Part 3 Tutorial      
 
 1) Final VCF data (n=24)-> Filter -> Output to Home Directory      
 2) Estimate Healthy and Sick alleles -> f(H) - f(S)   
 3) Fst between H vs S -> output to local machine -> plot R -> estimate pi at synonymous sites, nonsynonymous sites, and nonsyn/syn  -> output to local machine -> compare to Romiguier paper    
 
-### Finishing allele frequency and diversity calculations
+### Finishing allele frequency and diversity calculations     
 
 **Parsing out data in Terminal from txt file that has individual numbers**   
 
-```
+```UNIX
 cd ~/mydata/
 grep "HH" ssw_healthloc.txt | cut -f1 >H_SampleIDs.txt
 
@@ -1597,19 +1600,20 @@ wc H_SampleIDs.txt
 
 **To get both versions of sick individuals (HS and SS) we use this code**   
 
-```
+```UNIX  
 grep "HS\|SS" ssw_healthloc.txt | cut -f1 >S_SampleIDs.txt
-```
+```    
 
 **Download Fetch or Cyber Duck for easy file transfer from Terminal to computer**   
 
 **Can pick out which genes have high allelic differences**      
 
-```
+```UNIX
 All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele frequency differences (both negative and positive)
-```
+```    
 
-------   
+------      
+
 <div id='id-section26'/>  
 
 ### Page 26: 2017-03-22. Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)   
