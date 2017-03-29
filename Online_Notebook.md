@@ -53,7 +53,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 25: 2017-03-20](#id-section25). Population Genomics Part 3 Tutorial
 * [Page 26: 2017-03-22](#id-section26). Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)
 * [Page 27: 2017-03-27](#id-section27). Selective sweep info update (Allison)
-* [Page 28:](#id-section28).
+* [Page 28: 2017-03-29](#id-section28). Detecting local adaptation info update (Lauren Ashlock)
 * [Page 29:](#id-section29).
 * [Page 30:](#id-section30).
 * [Page 31:](#id-section31).
@@ -1642,7 +1642,51 @@ alternative hypotheses to selective sweeps:
 
 
 ------ <div id='id-section28'/>
-###Page 28:
+###Page 28: 2017-03-29. Detecting local adaptation info update (Lauren Ashlock)   
+
+Local adaptation (i.e. sea stars adapted to disease in a particular location)   
+
+Different approaches:   
+* genetic - environment association analyse   
+* differentiation outlier method (Fst)   
+
+Challenges:   
+* Confounding factors   
+- demographic history   
+- neutral population structure   
+- background selection   
+* Missing genome   
+- reduced representation   
+- missing structural variants in reference   
+- loss of repetitive regions/paralogs   
+* Missing landscape   
+- low resolution environmental data   
+- scale of local adaptation   
+- multi colinearity (i.e. if temperature is related to disease prevalence)      
+
+Solutions:    
+* Confounding factors   
+- null demographic models   
+- relatedness among samples   
+* Missing genome   
+- exome capture or RNA-seq   
+- whole genome sequencing (create de novo)   
+- sufficient depth of coverage   
+* Missing landscape   
+- know system   
+* Other considerations   
+- sampling strategy   
++ number of individuals   
++ paired sampling   
+- multiple comparisons   
++ sliding window (instead of all at once)   
++ establish FDR (false discovery rate)  
+- genomic architecture   
+* Final notes   
+- pair with ecological, functional studies; experimental studies   
+
+
+
 ------ <div id='id-section29'/>
 ###Page 29:
 ------ <div id='id-section30'/>
