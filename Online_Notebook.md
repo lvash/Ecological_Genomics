@@ -1641,16 +1641,20 @@ alternative hypotheses to selective sweeps:
 
 
 
------- <div id='id-section28'/>
+------    
+<div id='id-section28'/>   
+
 ###Page 28: 2017-03-29. Detecting local adaptation info update (Lauren Ashlock)   
 
 Local adaptation (i.e. sea stars adapted to disease in a particular location)   
 
 Different approaches:   
+
 * genetic - environment association analyse   
 * differentiation outlier method (Fst)   
 
 Challenges:   
+
 * Confounding factors   
 - demographic history   
 - neutral population structure   
@@ -1665,6 +1669,7 @@ Challenges:
 - multi colinearity (i.e. if temperature is related to disease prevalence)      
 
 Solutions:    
+
 * Confounding factors   
 - null demographic models   
 - relatedness among samples   
@@ -1684,6 +1689,9 @@ Solutions:
 - genomic architecture   
 * Final notes   
 - pair with ecological, functional studies; experimental studies   
+
+Ideal pH study:   
+paired populations of low to high pH across latitude     
 
 
 
