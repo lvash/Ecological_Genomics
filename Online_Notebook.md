@@ -1698,6 +1698,31 @@ Solutions:
 Ideal pH study:   
 paired populations of low to high pH across latitude     
 
+### Population Genomics Tutorial 4   
+dataset of i individuals @ j SNPs   
+-> Pr(Genotypes | K, Q, P)      
+K = # groups   
+Q = ancestry (proportion of an individual's genome)   
+P = allele frequencies at each SNP in each K population   
+Genotype matrix 24 individuals x 5,317 SNPs   
+Divides individuals into chunks, masks one group, uses unmasked individuals as 'train' data, and use masked group as 'test' data (cross validation); best K is lowest cross-validation score   
+
+
+Admixture does it all within a maximum likelihood model, not bayesian   
+Fast, but does not differential support for different models (which number of K is best)   
+
+
+For our own research, we won't have to change .spid file except defining populations:    
+#### Select population definition file:   
+VCF_PARSER_POP_FILE_QUESTION=./SSW_tidal.pops     
+and making sure file output format is correct:    
+#### EIGENSOFT Writer questions   
+WRITER_FORMAT=EIGENSOFT   
+
+bash scripts always begin with:   
+```   
+#!/bin/bash
+```   
 
 
 ------ <div id='id-section29'/>
