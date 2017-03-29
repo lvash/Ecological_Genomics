@@ -1723,7 +1723,28 @@ bash scripts always begin with:
 ```   
 #!/bin/bash
 ```   
+Changed vcf2geno.sh file to:   
+```
+java -Xmx512M -jar /data/popgen/PGDSpider_2.0.9.0/PGDSpider2-cli.jar -inputfile ./SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf -inputformat VCF -outputfile ./SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf.geno -outputformat EIGENSOFT -spid ./vcf2admixture_SSW.spid
+```
+**FOR LOOPS** IN TERMINAL LOOK LIKE:   
+```
+for K in {1..10}
 
+do
+
+admixture -C 0.000001 --cv ./SSW_all_biallelic.MAF0.02.Miss1.0.recode.vcf.geno $K \
+| tee log${K}.out
+
+done
+
+# After the for loop finishes, you can use 'grep' to grab the values of the CV from each separate log file and append them into a new summary text file.
+
+grep CV log*.out >chooseK.txt
+```
+-C in admixture function; at each iteration, climb up to peak of likelihood - which point can you stop?   
+--cv applies cross validation   
+| sends info to log file
 
 ------ <div id='id-section29'/>
 ###Page 29:
