@@ -1649,9 +1649,9 @@ alternative hypotheses to selective sweeps:
 
 <div id='id-section28'/>   
 
-###Page 28: 2017-03-29. Detecting local adaptation info update (Lauren Ashlock)   
+### Page 28: 2017-03-29. Detecting local adaptation info update (Lauren Ashlock)   
 
-Local adaptation (i.e. sea stars adapted to disease in a particular location)   
+Local adaptation (i.e. sea stars adapted to disease in a particular location)      
 
 Different approaches:   
 
