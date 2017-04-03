@@ -1782,9 +1782,49 @@ LD shows an adaptive allele present in every individual which helps, but if adap
 neutral locations - intergenic loci (between genes; noncoding regions; contain promoters and regulatory regions though)   
 frequency (y) to chi-squared (x) plot: neutral distribution and non-neutral distribution, look at tail extremes to find loci under spatial heterogeneous selection (diversifying selection on tails; stabilizing selection in center of distribution is what they want), remove extremes, recalculate distribution, plot tail distribution on top of recalculated distribution; in the dist that include extremes, the Fst's that exceed the recalculated distribution with no extremes are deemed significant   
 
+### Rscript for Fst analysis   
+
+```{r}
+### Install packages  
+library(devtools)
+source("http://bioconductor.org/biocLite.R")
+biocLite("qvalue")
+install_github("whitlock/OutFLANK") 
+library(OutFLANK)
+library(vcfR)
+library(adegenet)
+
+### Read in your .geno file. OutFlank requires it to be transposed, so we'll do that next 
+sswgeno_in<- read.fwf("SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf.geno", width=rep(1,24))
+sswgeno<-t(sswgeno_in)
+dim(sswgeno)
+
+## Read in metadata
+ssw_meta<-read.table("ssw_healthloc.txt",T) 
+ssw_meta<-ssw_meta[order(ssw_meta$Individual),] #reorder meta data by Ind number
+ssw_meta$Trajectory[which(ssw_meta$Trajectory == 'MM')] = NA # remove MMs from analysis
 
 
+### Using OutFLANK
 
+OF_SNPs <- MakeDiploidFSTMat(SNPmat = sswgeno, locusNames = seq(from= 1,to =5317, by=1), popNames = ssw_meta$Trajectory)
+head(OF_SNPs)
+OF_out <- OutFLANK(FstDataFrame = OF_SNPs, LeftTrimFraction = 0.05, RightTrimFraction = 0.05, Hmin=0.1, NumberOfSamples =  3, qthreshold = 0.1) ## takes Fst data to find outliers using trimmed likelihood approach
+OutFLANKResultsPlotter(OFoutput=OF_out, withOutliers = T, NoCorr = T, Hmin=0.1, binwidth = 0.005, titletext = "Scan for local selection")
+outliers<-which(OF_out$results$OutlierFlag=="TRUE")   
+
+### We can extract info about the outliers by reading in the vcf file and looking at the annotations   
+vcf1<- read.vcfR("SSW_all_biallelic.MAF0.02.Miss0.8.recode.vcf")
+dim(vcf1)
+vcfann <- as.data.frame(getFIX(vcf1)) #getFIX gets annotations   
+vcfann[outliers,]
+```
+
+Then go to terminal: 
+```{UNIX}
+vim /data/project_data/assembly/08-11-35-36_cl20_longest_orfs_gene.cds
+```
+we can use the gene IDs (i.e. DN46509); match gene ID using (/DN46509), copy sequence into [BlastX](https://blast.ncbi.nlm.nih.gov/Blast.cgi)   
 
 
 
