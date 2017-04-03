@@ -1747,7 +1747,7 @@ grep CV log*.out >chooseK.txt
 | sends info to log file
 
 ------ <div id='id-section29'/>
-###Page 29: 2017-04-03. Karl Fetter Guest Lecture: Fst; outliers   
+### Page 29: 2017-04-03. Karl Fetter Guest Lecture: Fst; outliers   
 
 Outline      
 * Inbreeding produces structured populations   
@@ -1782,7 +1782,7 @@ LD shows an adaptive allele present in every individual which helps, but if adap
 neutral locations - intergenic loci (between genes; noncoding regions; contain promoters and regulatory regions though)   
 frequency (y) to chi-squared (x) plot: neutral distribution and non-neutral distribution, look at tail extremes to find loci under spatial heterogeneous selection (diversifying selection on tails; stabilizing selection in center of distribution is what they want), remove extremes, recalculate distribution, plot tail distribution on top of recalculated distribution; in the dist that include extremes, the Fst's that exceed the recalculated distribution with no extremes are deemed significant   
 
-### Rscript for Fst analysis   
+### R script for Fst analysis   
 
 ```{r}
 ### Install packages  
@@ -1836,60 +1836,60 @@ we can use the gene IDs (i.e. DN46509); match gene ID using (/DN46509), copy seq
 ------ <div id='id-section32'/>
 ###Page 32:
 ------ <div id='id-section33'/>
-###Page 33:
+### Page 33:
 ------ <div id='id-section34'/>
-###Page 34:
+### Page 34:
 ------ <div id='id-section35'/>
-###Page 35:
+### Page 35:
 ------ <div id='id-section36'/>
-###Page 36:
+### Page 36:
 ------ <div id='id-section37'/>
-###Page 37:
+### Page 37:
 ------ <div id='id-section38'/>
-###Page 38:
+### Page 38:
 ------ <div id='id-section39'/>
-###Page 39:
+### Page 39:
 ------ <div id='id-section40'/>
-###Page 40:
+### Page 40:
 ------ <div id='id-section41'/>
-###Page 41:
+### Page 41:
 ------ <div id='id-section42'/>
-###Page 42:
+### Page 42:
 ------ <div id='id-section43'/>
-###Page 43:
+### Page 43:
 ------ <div id='id-section44'/>
-###Page 44:
+### Page 44:
 ------ <div id='id-section45'/>
-###Page 45:
+### Page 45:
 ------ <div id='id-section46'/>
-###Page 46:
+### Page 46:
 ------ <div id='id-section47'/>
-###Page 47:
+### Page 47:
 ------ <div id='id-section48'/>
-###Page 48:
+### Page 48:
 ------ <div id='id-section49'/>
-###Page 49:
+### Page 49:
 ------ <div id='id-section50'/>
-###Page 50:
+### Page 50:
 ------ <div id='id-section51'/>
-###Page 51:
+### Page 51:
 ------ <div id='id-section52'/>
-###Page 52:
+### Page 52:
 ------ <div id='id-section53'/>
-###Page 53:
+### Page 53:
 ------ <div id='id-section54'/>
 ###Page 54:
 ------ <div id='id-section55'/>
-###Page 55:
+### Page 55:
 ------ <div id='id-section56'/>
-###Page 56:
+### Page 56:
 ------ <div id='id-section57'/>
-###Page 57:
+### Page 57:
 ------ <div id='id-section58'/>
-###Page 58:
+### Page 58:
 ------ <div id='id-section59'/>
-###Page 59:
+### Page 59:
 ------ <div id='id-section60'/>
-###Page 60:
+### Page 60:
 
 ------
