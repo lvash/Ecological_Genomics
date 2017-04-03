@@ -54,7 +54,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 26: 2017-03-22](#id-section26). Population Genomics Part 4 (Finishing heterozygosity estimates and PCA)
 * [Page 27: 2017-03-27](#id-section27). Selective sweep info update (Allison)
 * [Page 28: 2017-03-29](#id-section28). Detecting local adaptation info update (Lauren Ashlock)
-* [Page 29:](#id-section29).
+* [Page 29: 2017-04-03](#id-section29). Karl Fetter Guest Lecture: Fst; outliers
 * [Page 30:](#id-section30).
 * [Page 31:](#id-section31).
 * [Page 32:](#id-section32).
@@ -1747,7 +1747,48 @@ grep CV log*.out >chooseK.txt
 | sends info to log file
 
 ------ <div id='id-section29'/>
-###Page 29:
+###Page 29: 2017-04-03. Karl Fetter Guest Lecture: Fst; outliers   
+
+Outline      
+* Inbreeding produces structured populations   
+* Selective sweeps change allele frequencies in populations   
+* empirical p-values created from distributions of putatively neutral loci are super useful for finding natural selection   
+* methods from Whitlock and Lauterhouse called OutFlank (2015)
+
+Questions:   
+* What challenges do outlier detection methods face?   
+* How is linkage disequilibrium (LD) our friend and foe for finding loci under selection?   
+
+structured population: change in allele frequency from one population to another   
+
+F-statistics: created by Sewell Wright; 0 to 1 (1=completely inbred; structured)      
+H - Heterozygosity
+I - individual   
+S - subpopulation
+T - total 
+probability that two alleles sampled from individuals are identical by descent   
+
+F = inbreeding coefficient   
+Fst = (Heterozygosity of total - heterozyg of subpopulation) / total heterozyg   
+Fis = (expected(Hs) - Obs(Hs))/expected(Hs)   
+Fit = (Ht - Hi)/Ht   
+
+Vw (within population genetic variance) - on plot of genetic variation (y) as function of Fst (x) - quadratic curve     
+Vb (regional diversity) -   plot almost linear (high genetic variance with F=1; metapopulations are inbred but distinct from each other)   
+Vt (Fst) - exponential and then plateaus   
+
+LD shows an adaptive allele present in every individual which helps, but if adaptive allele has neutral 'hitchhikers' can' tell the two apart   
+
+neutral locations - intergenic loci (between genes; noncoding regions; contain promoters and regulatory regions though)   
+frequency (y) to chi-squared (x) plot: neutral distribution and non-neutral distribution, look at tail extremes to find loci under spatial heterogeneous selection (diversifying selection on tails; stabilizing selection in center of distribution is what they want), remove extremes, recalculate distribution, plot tail distribution on top of recalculated distribution; in the dist that include extremes, the Fst's that exceed the recalculated distribution with no extremes are deemed significant   
+
+
+
+
+
+
+
+
 ------ <div id='id-section30'/>
 ###Page 30:
 ------ <div id='id-section31'/>
