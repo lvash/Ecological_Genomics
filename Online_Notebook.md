@@ -56,7 +56,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 28: 2017-03-29](#id-section28). Detecting local adaptation info update (Lauren Ashlock)
 * [Page 29: 2017-04-03](#id-section29). Karl Fetter Guest Lecture: Fst; outliers
 * [Page 30: 2017-04-04](#id-section30). **Homework 3: Population genomic diversity and structure**
-* [Page 31:](#id-section31).
+* [Page 31: 2017-04-05](#id-section31). Melissa's Info update: Annotation/Enrichment
 * [Page 32:](#id-section32).
 * [Page 33:](#id-section33).
 * [Page 34:](#id-section34).
@@ -1914,7 +1914,32 @@ After filtering, kept 2071 out of a possible 7486938 Sites
 ```
 
 ------ <div id='id-section31'/>
-###Page 31:
+
+### Page 31: 2017-04-05. Melissa's Info update: Annotation/Enrichment      
+
+Processing raw data: file types: .fastq ; programs: Trimmomatic   
+transcriptome assembly: file types: .fasta ; programs: Trinity   
+annotation (file type: .fasta; program: BLAST) OR map reads (file types: .sam ; program: BWA)   
+
+map reads -> differential gene expression analysis (file: counts table; program: DESeq2) or population genomics (file: .vcf; program: PCA, DAPC, ADMIXTURE)   
+
+Output: Log fold change, pvalue, stats (DGE); Fst, DAPC/PCA loadings (pop genom); **but what is biological function and does it match our predictions?** -> functional enrichment analyses (use results from DGE, Fst, and use program called GO Mann-Whitney U made by Dixon et al. paper using lots of file types)         
+
+#### Annotation   
+* BLAST2GO (pay for it) - upload fasta file and spits out gene name and best hits   
+* use "Brute Force" where you do everything yourself    
+* somewhere in between using pipelines created from other people (Trinotate)   
+
+* Start with .fasta file that has your genes -> databases     
+* Use program (BLAST): gives e-value (lower is better like pval; 10^-2 less stringent to 10^-50 more stringent), bit score (bigger is better), % identity and length (bigger better)     
+	+ blastp (query/assembly/.fasta: .pep (amino acid AA); subject/database/.db: .pep)    
+	+ blastx (query: .csd (nucleotide) ->blasts 6x ; subject: .pep (takes longer, but if unsure about AA, better match)   
+* another program named DIAMOND   
+	+ UniProt - protein (every protein associated with functional terms: Gene Ontology, Kegg Pathways, Protein domains)   
+* databases: NCBIs, NR (non-redundant; protein)   
+
+
+
 ------ <div id='id-section32'/>
 ###Page 32:
 ------ <div id='id-section33'/>
