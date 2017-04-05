@@ -1945,14 +1945,20 @@ Output: Log fold change, pvalue, stats (DGE); Fst, DAPC/PCA loadings (pop genom)
 ### Page 32: 2017-04-05. Gene Annotation Tutorial   
 
 Fisher's Exact Test   
-| | non-DEG | DEG |   
+
+| 		| non-DEG 	| DEG 	|   
 | ------------- |:-------------:| -----:|
-| not in GO:X | 1800 | 200 |   
-| GO:X | 50 | 50 |
+| not in GO:X 	| 1800 		| 200 	|   
+| GO:X 		| 50 		| 50	|
 
 10% DEG but not in GO category   
 50% DEG in GO category (significant! 5x)    
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 
