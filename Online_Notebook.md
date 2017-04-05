@@ -55,7 +55,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 27: 2017-03-27](#id-section27). Selective sweep info update (Allison)
 * [Page 28: 2017-03-29](#id-section28). Detecting local adaptation info update (Lauren Ashlock)
 * [Page 29: 2017-04-03](#id-section29). Karl Fetter Guest Lecture: Fst; outliers
-* [Page 30:](#id-section30).
+* [Page 30: 2017-04-04](#id-section30). **Homework 3: Population genomic diversity and structure**
 * [Page 31:](#id-section31).
 * [Page 32:](#id-section32).
 * [Page 33:](#id-section33).
@@ -1830,7 +1830,89 @@ we can use the gene IDs (i.e. DN46509); match gene ID using (/DN46509), copy seq
 
 
 ------ <div id='id-section30'/>
-###Page 30:
+
+### Page 30: 2017-04-04. **Homework 3: Population genomic diversity and structure**  
+
+
+Original output (done with class):   
+
+```{UNIX}
+Parameters as interpreted:
+	--gzvcf SSW_by24inds.txt.vcf.gz
+	--maf 0.02
+	--max-alleles 2
+	--min-alleles 2
+	--max-missing 0.8
+	--out /users/l/v/lvash/SSW_original
+	--recode
+
+Using zlib version: 1.2.7
+After filtering, kept 24 out of 24 Individuals
+Outputting VCF file...
+After filtering, kept 5317 out of a possible 7486938 Sites
+```
+### Changing maf to 0.05 decreases sites retained:   
+
+```
+vcftools --gzvcf SSW_by24inds.txt.vcf.gz --min-alleles 2 --max-alleles 2 --maf 0.05 --max-missing 0.8 --recode --out ~/hw2/SSW_maf0.05
+Parameters as interpreted:
+	--gzvcf SSW_by24inds.txt.vcf.gz
+	--maf 0.05
+	--max-alleles 2
+	--min-alleles 2
+	--max-missing 0.8
+	--out /users/l/v/lvash/SSW_all_biallelic.MAF0.05.Miss0.8
+	--recode
+
+Using zlib version: 1.2.7
+After filtering, kept 24 out of 24 Individuals
+Outputting VCF file...
+After filtering, kept 1899 out of a possible 7486938 Sites
+```
+
+### I tried increasing max-missing option to 1 but it drastically reduced sites retained:   
+
+```
+vcftools --gzvcf SSW_by24inds.txt.vcf.gz --min-alleles 2 --max-alleles 2 --maf 0.05 --max-missing 1 --recode --out ~/hw2/max-missing1
+
+Parameters as interpreted:
+	--gzvcf SSW_by24inds.txt.vcf.gz
+	--maf 0.05
+	--max-alleles 2
+	--min-alleles 2
+	--max-missing 1
+	--out /users/l/v/lvash/hw2/SSW_exclude_MM
+	--recode
+
+Using zlib version: 1.2.7
+After filtering, kept 24 out of 24 Individuals
+Outputting VCF file...
+After filtering, kept 414 out of a possible 7486938 Sites
+```
+
+### I am removing MM from the analysis which results in more sites (less than 100 though) being retained :   
+
+```
+vcftools --gzvcf SSW_by24inds.txt.vcf.gz --min-alleles 2 --max-alleles 2 --maf 0.05 --max-missing 0.8 --remove MM_SampleIDs.txt --recode --out ~/hw2/SSW_exclude_MM
+
+Parameters as interpreted:
+	--gzvcf SSW_by24inds.txt.vcf.gz
+	--exclude MM_SampleIDs.txt
+	--maf 0.05
+	--max-alleles 2
+	--min-alleles 2
+	--max-missing 0.8
+	--out /users/l/v/lvash/hw2/SSW_exclude_MM
+	--recode
+
+Using zlib version: 1.2.7
+Excluding individuals in 'exclude' list
+After filtering, kept 22 out of 24 Individuals
+Outputting VCF file...
+After filtering, kept 2071 out of a possible 7486938 Sites
+
+```
+
 ------ <div id='id-section31'/>
 ###Page 31:
 ------ <div id='id-section32'/>
