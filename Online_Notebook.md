@@ -1913,6 +1913,8 @@ After filtering, kept 2071 out of a possible 7486938 Sites
 
 ```
 
+
+
 ------ <div id='id-section31'/>
 
 ### Page 31: 2017-04-05. Melissa's Info update: Annotation/Enrichment      
@@ -1954,11 +1956,11 @@ Fisher's Exact Test
 10% DEG but not in GO category   
 50% DEG in GO category (significant! 5x)    
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
+OR compare distributions of metric (Fst, Fstat, pval) with those in immune response category (for example) to metrics of those not in category   
+
+### [Annotation Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-04-05_annotation_tutorial3.html)   
+
 
 
 
