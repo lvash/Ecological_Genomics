@@ -57,7 +57,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 29: 2017-04-03](#id-section29). Karl Fetter Guest Lecture: Fst; outliers
 * [Page 30: 2017-04-04](#id-section30). **Homework 3: Population genomic diversity and structure**
 * [Page 31: 2017-04-05](#id-section31). Melissa's Info update: Annotation/Enrichment
-* [Page 32:](#id-section32).
+* [Page 32: 2017-04-05](#id-section32). Gene Annotation Tutorial
 * [Page 33:](#id-section33).
 * [Page 34:](#id-section34).
 * [Page 35:](#id-section35).
@@ -1940,8 +1940,22 @@ Output: Log fold change, pvalue, stats (DGE); Fst, DAPC/PCA loadings (pop genom)
 
 
 
------- <div id='id-section32'/>
-###Page 32:
+------ <div id='id-section32'/>   
+
+### Page 32: 2017-04-05. Gene Annotation Tutorial   
+
+Fisher's Exact Test   
+| | non-DEG | DEG |   
+| ------------- |:-------------:| -----:|
+| not in GO:X | 1800 | 200 |   
+| GO:X | 50 | 50 |
+
+10% DEG but not in GO category   
+50% DEG in GO category (significant! 5x)    
+
+
+
+
 ------ <div id='id-section33'/>
 ### Page 33:
 ------ <div id='id-section34'/>
