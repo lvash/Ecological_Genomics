@@ -1912,8 +1912,19 @@ Outputting VCF file...
 After filtering, kept 2071 out of a possible 7486938 Sites
 
 ```
-
-
+### Calculating Fst   
+For my "maf 0.05" all individuals filter:   
+```
+vcftools --vcf SSW_maf0.05.recode.vcf --weir-fst-pop H_SampleIDs.txt --weir-fst-pop S_SampleIDs.txt --weir-fst-pop MM_SampleIDs.txt --out HvS_Fst_maf05
+Weir and Cockerham mean Fst estimate: -0.00073739
+Weir and Cockerham weighted Fst estimate: 0.00065228
+```
+For my "exclude MM" filter:   
+```
+vcftools --vcf SSW_exclude_MM.recode.vcf --weir-fst-pop H_SampleIDs.txt --weir-fst-pop S_SampleIDs.txt --out HvS_Fst_exclMM
+Weir and Cockerham mean Fst estimate: -0.0022304
+Weir and Cockerham weighted Fst estimate: -0.00023857
+```
 
 ------ <div id='id-section31'/>
 
