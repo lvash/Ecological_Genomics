@@ -1979,12 +1979,12 @@ OR compare distributions of metric (Fst, Fstat, pval) with those in immune respo
 
 ### Page 33: 2017-04-08. Paper Discussion prep: "Bacterial community dynamics are linked to patterns of coral heat tolerance"   
 
-### Study system:   
-Acropora hyacinthus   
+## Study system:   
+*Acropora hyacinthus*   
 Ofu Island, American Samoa   
-Two locations: highly variable (HV) pool and moderately variable (MV) pool which had different thermal environments      
+**Two locations**: highly variable (**HV**) pool and moderately variable (**MV**) pool which had different thermal environments      
 
-#### What makes it a good system?   
+### What makes it a good system?   
 1. Thermally distinct environments allow to expore effects of environment without confounding factor of site   
 2. Thermally sensitive, wide-spread species   
 3. Previous studies showed difference in algal symbiont communities in different thermal environments; although bleached irrespective of symbiont type         
@@ -1996,22 +1996,22 @@ This study **investigated the bacterial community composition and its potential 
 1. Conducted long-term reciprocal transplant (17 months)   
 2. Heat-stress experiment   
 
-### Main Results:   
+## Main Results:   
 
-**Coral microbiomes differ with thermal habitats (Figure 1d)**   
+### **Coral microbiomes differ with thermal habitats (Figure 1d)**   
 Ex: Rhodospirillaceae accounted for 15% of total family abundance in HV pools but less than 2% in MV pools   
 
-**Coral microbiomes adapt to thermal habitats**   
+### **Coral microbiomes adapt to thermal habitats**   
 1. The microbiomes of non-native corals that were transplanted **could not be distinguished** from the microbiomes of native corals in same pool (Figure 1c; different shapes, same color)      
 2. The **cross-transplanted fragments were significantly different from back-transplanted** counterparts (Figure 1c; same shapes, different colors)   
 3. Lack of covariance between coral genotype and microbiome composition (argues against heritable microbial component)   
 
-**Microbiome dynamics are linked to coral heat tolerance**   
+### **Microbiome dynamics are linked to coral heat tolerance**   
 Short term bleaching experiment mimicked natural temperature variation in HV pool during summer noon low tides that cause bleaching   
 1. MV pools: microbiomes signicantly affected after 20h and significant bleaching   
 2. HV pools: microbiome communities remained stable (no sig. response compared to control) and bleached less   
 
-**Microbial functional profiles change with thermal habitat**   
+### **Microbial functional profiles change with thermal habitat**   
 Used predictive metagenomic analysis: Phylogenetic Investigation of Communities by Reconstruction of Unobserved States (PICRUSt)   
 1. 128 functional traits and 28 proteins distinguished microbial communities between HV and MV pools   
 2. HV coral microbiomes characterized by enrichment of functions related to metabolism and carbohydrate transport   
@@ -2019,7 +2019,7 @@ Used predictive metagenomic analysis: Phylogenetic Investigation of Communities 
 
 **Functional profile Discussion**: enzyme Fucose has been shown to undergo largest increase of carbs in coral mucus under heat stress and was enriched in HV; carb transport and metabolism under strong regulation in *Streptococcus mutans* (bacterium associated with tooth decay) to cope with heat stress; **data support a functional restructuring of the microbial metabolic network in stress-resistant corals**          
 
-**Bacterial taxa as indicators of coral heat tolerance**   
+### **Bacterial taxa as indicators of coral heat tolerance**   
 Analyzed data for the presence of candidate indicator taxa that characterize unchanged microbiome of corals in HV pool   
 1. HV pool: characterized by consistent set of microbial taxa across all control/heat treatments; **2/3 belonged to Alphaproteobacteria (rarely present in MV pools)**   
 2. 20h heat-stressed samples compared to all other treatment groups revealed HV microbial communities had no distinct bacterial indicator taxa    
