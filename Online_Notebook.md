@@ -2016,7 +2016,8 @@ Used predictive metagenomic analysis: Phylogenetic Investigation of Communities 
 1. 128 functional traits and 28 proteins distinguished microbial communities between HV and MV pools   
 2. HV coral microbiomes characterized by enrichment of functions related to metabolism and carbohydrate transport   
 3. Only 3 functions enriched in MV coral microbiomes   
-**Discussion**: enzyme Fucose has been shown to undergo largest increase of carbs in coral mucus under heat stress and was enriched in HV; carb transport and metabolism under strong regulation in *Streptococcus mutans* (bacterium associated with tooth decay) to cope with heat stress; **data support a functional restructuring of the microbial metabolic network in stress-resistant corals**          
+
+**Functional profile Discussion**: enzyme Fucose has been shown to undergo largest increase of carbs in coral mucus under heat stress and was enriched in HV; carb transport and metabolism under strong regulation in *Streptococcus mutans* (bacterium associated with tooth decay) to cope with heat stress; **data support a functional restructuring of the microbial metabolic network in stress-resistant corals**          
 
 **Bacterial taxa as indicators of coral heat tolerance**   
 Analyzed data for the presence of candidate indicator taxa that characterize unchanged microbiome of corals in HV pool   
@@ -2024,7 +2025,8 @@ Analyzed data for the presence of candidate indicator taxa that characterize unc
 2. 20h heat-stressed samples compared to all other treatment groups revealed HV microbial communities had no distinct bacterial indicator taxa    
 3. MV pool had 10 indicator OTUs that were characteristic of heat-induced microbial shift (**Gammaproteobacteria and Saprospirae**)   
 4. Functional microbial profiles also encoded by different bacterial classes   
-**Discussion**: 
+
+**Indicator taxa Discussion**: 
 * unchanged **HV bacteria represent spatially explicit bacteria hypothesized to fulfill functional niches** (may contribute to resilience)   
 * **MV heat-associated changes** in microbiome characterized by bacterial taxa previously recorded in **diseased/stressed marine organisms**   
 * Alphaproteobacteria were responsible for large fraction of functional enrichment in HV pool; Family Rhodospirillaceae and genus *Inquilinus* most prevalent   
