@@ -2088,6 +2088,7 @@ Num observations: 93033
 Total count: 8362869
 Table density (fraction of non-zero values): 0.028
 
+```
 Counts/sample summary:
  Min: 28412.0
  Max: 77866.0
@@ -2096,7 +2097,7 @@ Counts/sample summary:
  Std. dev.: 7637.541
  Sample Metadata Categories: None provided
  Observation Metadata Categories: taxonomy
- 
+ ```
  
 
 ------ <div id='id-section35'/>
