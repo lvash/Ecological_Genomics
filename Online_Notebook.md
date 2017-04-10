@@ -59,7 +59,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 31: 2017-04-05](#id-section31). Melissa's Info update: Annotation/Enrichment
 * [Page 32: 2017-04-05](#id-section32). Gene Annotation Tutorial
 * [Page 33: 2017-04-08](#id-section33). Paper Discussion prep: "Bacterial community dynamics are linked to patterns of coral heat tolerance"
-* [Page 34: 2017-04-08](#id-section34). Microbiome: Steve's info update
+* [Page 34: 2017-04-08](#id-section34). Microbiome: Steve's info update and Melanie's coding session
 * [Page 35:](#id-section35).
 * [Page 36:](#id-section36).
 * [Page 37:](#id-section37).
@@ -2038,7 +2038,7 @@ Analyzed data for the presence of candidate indicator taxa that characterize unc
 
 
 ------ <div id='id-section34'/>
-### Page 34: 2017-04-08. Microbiome: Steve's info update    
+### Page 34: 2017-04-08. Microbiome: Steve's info update and Melanie's coding session    
 
 RNA (sea stars)   -- Amplicon-Seq (16S) - what microbes are present? what are they doing? (metagenomics)    
 |
@@ -2081,6 +2081,23 @@ Does microbiome evolve under different contexts? -> adaptation of host to enviro
 Can knowledge of microbiomes predict a response to env. selection?    
 
 
+### BIOME TABLE SUMMARY   
+
+Num samples: 176
+Num observations: 93033
+Total count: 8362869
+Table density (fraction of non-zero values): 0.028
+
+Counts/sample summary:
+ Min: 28412.0
+ Max: 77866.0
+ Median: 47051.500
+ Mean: 47516.301
+ Std. dev.: 7637.541
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+ 
+ 
 
 ------ <div id='id-section35'/>
 ### Page 35:
