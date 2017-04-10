@@ -59,7 +59,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 31: 2017-04-05](#id-section31). Melissa's Info update: Annotation/Enrichment
 * [Page 32: 2017-04-05](#id-section32). Gene Annotation Tutorial
 * [Page 33: 2017-04-08](#id-section33). Paper Discussion prep: "Bacterial community dynamics are linked to patterns of coral heat tolerance"
-* [Page 34:](#id-section34).
+* [Page 34: 2017-04-08](#id-section34). Microbiome: Steve's info update
 * [Page 35:](#id-section35).
 * [Page 36:](#id-section36).
 * [Page 37:](#id-section37).
@@ -2037,14 +2037,51 @@ Analyzed data for the presence of candidate indicator taxa that characterize unc
 
 
 
-
-
-
-
-
-
 ------ <div id='id-section34'/>
-### Page 34:
+### Page 34: 2017-04-08. Microbiome: Steve's info update    
+
+RNA (sea stars)   -- Amplicon-Seq (16S) - what microbes are present? what are they doing? (metagenomics)    
+|
+RNA-seq: what genes are being expressed (transcriptomics)? Diversity and structure of sample; evidence for selection? (population genomics)?   
+
+### Microbiome vs metagenome   
+
+Microbiome: assemblage of microbial taxa associated with host/environment   
+* pathogens   
+* symbionts (mutualists; commensalists)   
+host and microbiome form holobiont   
+(who is there?)
+
+how do you measure microbiome?    
+1) Amplicon-Seq: 16S rRNA (DNA gene that codes for RNA)   
+single-strand RNA forms hairpin loops; loops are more variable because elsewhere, hydrogen bonds are formed in close quarters   
+2) Internal transcribed spacer (ITS)   
+subunits of ribosomal RNA: 18S ---- 5.8S ----- 28S (--- are ITS1 and ITS2; non-coding so more variable)   
+
+Metagenomics: genes being expressed by microbiome; combined community level expression of genes   
+what are they doing? (function)   
+
+how do you measure metagenomics?   
+RNA-Seq or Shot-gun DNA-seq   
+
+Processing:   
+* Sample tissue; extract your DNA/RNA   
+* PCR target gene - use primers (16S - eukaryotes don't have 16S subunit; target bacteria and Archaea)      
+* Barcode amplified fragments, so after sequencing in pool, separate out   
+* Assign distance threshold (cluster sequences based on similarity - usually 97%) - OTUs   
+* Blast OTUs to database to determine taxonomy   
+
+#### Microbial Revolution    
+* Most microbes are culturable; didn't know true diversity until sequencing    
+
+### Big Questions   
+Is there a 'core' microbiome shared in common among many organisms?   
+How much diversity is unique to individuals, populations, and communities? (is it heritable?)   
+Does microbiome evolve under different contexts? -> adaptation of host to environment?!?      
+Can knowledge of microbiomes predict a response to env. selection?    
+
+
+
 ------ <div id='id-section35'/>
 ### Page 35:
 ------ <div id='id-section36'/>
