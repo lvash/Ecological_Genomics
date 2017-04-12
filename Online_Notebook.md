@@ -60,7 +60,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 32: 2017-04-05](#id-section32). Gene Annotation Tutorial
 * [Page 33: 2017-04-08](#id-section33). Paper Discussion prep: "Bacterial community dynamics are linked to patterns of coral heat tolerance"
 * [Page 34: 2017-04-08](#id-section34). Microbiome: Steve's info update and Melanie's coding session
-* [Page 35:](#id-section35).
+* [Page 35: 2017-04-12](#id-section35). Host genetic associations with the microbiome  
 * [Page 36:](#id-section36).
 * [Page 37:](#id-section37).
 * [Page 38:](#id-section38).
@@ -2101,7 +2101,35 @@ Counts/sample summary:
  
 
 ------ <div id='id-section35'/>
-### Page 35:
+### Page 35: 2017-04-12. Host genetic associations with the microbiome   
+
+Microbiome is beneficial (digestive, immune, vitamins, disease resistance) and potentially heritable   
+
+heritability (*not inheritance*) - the proportion of variance in a host trait, measured across populations, and explained by genetics (not environmental) directly (ex: twin pairs) or genome wide association studies (GWAS)   
+
+GWAS - studied in humans   
+- microbiome ~ "traits"   
+- used SNP data from host   
+- 16S rRNA from microbiome   
+Ex: Hutterites: 15 heritable taxa; seasonal (olfactory receptor genes)   
+
+Cross study comparisons   
+- mice: QTL studies; immune functions   
+- plants: QTL; genotypic effects of species richness of microbiome and abundance of indiv. taxa   
+- flies: GWAS; barrier defense (digestive) and immunity   
+
+Limitations   
+- costly   
+- small N -> decreases power of results   
+- lacking microbial taxa   
+- meta analyses did not find signficant results (studies too different)   
+
+To increase power -> increase sample size and unify sample sequencing and analysis   
+
+
+
+
+
 ------ <div id='id-section36'/>
 ### Page 36:
 ------ <div id='id-section37'/>
