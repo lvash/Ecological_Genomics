@@ -2180,7 +2180,7 @@ type II error: failt to reject Ho when FALSE
 	+ heteroskedasticity   
 	+ reduced statistical power (lose sample size)      
 - rarefying   
-	+ steps - find smallest N (N_lmin_), discard libraries with fewer than N_lmin_, subsample reads from larger Ns without replacement   
+	+ steps - find smallest N (N<sub>Lmin</sub>), discard libraries with fewer than N<sub>Lmin</sub>, subsample reads from larger Ns without replacement   
 	+ what this does: normalizes data; removes discrepencies in number of reads    
 	+ problems: high rate of false positives; requires omission of data; reduces statistical power         
 
