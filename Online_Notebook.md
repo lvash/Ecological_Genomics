@@ -2191,6 +2191,17 @@ type II error: failt to reject Ho when FALSE
 - edgeR; DESeq; phyloseq for mixture models   
 
 
+### Trouble with biom package install   
+1) Had to download [archived version](https://cran.r-project.org/src/contrib/Archive/biom/)   
+2) Installed dependency package: RJSONIO in R
+3) Terminal: R CMD INSTALL packagename.tar.gz   
+
+### Then had to convert metagenome_predictions.L3.biom file to json format (used json file in R script)  
+
+```
+biom convert -i metagenome_predictions.L3.biom -o metagenome_predictions_json.biom --table-type="OTU table" --to-json
+```
+
 ------ <div id='id-section37'/>
 
 ### Page 37:
