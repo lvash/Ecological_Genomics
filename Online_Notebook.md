@@ -149,6 +149,7 @@ Sanger sequencing: "The first method of sequencing the genetic code was devised 
 Illumina: Illumina next-generation sequencing utilizes a fundamentally different approach from the classic Sanger chain-termination method. It leverages sequencing by synthesis (SBS) technology – tracking the addition of labeled nucleotides as the DNA chain is copied – in a massively parallel fashion. [Reference](https://www.illumina.com/technology/next-generation-sequencing.html)      
 
 ------ <div id='id-section3'/>
+
 ### Page 3: 2017-01-24 Articles: Rockman 2012 and Lee et al. 2014
 
 ### Lee et al. 2014: Identifying the genes underlying quantitative traits: a rationale for the QTN programme   
@@ -242,6 +243,7 @@ If comparing resistance versus susceptibility in populations: which populations 
 
 
 ------ <div id='id-section4'/>
+
 ### Page 4: 2017-01-25 Class notes [QTNs and SSWD info]   
 
 [Handout and Notes Page 1](https://cloud.githubusercontent.com/assets/15003012/22557682/3f9c49ac-e939-11e6-851f-628492b6a93d.jpg)   
@@ -328,6 +330,7 @@ Questions:
 
 
 ------ <div id='id-section5'/>
+
 ### Page 5: 2017-01-30 Choosing SSWD questions   
 
 [Sea Star Wasting Disease Data](https://cloud.githubusercontent.com/assets/15003012/22557818/a82b9f0e-e939-11e6-9862-db46aa909de8.jpg)   
@@ -394,6 +397,7 @@ GBS: restriction enzymes - reduce representation across genome so you can focus 
 
 
 ------ <div id='id-section6'/>
+
 ### Page 6: 2017-02-01 Info Update Blitz
 
 **Whole Genome Sequencing**   
@@ -570,7 +574,8 @@ Limitations
 
 
 ------ <div id='id-section7'/>
-###Page 7: 2017-02-01 Unix Tutorial and Tips   
+
+### Page 7: 2017-02-01 Unix Tutorial and Tips   
 
 Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labnotebook/blob/master/Tutorials/Tutorials_CommandLine.md) 
 * How to connect to server (use netID with UVM password)    
@@ -588,6 +593,7 @@ Link to [Unix Tutorial](https://github.com/stephenrkeller/PBIO381_srkeller_labno
 [Unix Cheat Sheet](https://files.fosswire.com/2007/08/fwunixref.pdf)    
 ​    
 ------ <div id='id-section8'/>
+
 ### Page 8: 2017-02-03 Article: Dunning et al. 2014   
 ### Divergent transcriptional responses to low temperature among populations of alpine and lowland species of New Zealand stick insects (*Micrarchus*)   
 
@@ -637,6 +643,7 @@ Is this more than expected? Use Fisher's exact test
 
 
 ------ <div id='id-section9'/> 
+
 ### Page 9: 2017-02-06 Info update for RNA seq and article discussion   
 
 Beforehand: 
@@ -681,6 +688,7 @@ Beforehand:
 
 
 ------ <div id='id-section10'/>
+
 ### Page 10: 2017-02-06 RNA-seq Coding   
 
 [RNA seq Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-06_RNAseq_tutorial.html)   
@@ -708,6 +716,7 @@ TrimmomaticPE: Completed successfully
 Last line I run: fastqc /data/project_data/fastq/19_5-20_S_5_R1.fq.gz   
 
 ------ <div id='id-section11'/>
+
 ### Page 11: 2017-02-08 Transcriptomics info update   
 
 Outline:   
@@ -783,6 +792,7 @@ Skills learning objectives:
 - Evaluate assembly
 
 ------ <div id='id-section12'/>
+
 ### Page 12: 2017-02-10 Prepping for Todd et al. info update      
 
 ## The power and promise of RNA-seq in ecology and evolution   
@@ -851,6 +861,7 @@ press ctrl + a + d (detach)
 screen -r (reattach)
 
 ------ <div id='id-section13'/>
+
 ### Page 13: 2017-02-15. SNPs and Population Genomics Info Update
 
 **Glossary**
@@ -906,6 +917,7 @@ SNPs act as 'footprints' for natural selection and can let us know if we need to
 
 
 ------ <div id='id-section14'/>
+
 ### Page 14: 2017-02-15. Article discussion: Zhao et al. 2016
 
 [Andrew's Notes](https://adnguyen.github.io/2017_Ecological_Genomics/ANBE_notebook.html#id-section10)
@@ -935,6 +947,7 @@ Questions: Does gene level DE count isoforms as one gene?
 
 
 ------ <div id='id-section15'/>
+
 ### Page 15: 2017-02-15 Sequence alignment (SAM) files and Read Count Extraction Coding  
 
 [Link to tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-02-15_RNAseq_Map_Count.html)   
@@ -993,6 +1006,7 @@ We are interested in first column (total unique reads)
 
 
 ------ <div id='id-section16'/>
+
 ### Page 16: 2017-02-22 DESeq2 in R
 
 ### Moving the R scripts and files from the server to Ecological Genomics 
@@ -1010,6 +1024,7 @@ workflowInstall("rnaseqGene")
 
 
 ------ <div id='id-section17'/>
+
 ### Page 17: 2017-02-27 Scott Edwards paper    
 
 **Glossary**
@@ -1025,6 +1040,7 @@ workflowInstall("rnaseqGene")
 Craig Moritz (last author) - Australia; reptiles/amphibian population genetics   
 
 ------ <div id='id-section18'/>
+
 ### Page 18: 2017-03-01 Homework Assignment info and WGCNA
 
 ### WGCNA - Weighted correlation network
@@ -1088,6 +1104,7 @@ Ran out of time, didn't finish
 	    
 
 ------ <div id='id-section19'/>
+
 ### Page 19: 2017-03-06 Population Genomics: Steve's Info Update and Alex's Discussion   
 
 **Glossary**   
@@ -1142,6 +1159,7 @@ Raw reads -> Clean/trimmed -> Assembled draft transcriptome -> Mapped clean read
 
 
 ------ <div id='id-section20'/>   
+
 ### Page 20:2017-03-06 Population Genomics Tutorial 
 [Link to Tutorial](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-06_Tutorials_PopGenomics1.html)   
 
@@ -1153,7 +1171,8 @@ Did it detect the correct number of individuals? kept 24 out of 24 Individuals
 How many SNPs do we have? 7472775   
 
 ```grep "unres" SSW_bamlist.txt.vcf | wc ``` this searches for SNPs deemed unresolved ("unres") and pipes it to a wordcount (wc) function   
-Output: ```5631864 185851488 1028494934
+Output: 
+```5631864 185851488 1028494934
 ``` 
 **5631864 were unresolved**   
 
@@ -1238,6 +1257,7 @@ $ R
 ```
 
 ------ <div id='id-section21'/>
+
 ### Page 21: 2017-03-07 Homework 2: RNA sequencing for gene expression analyses
 
 Here is the code I used to subset out the data into Intertidal versus Subtidal   
@@ -1393,6 +1413,7 @@ with(subset(resFULL, padj<.000005 & abs(log2FoldChange)>2), textxy(log2FoldChang
 Here is the [output](https://cloud.githubusercontent.com/assets/15003012/23735295/ae9d674e-0452-11e7-91b9-72bf08c656c4.png) from one of my earlier versions (later I substituted pvalue for adjusted p-value)   
 
 ------ <div id='id-section22'/>   
+
 ### Page 22: 2017-03-08 Effective Population Size and Substitution Rate Info Update   
    
 ### Rate of evolution due to the relationship of effective population size and the substitution rate (NeRR)   
@@ -1457,6 +1478,7 @@ estimating mu: time (MY) since common ancestor (phylogenetic distance) can be lo
 
 
 ------ <div id='id-section23'/>   
+
 ### Page 23: 2017-03-08 Population Genomics Part 2 Tutorial   
    
 [Link](https://adnguyen.github.io/2017_Ecological_Genomics/Tutorial/2017-03-08_Tutorials_PopGenomics2.html) to Tutorial   
@@ -1532,6 +1554,7 @@ I brought the pdf to my local computer to look at it and converted it to a jpg.
 
 ------      
 <div id='id-section24'/>   
+
 ### Page 24: 2017-03-20. Bill Kilpatrick's Info Update   
    
 ### Glossary:   
@@ -1580,6 +1603,7 @@ admixed populations - every individual is going to be a combination of genes; go
 ------    
 
 <div id='id-section25'/>     
+
 ### Page 25: 2017-03-20. Population Genomics Part 3 Tutorial      
 
 1) Final VCF data (n=24)-> Filter -> Output to Home Directory      
@@ -1623,6 +1647,7 @@ All_freq[which(abs(All_freq$diff)>0.35),] ### gives which ones have high allele 
 
 
 ------   <div id='id-section27'/>  
+
 ### Page 27: 2017-03-27. Selective sweep info update (Allison)      
 **sweep**: pattern whereby a single adaptive allele "sweeps" through populations (goes to fixation or nearly so)   
 **hard sweep**: single adaptive allele in common genetic background (sharp decrease of genetic diversity)   
@@ -1746,7 +1771,8 @@ grep CV log*.out >chooseK.txt
 --cv applies cross validation   
 | sends info to log file
 
------- <div id='id-section29'/>
+------ <div id='id-section29'/> 
+
 ### Page 29: 2017-04-03. Karl Fetter Guest Lecture: Fst; outliers   
 
 Outline      
@@ -2101,7 +2127,8 @@ Counts/sample summary:
  ```
  
 
------- <div id='id-section35'/>
+------ <div id='id-section35'/> 
+
 ### Page 35: 2017-04-12. Host genetic associations with the microbiome   
 
 Microbiome is beneficial (digestive, immune, vitamins, disease resistance) and potentially heritable   
@@ -2165,52 +2192,76 @@ type II error: failt to reject Ho when FALSE
 
 
 ------ <div id='id-section37'/>
+
 ### Page 37:
 ------ <div id='id-section38'/>
+
 ### Page 38:
 ------ <div id='id-section39'/>
+
 ### Page 39:
 ------ <div id='id-section40'/>
+
 ### Page 40:
 ------ <div id='id-section41'/>
+
 ### Page 41:
 ------ <div id='id-section42'/>
+
 ### Page 42:
 ------ <div id='id-section43'/>
+
 ### Page 43:
 ------ <div id='id-section44'/>
+
 ### Page 44:
 ------ <div id='id-section45'/>
+
 ### Page 45:
 ------ <div id='id-section46'/>
+
 ### Page 46:
 ------ <div id='id-section47'/>
+
 ### Page 47:
 ------ <div id='id-section48'/>
+
 ### Page 48:
 ------ <div id='id-section49'/>
+
 ### Page 49:
 ------ <div id='id-section50'/>
+
 ### Page 50:
 ------ <div id='id-section51'/>
+
 ### Page 51:
 ------ <div id='id-section52'/>
+
 ### Page 52:
 ------ <div id='id-section53'/>
+
 ### Page 53:
 ------ <div id='id-section54'/>
-###Page 54:
+
+### Page 54:
 ------ <div id='id-section55'/>
+
 ### Page 55:
 ------ <div id='id-section56'/>
+
 ### Page 56:
 ------ <div id='id-section57'/>
+
 ### Page 57:
 ------ <div id='id-section58'/>
+
 ### Page 58:
 ------ <div id='id-section59'/>
+
 ### Page 59:
 ------ <div id='id-section60'/>
+
 ### Page 60:
 
 ------
