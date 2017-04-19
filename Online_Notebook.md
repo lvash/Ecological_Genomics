@@ -61,7 +61,7 @@ Science should be reproducible and one of the best ways to achieve this is by lo
 * [Page 33: 2017-04-08](#id-section33). Paper Discussion prep: "Bacterial community dynamics are linked to patterns of coral heat tolerance"
 * [Page 34: 2017-04-08](#id-section34). Microbiome: Steve's info update and Melanie's coding session
 * [Page 35: 2017-04-12](#id-section35). Host genetic associations with the microbiome  
-* [Page 36:](#id-section36).
+* [Page 36: 2017-04-19](#id-section36). Alex's Info Update
 * [Page 37:](#id-section37).
 * [Page 38:](#id-section38).
 * [Page 39:](#id-section39).
@@ -2038,6 +2038,7 @@ Analyzed data for the presence of candidate indicator taxa that characterize unc
 
 
 ------ <div id='id-section34'/>
+
 ### Page 34: 2017-04-08. Microbiome: Steve's info update and Melanie's coding session    
 
 RNA (sea stars)   -- Amplicon-Seq (16S) - what microbes are present? what are they doing? (metagenomics)    
@@ -2130,8 +2131,39 @@ To increase power -> increase sample size and unify sample sequencing and analys
 
 
 
------- <div id='id-section36'/>
-### Page 36:
+------ <div id='id-section36'/> 
+
+### Page 36:  2017-04-19. Alex's Info Update
+
+**Rarefying microbiome data is NOT acceptable**   
+
+Rarefying vs rarefaction    
+
+**Glossary**   
+rarefaction - estimating species richness based on number of samples from each group (extrapolation)     
+rarefying - normalization of data using lowest N (random subsampling without replacement)   
+heteroskedasticity - variability of a variable changes along another predictor variable     
+power: probability of rejecting a false null hypothesis      
+type I error: reject Ho whent it is TRUE   
+type II error: failt to reject Ho when FALSE      
+   
+**Past methods**  
+- proportions: of individal OTUs over total observed OTUs found      
++ high rate of false positives   
++ heteroskedasticity   
++ reduced statistical power (lose sample size)      
+- rarefying   
++ steps - find smallest N (N_lmin_), discard libraries with fewer than N_lmin_, subsample reads from larger Ns without replacement   
++ what this does: normalizes data; removes discrepencies in number of reads    
++ problems: high rate of false positives; requires omission of data; reduces statistical power         
+
+**Mixture models (recommended)**    
+- combines two distributions (i.e. binomial with zero-inflated Gaussian/Normal)     
+- does not cut down N, so does not decrease power and increase accuracy   
+- allows libraries of different lengths and accounts for biological variability   
+- edgeR; DESeq; phyloseq for mixture models   
+
+
 ------ <div id='id-section37'/>
 ### Page 37:
 ------ <div id='id-section38'/>
