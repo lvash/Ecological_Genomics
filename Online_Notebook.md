@@ -2149,13 +2149,13 @@ type II error: failt to reject Ho when FALSE
    
 **Past methods**  
 - proportions: of individal OTUs over total observed OTUs found      
-+ high rate of false positives   
-+ heteroskedasticity   
-+ reduced statistical power (lose sample size)      
+	+ high rate of false positives   
+	+ heteroskedasticity   
+	+ reduced statistical power (lose sample size)      
 - rarefying   
-+ steps - find smallest N (N_lmin_), discard libraries with fewer than N_lmin_, subsample reads from larger Ns without replacement   
-+ what this does: normalizes data; removes discrepencies in number of reads    
-+ problems: high rate of false positives; requires omission of data; reduces statistical power         
+	+ steps - find smallest N (N_lmin_), discard libraries with fewer than N_lmin_, subsample reads from larger Ns without replacement   
+	+ what this does: normalizes data; removes discrepencies in number of reads    
+	+ problems: high rate of false positives; requires omission of data; reduces statistical power         
 
 **Mixture models (recommended)**    
 - combines two distributions (i.e. binomial with zero-inflated Gaussian/Normal)     
